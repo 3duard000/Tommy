@@ -12,7 +12,9 @@ import json
 import re
 
 # Carpetas que NO son categorias de galeria
-SKIP_DIRS = {'.git', '.github', 'assets'}
+# "Other" contiene imagenes de portada (usadas en la seccion "Our Story"),
+# no es una categoria del catalogo.
+SKIP_DIRS = {'.git', '.github', 'assets', 'Other'}
 
 # Nombres bonitos para mostrar (folder -> nombre visible)
 DISPLAY_NAMES = {
