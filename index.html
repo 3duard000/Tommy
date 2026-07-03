@@ -468,6 +468,9 @@ function filterCats(q){
 function openCategory(i){ current = CATALOG[i]; location.hash = 'cat-'+i; }
 
 function renderGallery(){
+  // Hide the home-only sections (hero + Our Story) while viewing a gallery
+  document.getElementById('top').classList.add('hidden');
+  document.getElementById('story').classList.add('hidden');
   document.getElementById('catalog').classList.add('hidden');
   const gal = document.getElementById('gallery');
   gal.classList.remove('hidden');
@@ -493,6 +496,8 @@ function handleHash(){
   }
   document.getElementById('gallery').classList.add('hidden');
   document.getElementById('catalog').classList.remove('hidden');
+  document.getElementById('top').classList.remove('hidden');
+  document.getElementById('story').classList.remove('hidden');
   current = null;
 }
 window.addEventListener('hashchange', handleHash);
