@@ -4,14 +4,14 @@
     "name": "Accessories",
     "folder": "Accesories",
     "cover": "thumbs/Accesories/Charder C/Clear Glass Silver Rim.webp",
-    "count": 23,
+    "count": 21,
     "children": [
       {
         "type": "category",
         "name": "Charger Plates",
         "folder": "Accesories/Charder C",
         "cover": "thumbs/Accesories/Charder C/Clear Glass Silver Rim.webp",
-        "count": 12,
+        "count": 11,
         "items": [
           {
             "src": "Accesories/Charder C/Clear Glass Silver Rim.png",
@@ -63,13 +63,6 @@
             "note": ""
           },
           {
-            "src": "Accesories/Charder C/11´´ Round Clear Glass Charger Plate With Silver Ball Trim(1).png",
-            "thumb": "thumbs/Accesories/Charder C/11´´ Round Clear Glass Charger Plate With Silver Ball Trim(1).webp",
-            "title": "Round Clear Glass Charger Plate with Silver Ball Trim",
-            "dims": "11\"",
-            "note": ""
-          },
-          {
             "src": "Accesories/Charder C/11´´ Round Clear Glass Charger Plate With Silver Ball Trim.png",
             "thumb": "thumbs/Accesories/Charder C/11´´ Round Clear Glass Charger Plate With Silver Ball Trim.webp",
             "title": "Round Clear Glass Charger Plate with Silver Ball Trim",
@@ -104,7 +97,7 @@
         "name": "Shades",
         "folder": "Accesories/Shades",
         "cover": "thumbs/Accesories/Shades/Beaded shade with hanging beads. Available in sand, gold, and silver..webp",
-        "count": 11,
+        "count": 10,
         "items": [
           {
             "src": "Accesories/Shades/Beaded shade with hanging beads. Available in sand, gold, and silver..png",
@@ -170,13 +163,6 @@
             "note": ""
           },
           {
-            "src": "Accesories/Shades/13´´ Square Black High Glass Ceramic Charger Plate.png",
-            "thumb": "thumbs/Accesories/Shades/13´´ Square Black High Glass Ceramic Charger Plate.webp",
-            "title": "Square Black High Glass Ceramic Charger Plate",
-            "dims": "13\"",
-            "note": ""
-          },
-          {
             "src": "Accesories/Shades/White Pleated Fabric Shade.png",
             "thumb": "thumbs/Accesories/Shades/White Pleated Fabric Shade.webp",
             "title": "White Pleated Fabric Shade",
@@ -226,7 +212,7 @@
         "src": "Arches/8_ Greek 4 column chuppa with 4_x8_ top. Available in Ivory and Gray.png",
         "thumb": "thumbs/Arches/8_ Greek 4 column chuppa with 4_x8_ top. Available in Ivory and Gray.webp",
         "title": "Greek 4 Column Chuppa with Top",
-        "dims": "8\" / 4\" × 8\"",
+        "dims": "4\" × 8\" / 8\"",
         "note": "Available in Ivory and Gray"
       },
       {
@@ -336,7 +322,7 @@
     "name": "Candelabras",
     "folder": "Candelabras",
     "cover": "thumbs/Candelabras/10 arm all crystal contemporary candelabra with candle hurricanes.webp",
-    "count": 20,
+    "count": 16,
     "items": [
       {
         "src": "Candelabras/10 arm all crystal contemporary candelabra with candle hurricanes.png",
@@ -388,13 +374,6 @@
         "note": ""
       },
       {
-        "src": "Candelabras/30_ crystal and silver 5 arm candelabra.png",
-        "thumb": "thumbs/Candelabras/30_ crystal and silver 5 arm candelabra.webp",
-        "title": "Crystal and Silver 5 Arm Candelabra",
-        "dims": "30\"",
-        "note": ""
-      },
-      {
         "src": "Candelabras/30_ crystal and silver 5 arm candelabra(1).png",
         "thumb": "thumbs/Candelabras/30_ crystal and silver 5 arm candelabra(1).webp",
         "title": "Crystal and Silver 5 Arm Candelabra",
@@ -416,13 +395,6 @@
         "note": ""
       },
       {
-        "src": "Candelabras/24_ gold 4 arm candelabra(1).png",
-        "thumb": "thumbs/Candelabras/24_ gold 4 arm candelabra(1).webp",
-        "title": "Gold 4 Arm Candelabra",
-        "dims": "24\"",
-        "note": ""
-      },
-      {
         "src": "Candelabras/24_ gold 5 arm candelabra.png",
         "thumb": "thumbs/Candelabras/24_ gold 5 arm candelabra.webp",
         "title": "Gold 5 Arm Candelabra",
@@ -437,13 +409,6 @@
         "note": ""
       },
       {
-        "src": "Candelabras/Large gold 5 arm candelabra(1).png",
-        "thumb": "thumbs/Candelabras/Large gold 5 arm candelabra(1).webp",
-        "title": "Large Gold 5 Arm Candelabra",
-        "dims": "",
-        "note": ""
-      },
-      {
         "src": "Candelabras/Round footed 5 arm crystal candelabra.png",
         "thumb": "thumbs/Candelabras/Round footed 5 arm crystal candelabra.webp",
         "title": "Round Footed 5 Arm Crystal Candelabra",
@@ -451,17 +416,10 @@
         "note": ""
       },
       {
-        "src": "Candelabras/39_ silver 5 arm candelabra.png",
-        "thumb": "thumbs/Candelabras/39_ silver 5 arm candelabra.webp",
-        "title": "Silver 5 Arm Candelabra",
-        "dims": "39\"",
-        "note": ""
-      },
-      {
         "src": "Candelabras/24_ silver 5 arm candelabra.png",
         "thumb": "thumbs/Candelabras/24_ silver 5 arm candelabra.webp",
         "title": "Silver 5 Arm Candelabra",
-        "dims": "24\"",
+        "dims": "24\" / 39\"",
         "note": ""
       },
       {
@@ -485,14 +443,14 @@
     "name": "Candle Holders",
     "folder": "Candle Holders",
     "cover": "thumbs/Candle Holders/Candle Display/5´ pedestal candle holder.webp",
-    "count": 34,
+    "count": 28,
     "children": [
       {
         "type": "category",
         "name": "Candle Displays",
         "folder": "Candle Holders/Candle Display",
         "cover": "thumbs/Candle Holders/Candle Display/5´ pedestal candle holder.webp",
-        "count": 7,
+        "count": 3,
         "items": [
           {
             "src": "Candle Holders/Candle Display/5´ pedestal candle holder.png",
@@ -505,42 +463,14 @@
             "src": "Candle Holders/Candle Display/36_ iron stand with glass vase.png",
             "thumb": "thumbs/Candle Holders/Candle Display/36_ iron stand with glass vase.webp",
             "title": "Iron Stand with Glass Vase",
-            "dims": "36\"",
-            "note": ""
-          },
-          {
-            "src": "Candle Holders/Candle Display/72_ iron stand with glass vase.png",
-            "thumb": "thumbs/Candle Holders/Candle Display/72_ iron stand with glass vase.webp",
-            "title": "Iron Stand with Glass Vase",
-            "dims": "72\"",
-            "note": ""
-          },
-          {
-            "src": "Candle Holders/Candle Display/84_ iron stand with glass vase.png",
-            "thumb": "thumbs/Candle Holders/Candle Display/84_ iron stand with glass vase.webp",
-            "title": "Iron Stand with Glass Vase",
-            "dims": "84\"",
-            "note": ""
-          },
-          {
-            "src": "Candle Holders/Candle Display/48_ iron stand with glass vase.png",
-            "thumb": "thumbs/Candle Holders/Candle Display/48_ iron stand with glass vase.webp",
-            "title": "Iron Stand with Glass Vase",
-            "dims": "48\"",
+            "dims": "36\" / 48\" / 72\" / 84\"",
             "note": ""
           },
           {
             "src": "Candle Holders/Candle Display/46_ rust iron stand with glass vase.png",
             "thumb": "thumbs/Candle Holders/Candle Display/46_ rust iron stand with glass vase.webp",
             "title": "Rust Iron Stand with Glass Vase",
-            "dims": "46\"",
-            "note": ""
-          },
-          {
-            "src": "Candle Holders/Candle Display/70_ rust iron stand with glass vase.png",
-            "thumb": "thumbs/Candle Holders/Candle Display/70_ rust iron stand with glass vase.webp",
-            "title": "Rust Iron Stand with Glass Vase",
-            "dims": "70\"",
+            "dims": "46\" / 70\"",
             "note": ""
           }
         ]
@@ -550,7 +480,7 @@
         "name": "Candlesticks",
         "folder": "Candle Holders/Candle Sticks",
         "cover": "thumbs/Candle Holders/Candle Sticks/11 1_2_ antique gold candlestick.webp",
-        "count": 7,
+        "count": 6,
         "items": [
           {
             "src": "Candle Holders/Candle Sticks/11 1_2_ antique gold candlestick.png",
@@ -581,17 +511,10 @@
             "note": ""
           },
           {
-            "src": "Candle Holders/Candle Sticks/10_ gold candlestick_.png",
-            "thumb": "thumbs/Candle Holders/Candle Sticks/10_ gold candlestick_.webp",
-            "title": "Gold Candlestick",
-            "dims": "10\"",
-            "note": ""
-          },
-          {
             "src": "Candle Holders/Candle Sticks/12_ gold candlestick.png",
             "thumb": "thumbs/Candle Holders/Candle Sticks/12_ gold candlestick.webp",
             "title": "Gold Candlestick",
-            "dims": "12\"",
+            "dims": "10\" / 12\"",
             "note": ""
           },
           {
@@ -608,7 +531,7 @@
         "name": "Votive Holders",
         "folder": "Candle Holders/Votive Holders",
         "cover": "thumbs/Candle Holders/Votive Holders/Crystal flared top votive holder.webp",
-        "count": 10,
+        "count": 9,
         "items": [
           {
             "src": "Candle Holders/Votive Holders/Crystal flared top votive holder.png",
@@ -620,13 +543,6 @@
           {
             "src": "Candle Holders/Votive Holders/Crystal shotglass votive holder(1).png",
             "thumb": "thumbs/Candle Holders/Votive Holders/Crystal shotglass votive holder(1).webp",
-            "title": "Crystal Shotglass Votive Holder",
-            "dims": "",
-            "note": ""
-          },
-          {
-            "src": "Candle Holders/Votive Holders/Crystal shotglass votive holder.png",
-            "thumb": "thumbs/Candle Holders/Votive Holders/Crystal shotglass votive holder.webp",
             "title": "Crystal Shotglass Votive Holder",
             "dims": "",
             "note": ""
@@ -767,15 +683,15 @@
     "type": "group",
     "name": "Centerpieces",
     "folder": "Centerpieces",
-    "cover": "thumbs/Centerpieces/Centerpieces Bowls/10_ cut crystal bowl with silver pedestal.webp",
-    "count": 26,
+    "cover": "thumbs/Centerpieces/Centerpieces Bowls/ 10 1_2_ silver footed bowl with handles.webp",
+    "count": 19,
     "children": [
       {
         "type": "category",
         "name": "Centerpiece Bowls",
         "folder": "Centerpieces/Centerpieces Bowls",
         "cover": "thumbs/Centerpieces/Centerpieces Bowls/10_ cut crystal bowl with silver pedestal.webp",
-        "count": 8,
+        "count": 6,
         "items": [
           {
             "src": "Centerpieces/Centerpieces Bowls/10_ cut crystal bowl with silver pedestal.png",
@@ -795,14 +711,7 @@
             "src": "Centerpieces/Centerpieces Bowls/  8 1_2_ gold footed bowl with handles_.png",
             "thumb": "thumbs/Centerpieces/Centerpieces Bowls/  8 1_2_ gold footed bowl with handles_.webp",
             "title": "Gold Footed Bowl with Handles",
-            "dims": "8 1/2\"",
-            "note": ""
-          },
-          {
-            "src": "Centerpieces/Centerpieces Bowls/  10 1_2_ gold footed bowl with handles_.png",
-            "thumb": "thumbs/Centerpieces/Centerpieces Bowls/  10 1_2_ gold footed bowl with handles_.webp",
-            "title": "Gold Footed Bowl with Handles",
-            "dims": "10 1/2\"",
+            "dims": "8 1/2\" / 10 1/2\"",
             "note": ""
           },
           {
@@ -820,17 +729,10 @@
             "note": "10\" high 9\" square"
           },
           {
-            "src": "Centerpieces/Centerpieces Bowls/ 8 1_2_ silver footed bowl with handles.png",
-            "thumb": "thumbs/Centerpieces/Centerpieces Bowls/ 8 1_2_ silver footed bowl with handles.webp",
-            "title": "Silver Footed Bowl with Handles",
-            "dims": "8 1/2\"",
-            "note": ""
-          },
-          {
             "src": "Centerpieces/Centerpieces Bowls/ 10 1_2_ silver footed bowl with handles.png",
             "thumb": "thumbs/Centerpieces/Centerpieces Bowls/ 10 1_2_ silver footed bowl with handles.webp",
             "title": "Silver Footed Bowl with Handles",
-            "dims": "10 1/2\"",
+            "dims": "8 1/2\" / 10 1/2\"",
             "note": ""
           }
         ]
@@ -839,21 +741,14 @@
         "type": "category",
         "name": "Centerpiece Pedestals",
         "folder": "Centerpieces/Certepiece Pedestals",
-        "cover": "thumbs/Centerpieces/Certepiece Pedestals/27.5_x7.8_ cast iron pillar candle holder.This item can be custom painted.webp",
-        "count": 18,
+        "cover": "thumbs/Centerpieces/Certepiece Pedestals/40_x 11_ cast iron pillar candle holder. This item can be custom painted.webp",
+        "count": 13,
         "items": [
-          {
-            "src": "Centerpieces/Certepiece Pedestals/27.5_x7.8_ cast iron pillar candle holder.This item can be custom painted.png",
-            "thumb": "thumbs/Centerpieces/Certepiece Pedestals/27.5_x7.8_ cast iron pillar candle holder.This item can be custom painted.webp",
-            "title": "Cast Iron Pillar Candle Holder",
-            "dims": "27.5\" × 7.8\"",
-            "note": "This item can be custom painted"
-          },
           {
             "src": "Centerpieces/Certepiece Pedestals/40_x 11_ cast iron pillar candle holder. This item can be custom painted.png",
             "thumb": "thumbs/Centerpieces/Certepiece Pedestals/40_x 11_ cast iron pillar candle holder. This item can be custom painted.webp",
             "title": "Cast Iron Pillar Candle Holder",
-            "dims": "40\" × 11\"",
+            "dims": "27.5\" × 7.8\" / 40\" × 11\"",
             "note": "This item can be custom painted"
           },
           {
@@ -888,15 +783,8 @@
             "src": "Centerpieces/Certepiece Pedestals/24_ gold pedestal. Available with center dish or with center bowl.png",
             "thumb": "thumbs/Centerpieces/Certepiece Pedestals/24_ gold pedestal. Available with center dish or with center bowl.webp",
             "title": "Gold Pedestal",
-            "dims": "24\"",
+            "dims": "24\" / 30\"",
             "note": "Available with center dish or with center bowl"
-          },
-          {
-            "src": "Centerpieces/Certepiece Pedestals/30_ gold pedestal.png",
-            "thumb": "thumbs/Centerpieces/Certepiece Pedestals/30_ gold pedestal.webp",
-            "title": "Gold Pedestal",
-            "dims": "30\"",
-            "note": ""
           },
           {
             "src": "Centerpieces/Certepiece Pedestals/30_ hexagonal vase. This item can be custom painted any color_.png",
@@ -937,35 +825,14 @@
             "src": "Centerpieces/Certepiece Pedestals/36_ stand with glass bell jar.png",
             "thumb": "thumbs/Centerpieces/Certepiece Pedestals/36_ stand with glass bell jar.webp",
             "title": "Stand with Glass Bell Jar",
-            "dims": "36\"",
-            "note": ""
-          },
-          {
-            "src": "Centerpieces/Certepiece Pedestals/24_ stand with glass bell jar.png",
-            "thumb": "thumbs/Centerpieces/Certepiece Pedestals/24_ stand with glass bell jar.webp",
-            "title": "Stand with Glass Bell Jar",
-            "dims": "24\"",
-            "note": ""
-          },
-          {
-            "src": "Centerpieces/Certepiece Pedestals/48_ stand with glass bell jar.png",
-            "thumb": "thumbs/Centerpieces/Certepiece Pedestals/48_ stand with glass bell jar.webp",
-            "title": "Stand with Glass Bell Jar",
-            "dims": "48\"",
+            "dims": "24\" / 36\" / 48\"",
             "note": ""
           },
           {
             "src": "Centerpieces/Certepiece Pedestals/26_ trumpet vase.png",
             "thumb": "thumbs/Centerpieces/Certepiece Pedestals/26_ trumpet vase.webp",
             "title": "Trumpet Vase",
-            "dims": "26\"",
-            "note": ""
-          },
-          {
-            "src": "Centerpieces/Certepiece Pedestals/33 1_4_ trumpet vase.png",
-            "thumb": "thumbs/Centerpieces/Certepiece Pedestals/33 1_4_ trumpet vase.webp",
-            "title": "Trumpet Vase",
-            "dims": "33 1/4\"",
+            "dims": "26\" / 33 1/4\"",
             "note": ""
           }
         ]
@@ -973,284 +840,260 @@
     ]
   },
   {
-    "type": "category",
+    "type": "group",
     "name": "Chairs",
     "folder": "Chairs",
     "cover": "thumbs/Chairs/Black Ballroom Chair.webp",
-    "count": 39,
-    "items": [
+    "count": 33,
+    "children": [
       {
-        "src": "Chairs/Black Ballroom Chair.png",
-        "thumb": "thumbs/Chairs/Black Ballroom Chair.webp",
-        "title": "Black Ballroom Chair",
-        "dims": "",
-        "note": ""
+        "type": "category",
+        "name": "Chairs",
+        "folder": "Chairs",
+        "cover": "thumbs/Chairs/Black Ballroom Chair.webp",
+        "count": 27,
+        "items": [
+          {
+            "src": "Chairs/Black Ballroom Chair.png",
+            "thumb": "thumbs/Chairs/Black Ballroom Chair.webp",
+            "title": "Black Ballroom Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Black Barstool.png",
+            "thumb": "thumbs/Chairs/Black Barstool.webp",
+            "title": "Black Barstool",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Black Garden Chairs.png",
+            "thumb": "thumbs/Chairs/Black Garden Chairs.webp",
+            "title": "Black Garden Chairs",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Chaclear.png",
+            "thumb": "thumbs/Chairs/Chaclear.webp",
+            "title": "Chaclear",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Chivari bar stools. Available in gold, white, black, silver, fruitwood.png",
+            "thumb": "thumbs/Chairs/Chivari bar stools. Available in gold, white, black, silver, fruitwood.webp",
+            "title": "Chivari Bar Stools",
+            "dims": "",
+            "note": "Available in gold, white, black, silver, fruitwood"
+          },
+          {
+            "src": "Chairs/Clear acrylic chair.png",
+            "thumb": "thumbs/Chairs/Clear acrylic chair.webp",
+            "title": "Clear Acrylic Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Clear Chavarría Chairs.jpg",
+            "thumb": "thumbs/Chairs/Clear Chavarría Chairs.webp",
+            "title": "Clear Chavarría Chairs",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Clear grooved pattern chair.png",
+            "thumb": "thumbs/Chairs/Clear grooved pattern chair.webp",
+            "title": "Clear Grooved Pattern Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Clear Infinity Chairs.jpg",
+            "thumb": "thumbs/Chairs/Clear Infinity Chairs.webp",
+            "title": "Clear Infinity Chairs",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Cross Back Fruitwood Chairs_.jpg",
+            "thumb": "thumbs/Chairs/Cross Back Fruitwood Chairs_.webp",
+            "title": "Cross Back Fruitwood Chairs",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Cross Back Natural Chairs.jpg",
+            "thumb": "thumbs/Chairs/Cross Back Natural Chairs.webp",
+            "title": "Cross Back Natural Chairs",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Fruitwood ballroom chair(1).png",
+            "thumb": "thumbs/Chairs/Fruitwood ballroom chair(1).webp",
+            "title": "Fruitwood Ballroom Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Gold Ballroom Chair.png",
+            "thumb": "thumbs/Chairs/Gold Ballroom Chair.webp",
+            "title": "Gold Ballroom Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Gold Barstool.png",
+            "thumb": "thumbs/Chairs/Gold Barstool.webp",
+            "title": "Gold Barstool",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Leatherette bar chair. Available in black or white.png",
+            "thumb": "thumbs/Chairs/Leatherette bar chair. Available in black or white.webp",
+            "title": "Leatherette Bar Chair",
+            "dims": "",
+            "note": "Available in black or white"
+          },
+          {
+            "src": "Chairs/Leatherette dining chair. Available in black or white.png",
+            "thumb": "thumbs/Chairs/Leatherette dining chair. Available in black or white.webp",
+            "title": "Leatherette Dining Chair",
+            "dims": "",
+            "note": "Available in black or white"
+          },
+          {
+            "src": "Chairs/Mahogany Barstool.png",
+            "thumb": "thumbs/Chairs/Mahogany Barstool.webp",
+            "title": "Mahogany Barstool",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Pearl.png",
+            "thumb": "thumbs/Chairs/Pearl.webp",
+            "title": "Pearl",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Pearl essence Chivari ballroom chair.png",
+            "thumb": "thumbs/Chairs/Pearl essence Chivari ballroom chair.webp",
+            "title": "Pearl Essence Chivari Ballroom Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Silver Ballroom Chair.png",
+            "thumb": "thumbs/Chairs/Silver Ballroom Chair.webp",
+            "title": "Silver Ballroom Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Silver Barstool.png",
+            "thumb": "thumbs/Chairs/Silver Barstool.webp",
+            "title": "Silver Barstool",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Smoked transparent chair.png",
+            "thumb": "thumbs/Chairs/Smoked transparent chair.webp",
+            "title": "Smoked Transparent Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Soft leatherette dining chair.png",
+            "thumb": "thumbs/Chairs/Soft leatherette dining chair.webp",
+            "title": "Soft Leatherette Dining Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Sultry beige ballroom chair.png",
+            "thumb": "thumbs/Chairs/Sultry beige ballroom chair.webp",
+            "title": "Sultry Beige Ballroom Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/White ballroom chair.png",
+            "thumb": "thumbs/Chairs/White ballroom chair.webp",
+            "title": "White Ballroom Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/White Barstool.png",
+            "thumb": "thumbs/Chairs/White Barstool.webp",
+            "title": "White Barstool",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/White Garden Chairs.png",
+            "thumb": "thumbs/Chairs/White Garden Chairs.webp",
+            "title": "White Garden Chairs",
+            "dims": "",
+            "note": ""
+          }
+        ]
       },
       {
-        "src": "Chairs/Black Barstool.png",
-        "thumb": "thumbs/Chairs/Black Barstool.webp",
-        "title": "Black Barstool",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Black Garden Chairs.png",
-        "thumb": "thumbs/Chairs/Black Garden Chairs.webp",
-        "title": "Black Garden Chairs",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Black Lamour Cushions.png",
-        "thumb": "thumbs/Chairs/Black Lamour Cushions.webp",
-        "title": "Black Lamour Cushions",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Brown Bengaline Cushions.png",
-        "thumb": "thumbs/Chairs/Brown Bengaline Cushions.webp",
-        "title": "Brown Bengaline Cushions",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Chaclear.png",
-        "thumb": "thumbs/Chairs/Chaclear.webp",
-        "title": "Chaclear",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Chivari bar stools. Available in gold, white, black, silver, fruitwood.png",
-        "thumb": "thumbs/Chairs/Chivari bar stools. Available in gold, white, black, silver, fruitwood.webp",
-        "title": "Chivari Bar Stools",
-        "dims": "",
-        "note": "Available in gold, white, black, silver, fruitwood"
-      },
-      {
-        "src": "Chairs/Clear acrylic chair.png",
-        "thumb": "thumbs/Chairs/Clear acrylic chair.webp",
-        "title": "Clear Acrylic Chair",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Clear Chavarría Chairs.jpg",
-        "thumb": "thumbs/Chairs/Clear Chavarría Chairs.webp",
-        "title": "Clear Chavarría Chairs",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Clear Chavarría Chairs 2.jpg",
-        "thumb": "thumbs/Chairs/Clear Chavarría Chairs 2.webp",
-        "title": "Clear Chavarría Chairs 2",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Clear grooved pattern chair.png",
-        "thumb": "thumbs/Chairs/Clear grooved pattern chair.webp",
-        "title": "Clear Grooved Pattern Chair",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Clear Infinity Chairs.jpg",
-        "thumb": "thumbs/Chairs/Clear Infinity Chairs.webp",
-        "title": "Clear Infinity Chairs",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Clear Infinity Chairs 2.jpg",
-        "thumb": "thumbs/Chairs/Clear Infinity Chairs 2.webp",
-        "title": "Clear Infinity Chairs 2",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Cross Back Fruitwood Chairs_.jpg",
-        "thumb": "thumbs/Chairs/Cross Back Fruitwood Chairs_.webp",
-        "title": "Cross Back Fruitwood Chairs",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/_Cross Back Fruitwood Chairs 2.jpg",
-        "thumb": "thumbs/Chairs/_Cross Back Fruitwood Chairs 2.webp",
-        "title": "Cross Back Fruitwood Chairs 2",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Cross Back Natural Chairs.jpg",
-        "thumb": "thumbs/Chairs/Cross Back Natural Chairs.webp",
-        "title": "Cross Back Natural Chairs",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Cross Back Natural Chairs 2.jpg",
-        "thumb": "thumbs/Chairs/Cross Back Natural Chairs 2.webp",
-        "title": "Cross Back Natural Chairs 2",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Fruitwood ballroom chair(1).png",
-        "thumb": "thumbs/Chairs/Fruitwood ballroom chair(1).webp",
-        "title": "Fruitwood Ballroom Chair",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Fruitwood ballroom chair.png",
-        "thumb": "thumbs/Chairs/Fruitwood ballroom chair.webp",
-        "title": "Fruitwood Ballroom Chair",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Gold Ballroom Chair.png",
-        "thumb": "thumbs/Chairs/Gold Ballroom Chair.webp",
-        "title": "Gold Ballroom Chair",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Gold Barstool.png",
-        "thumb": "thumbs/Chairs/Gold Barstool.webp",
-        "title": "Gold Barstool",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Gold Lamour Cushions.jpg",
-        "thumb": "thumbs/Chairs/Gold Lamour Cushions.webp",
-        "title": "Gold Lamour Cushions",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Leatherette bar chair. Available in black or white.png",
-        "thumb": "thumbs/Chairs/Leatherette bar chair. Available in black or white.webp",
-        "title": "Leatherette Bar Chair",
-        "dims": "",
-        "note": "Available in black or white"
-      },
-      {
-        "src": "Chairs/Leatherette dining chair. Available in black or white.png",
-        "thumb": "thumbs/Chairs/Leatherette dining chair. Available in black or white.webp",
-        "title": "Leatherette Dining Chair",
-        "dims": "",
-        "note": "Available in black or white"
-      },
-      {
-        "src": "Chairs/Mahogany Barstool.png",
-        "thumb": "thumbs/Chairs/Mahogany Barstool.webp",
-        "title": "Mahogany Barstool",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Olive Green Bengaline Cushions.png",
-        "thumb": "thumbs/Chairs/Olive Green Bengaline Cushions.webp",
-        "title": "Olive Green Bengaline Cushions",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Pearl.png",
-        "thumb": "thumbs/Chairs/Pearl.webp",
-        "title": "Pearl",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Pearl Bengaline Cushions.png",
-        "thumb": "thumbs/Chairs/Pearl Bengaline Cushions.webp",
-        "title": "Pearl Bengaline Cushions",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Pearl Bengaline Cushions(1).png",
-        "thumb": "thumbs/Chairs/Pearl Bengaline Cushions(1).webp",
-        "title": "Pearl Bengaline Cushions",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Pearl essence Chivari ballroom chair.png",
-        "thumb": "thumbs/Chairs/Pearl essence Chivari ballroom chair.webp",
-        "title": "Pearl Essence Chivari Ballroom Chair",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Silver Ballroom Chair.png",
-        "thumb": "thumbs/Chairs/Silver Ballroom Chair.webp",
-        "title": "Silver Ballroom Chair",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Silver Barstool.png",
-        "thumb": "thumbs/Chairs/Silver Barstool.webp",
-        "title": "Silver Barstool",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Silver Bengaline Cushions.png",
-        "thumb": "thumbs/Chairs/Silver Bengaline Cushions.webp",
-        "title": "Silver Bengaline Cushions",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Smoked transparent chair.png",
-        "thumb": "thumbs/Chairs/Smoked transparent chair.webp",
-        "title": "Smoked Transparent Chair",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Soft leatherette dining chair.png",
-        "thumb": "thumbs/Chairs/Soft leatherette dining chair.webp",
-        "title": "Soft Leatherette Dining Chair",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/Sultry beige ballroom chair.png",
-        "thumb": "thumbs/Chairs/Sultry beige ballroom chair.webp",
-        "title": "Sultry Beige Ballroom Chair",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/White ballroom chair.png",
-        "thumb": "thumbs/Chairs/White ballroom chair.webp",
-        "title": "White Ballroom Chair",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/White Barstool.png",
-        "thumb": "thumbs/Chairs/White Barstool.webp",
-        "title": "White Barstool",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Chairs/White Garden Chairs.png",
-        "thumb": "thumbs/Chairs/White Garden Chairs.webp",
-        "title": "White Garden Chairs",
-        "dims": "",
-        "note": ""
+        "type": "category",
+        "name": "Cushions",
+        "folder": "Chairs/Cushions",
+        "cover": "thumbs/Chairs/Cushions/Black Lamour Cushions.webp",
+        "count": 6,
+        "items": [
+          {
+            "src": "Chairs/Cushions/Black Lamour Cushions.png",
+            "thumb": "thumbs/Chairs/Cushions/Black Lamour Cushions.webp",
+            "title": "Black Lamour Cushions",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Cushions/Brown Bengaline Cushions.png",
+            "thumb": "thumbs/Chairs/Cushions/Brown Bengaline Cushions.webp",
+            "title": "Brown Bengaline Cushions",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Cushions/Gold Lamour Cushions.jpg",
+            "thumb": "thumbs/Chairs/Cushions/Gold Lamour Cushions.webp",
+            "title": "Gold Lamour Cushions",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Cushions/Olive Green Bengaline Cushions.png",
+            "thumb": "thumbs/Chairs/Cushions/Olive Green Bengaline Cushions.webp",
+            "title": "Olive Green Bengaline Cushions",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Cushions/Pearl Bengaline Cushions.png",
+            "thumb": "thumbs/Chairs/Cushions/Pearl Bengaline Cushions.webp",
+            "title": "Pearl Bengaline Cushions",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Cushions/Silver Bengaline Cushions.png",
+            "thumb": "thumbs/Chairs/Cushions/Silver Bengaline Cushions.webp",
+            "title": "Silver Bengaline Cushions",
+            "dims": "",
+            "note": ""
+          }
+        ]
       }
     ]
   },
@@ -1331,7 +1174,7 @@
     "name": "Displays",
     "folder": "Displays",
     "cover": "thumbs/Displays/5_x4_ Extra large urn with large handles. This item can be custom painted any color_.webp",
-    "count": 4,
+    "count": 3,
     "items": [
       {
         "src": "Displays/5_x4_ Extra large urn with large handles. This item can be custom painted any color_.png",
@@ -1344,14 +1187,7 @@
         "src": "Displays/Shiny White Floor Vase. 76\".png",
         "thumb": "thumbs/Displays/Shiny White Floor Vase. 76\".webp",
         "title": "Shiny White Floor Vase",
-        "dims": "76\"",
-        "note": ""
-      },
-      {
-        "src": "Displays/Shiny White Floor Vase. 40\".png",
-        "thumb": "thumbs/Displays/Shiny White Floor Vase. 40\".webp",
-        "title": "Shiny White Floor Vase",
-        "dims": "40\"",
+        "dims": "40\" / 76\"",
         "note": ""
       },
       {
@@ -1368,7 +1204,7 @@
     "name": "Furniture",
     "folder": "Furniture",
     "cover": "thumbs/Furniture/Country wood table. It has cast iron legs with a distressed wood top. This table measures W98_xD39_xH31.webp",
-    "count": 16,
+    "count": 14,
     "items": [
       {
         "src": "Furniture/Banquet and Tuscan Tables.jpg",
@@ -1392,16 +1228,9 @@
         "note": ""
       },
       {
-        "src": "Furniture/Cocktail and Round Tables.jpg",
-        "thumb": "thumbs/Furniture/Cocktail and Round Tables.webp",
-        "title": "Cocktail and Round Tables",
-        "dims": "",
-        "note": ""
-      },
-      {
         "src": "Furniture/Cocktail and Round Tables 2.jpg",
         "thumb": "thumbs/Furniture/Cocktail and Round Tables 2.webp",
-        "title": "Cocktail and Round Tables 2",
+        "title": "Cocktail and Round Tables",
         "dims": "",
         "note": ""
       },
@@ -1441,16 +1270,9 @@
         "note": ""
       },
       {
-        "src": "Furniture/Low Tables on Wheels.jpg",
-        "thumb": "thumbs/Furniture/Low Tables on Wheels.webp",
-        "title": "Low Tables on Wheels",
-        "dims": "",
-        "note": ""
-      },
-      {
         "src": "Furniture/Low Tables on Wheels 2.jpg",
         "thumb": "thumbs/Furniture/Low Tables on Wheels 2.webp",
-        "title": "Low Tables on Wheels 2",
+        "title": "Low Tables on Wheels",
         "dims": "",
         "note": ""
       },
@@ -1512,7 +1334,7 @@
     "name": "Pedestals & Columns",
     "folder": "Pedestals and columns",
     "cover": "thumbs/Pedestals and columns/8_ ivory greek column_.webp",
-    "count": 11,
+    "count": 7,
     "items": [
       {
         "src": "Pedestals and columns/8_ ivory greek column_.png",
@@ -1522,17 +1344,10 @@
         "note": ""
       },
       {
-        "src": "Pedestals and columns/ 4_ ivory plain fluted pedestal _.png",
-        "thumb": "thumbs/Pedestals and columns/ 4_ ivory plain fluted pedestal _.webp",
-        "title": "Ivory Plain Fluted Pedestal",
-        "dims": "4\"",
-        "note": ""
-      },
-      {
         "src": "Pedestals and columns/28_ ivory plain fluted pedestal.png",
         "thumb": "thumbs/Pedestals and columns/28_ ivory plain fluted pedestal.webp",
         "title": "Ivory Plain Fluted Pedestal",
-        "dims": "28\"",
+        "dims": "4\" / 28\"",
         "note": ""
       },
       {
@@ -1553,14 +1368,7 @@
         "src": "Pedestals and columns/6_ stone grey greek column _.png",
         "thumb": "thumbs/Pedestals and columns/6_ stone grey greek column _.webp",
         "title": "Stone Grey Greek Column",
-        "dims": "6\"",
-        "note": ""
-      },
-      {
-        "src": "Pedestals and columns/7_ stone grey greek column_.png",
-        "thumb": "thumbs/Pedestals and columns/7_ stone grey greek column_.webp",
-        "title": "Stone Grey Greek Column",
-        "dims": "7\"",
+        "dims": "6\" / 7\"",
         "note": ""
       },
       {
@@ -1571,24 +1379,10 @@
         "note": "Also available in Ivory"
       },
       {
-        "src": "Pedestals and columns/28_ stone grey plain fluted pedestal_.png",
-        "thumb": "thumbs/Pedestals and columns/28_ stone grey plain fluted pedestal_.webp",
-        "title": "Stone Grey Plain Fluted Pedestal",
-        "dims": "28\"",
-        "note": ""
-      },
-      {
         "src": "Pedestals and columns/3_ stone grey plain fluted pedestal.png",
         "thumb": "thumbs/Pedestals and columns/3_ stone grey plain fluted pedestal.webp",
         "title": "Stone Grey Plain Fluted Pedestal",
-        "dims": "3\"",
-        "note": ""
-      },
-      {
-        "src": "Pedestals and columns/4_ stone grey plain fluted pedestal_.png",
-        "thumb": "thumbs/Pedestals and columns/4_ stone grey plain fluted pedestal_.webp",
-        "title": "Stone Grey Plain Fluted Pedestal",
-        "dims": "4\"",
+        "dims": "3\" / 4\" / 28\"",
         "note": ""
       }
     ]
@@ -1598,7 +1392,7 @@
     "name": "Urns",
     "folder": "Urns",
     "cover": "thumbs/Urns/Ivory basket-weave planter.webp",
-    "count": 13,
+    "count": 12,
     "items": [
       {
         "src": "Urns/Ivory basket-weave planter.png",
@@ -1671,17 +1465,10 @@
         "note": ""
       },
       {
-        "src": "Urns/18_ stone grey urn.png",
-        "thumb": "thumbs/Urns/18_ stone grey urn.webp",
-        "title": "Stone Grey Urn",
-        "dims": "18\"",
-        "note": ""
-      },
-      {
         "src": "Urns/21_ stone grey urn.png",
         "thumb": "thumbs/Urns/21_ stone grey urn.webp",
         "title": "Stone Grey Urn",
-        "dims": "21\"",
+        "dims": "18\" / 21\"",
         "note": ""
       },
       {

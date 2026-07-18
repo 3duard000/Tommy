@@ -71,7 +71,8 @@
   .card .thumb{position:relative;aspect-ratio:1/1;overflow:hidden;background:#fff;padding:8px}
   .card .thumb img{width:100%;height:100%;object-fit:contain;transition:.4s}
   .card:hover .thumb img{transform:scale(1.06)}
-  .card .badge{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font-size:.72rem;font-weight:700;padding:5px 11px;border-radius:100px}
+  .card .badge{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font-size:.72rem;font-weight:700;padding:5px 11px;border-radius:100px;transition:opacity .2s;z-index:2}
+  .card:hover .badge{opacity:0}
   .card .badge.grp{background:var(--black)}
   .card .meta{padding:15px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px}
   .card .meta h3{font-size:1.12rem;color:var(--black)}

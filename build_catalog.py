@@ -3,17 +3,18 @@
 
 Uso:  python3 build_catalog.py     (requiere Pillow: pip install Pillow)
 
-- Recorre las carpetas (soporta grupos con subcategorias y categorias planas).
-- De cada archivo saca:  TITULO limpio  +  MEDIDAS  +  NOTA (detalles).
-- Genera miniaturas WebP livianas en thumbs/ (para carga rapida).
-- Escribe assets/catalog.json.
+- Recorre carpetas (grupos con subcategorias + categorias planas; una carpeta
+  puede tener imagenes directas Y subcarpetas: se vuelve grupo).
+- De cada archivo saca:  TITULO limpio + MEDIDAS + NOTA.
+- Fusiona items iguales (mismo nombre, distinta medida) en una sola tarjeta.
+- Genera miniaturas WebP livianas con FONDO BLANCO en thumbs/.
 """
 import os
 import re
 import json
 
 try:
-    from PIL import Image
+    from PIL import Image, ImageDraw
     HAVE_PIL = True
 except ImportError:
     HAVE_PIL = False
@@ -36,26 +37,33 @@ DISPLAY = {
     'Centerpieces': 'Centerpieces',
     'Centerpieces/Centerpieces Bowls': 'Centerpiece Bowls',
     'Centerpieces/Certepiece Pedestals': 'Centerpiece Pedestals',
+    'Chairs/Cushions': 'Cushions',
     'Dance floors': 'Dance Floors',
     'Lamps and Lighting': 'Lamps & Lighting',
     'Pedestals and columns': 'Pedestals & Columns',
 }
 
-# Portada elegida a mano por categoria (substring del nombre de archivo)
+# Portada elegida a mano (substring del nombre de archivo)
 COVER_OVERRIDE = {
     'Furniture': 'country wood table',
+    'Centerpieces': 'silver footed bowl with handles',
 }
 
-# palabras que van en minuscula dentro de un titulo (excepto al inicio)
 MINOR = {'a', 'an', 'and', 'the', 'of', 'with', 'in', 'on', 'or', 'to', 'for', 'x'}
-# se mantienen tal cual (siglas)
 KEEP_UPPER = {'LED', 'U', 'US', 'TV', 'DJ'}
+
+NOTE_SPLIT = re.compile(
+    r'\b(available in|available as|available with|also available|'
+    r'this item|this table|it has|vase is|the large urn|the smaller urn|complete)\b',
+    re.I)
+DIMS_ONLY = re.compile(r'^[\d\s./"HWDx×.-]+$')
+MEAS = re.compile(r'\d[\d\s./]*"(?:\s*[HWD])?(?:\s*[x×]\s*\d[\d\s./]*"?(?:\s*[HWD])?)*')
 
 
 def _units(name):
-    """Limpia el texto crudo del nombre de archivo (medidas, guiones, etc.)."""
     name = name.rsplit('.', 1)[0]
-    name = re.sub(r'\s*\(\d+\)\s*$', '', name)
+    name = re.sub(r'\s*\(\d+\)\s*$', '', name)          # (1) duplicado
+    name = re.sub(r'\s+[1-9]$', '', name)               # " 2" indice de foto
     name = name.replace('´´', '"').replace('’’', '"').replace("''", '"')
     name = name.replace('”', '"').replace('“', '"').replace('″', '"')
     name = name.replace('´', "'").replace('’', "'").replace('‘', "'").replace('′', "'")
@@ -69,17 +77,16 @@ def _units(name):
 
 
 def titlecase(s):
-    words = s.split(' ')
     out = []
-    for i, w in enumerate(words):
+    for i, w in enumerate(s.split(' ')):
         if not w:
             continue
-        if any(c.isdigit() for c in w):        # medidas / cantidades: intactas
+        if any(c.isdigit() for c in w):
             out.append(w)
         elif w.upper() in KEEP_UPPER:
             out.append(w.upper())
         elif w.isupper() and len(w) > 1:
-            out.append(w)                       # ya es sigla
+            out.append(w)
         elif i > 0 and w.lower() in MINOR:
             out.append(w.lower())
         else:
@@ -88,31 +95,18 @@ def titlecase(s):
     return (r[0].upper() + r[1:]) if r else r
 
 
-NOTE_SPLIT = re.compile(
-    r'\b(available in|available as|available with|also available|'
-    r'this item|this table|it has|vase is|the large urn|the smaller urn|complete)\b',
-    re.I)
-DIMS_ONLY = re.compile(r'^[\d\s./"HWDx×.-]+$')
-# medida en pulgadas: siempre lleva "  (con fraccion, H/W/D y cadenas con x)
-MEAS = re.compile(r'\d[\d\s./]*"(?:\s*[HWD])?(?:\s*[x×]\s*\d[\d\s./]*"?(?:\s*[HWD])?)*')
-
-
 def parse_name(filename):
-    """Devuelve (titulo, medidas, nota). Las medidas SIEMPRE salen del titulo."""
     base = _units(filename)
     note = ''
-
     if '. ' in base:
         base, note = base.split('. ', 1)
         note = note.strip()
-
     m = NOTE_SPLIT.search(base)
     if m:
         extra = base[m.start():].strip()
         base = base[:m.start()].strip(' .,')
         note = (extra + ('. ' + note if note else '')).strip()
 
-    # extrae TODAS las medidas en pulgadas del titulo -> linea de medidas
     dims = ''
     found = MEAS.findall(base)
     if found:
@@ -125,7 +119,6 @@ def parse_name(filename):
                 parts.append(d)
         dims = ' / '.join(parts)
 
-    # limpia conectores/puntuacion sueltos que hayan quedado
     base = re.sub(r'\s+', ' ', base)
     base = re.sub(r'^\s*(?:and|with|&|x|,)\s+', '', base, flags=re.I)
     base = re.sub(r'\s+(?:and|with|&|x)\s*$', '', base, flags=re.I)
@@ -133,7 +126,6 @@ def parse_name(filename):
 
     if not dims and note and DIMS_ONLY.match(note):
         dims, note = note.strip(' .'), ''
-
     if dims:
         dims = re.sub(r'\s*[x×]\s*', ' × ', dims)
         dims = re.sub(r'\s+', ' ', dims).strip(' .,')
@@ -141,8 +133,12 @@ def parse_name(filename):
     note = re.sub(r'\s+', ' ', note).strip(' .,')
     if note:
         note = note[0].upper() + note[1:]
-    title = titlecase(base)
-    return title, dims, note
+    return titlecase(base), dims, note
+
+
+def whiten_bg(im):
+    """Se dejan los fondos originales tal cual (sin blanqueado automatico)."""
+    return im.convert('RGB')
 
 
 def make_thumb(rel):
@@ -166,11 +162,59 @@ def make_thumb(rel):
         w, h = im.size
         if w > THUMB_MAXW:
             im = im.resize((THUMB_MAXW, round(h * THUMB_MAXW / w)), Image.LANCZOS)
+        im = whiten_bg(im)
         im.save(dst, 'WEBP', quality=THUMB_QUALITY, method=6)
         return thumb_rel
     except Exception as e:
         print('  ! no se pudo miniaturizar', rel, '->', e)
         return rel
+
+
+def _dim_key(d):
+    m = re.search(r'(\d+(?:\.\d+)?)', d)
+    return float(m.group(1)) if m else 9999.0
+
+
+def _whiteness(thumb_rel):
+    """Puntaje de blancura del fondo (promedio del canal minimo en las esquinas)."""
+    if not HAVE_PIL:
+        return 0
+    try:
+        im = Image.open(os.path.join(ROOT, thumb_rel)).convert('RGB')
+        w, h = im.size
+        cs = [im.getpixel((0, 0)), im.getpixel((w - 1, 0)),
+              im.getpixel((0, h - 1)), im.getpixel((w - 1, h - 1))]
+        return sum(min(c) for c in cs) / len(cs)
+    except Exception:
+        return 0
+
+
+def dedup(items):
+    """Fusiona items con el mismo titulo. Usa la imagen con el fondo mas blanco."""
+    groups, order = {}, []
+    for it in items:
+        t = it['title']
+        if t not in groups:
+            groups[t] = []
+            order.append(t)
+        groups[t].append(it)
+    out = []
+    for t in order:
+        g = groups[t]
+        base = dict(max(g, key=lambda it: _whiteness(it['thumb'])))  # el mas blanco
+        dims = []
+        note = ''
+        for it in g:
+            for tok in (it['dims'].split(' / ') if it['dims'] else []):
+                tok = tok.strip()
+                if tok and tok not in dims:
+                    dims.append(tok)
+            if not note and it.get('note'):
+                note = it['note']
+        base['dims'] = ' / '.join(sorted(dims, key=_dim_key))
+        base['note'] = note
+        out.append(base)
+    return out
 
 
 def images_in(rel):
@@ -186,16 +230,7 @@ def images_in(rel):
             title, dims, note = '', '', ''
         items.append({'src': src, 'thumb': make_thumb(src),
                       'title': title, 'dims': dims, 'note': note, 'file': f})
-    return items
-
-
-def pick_cover(folder, items):
-    sub = COVER_OVERRIDE.get(folder)
-    if sub:
-        for it in items:
-            if sub.lower() in it['file'].lower():
-                return it['thumb']
-    return items[0]['thumb']
+    return dedup(items)
 
 
 def subdirs(rel):
@@ -208,10 +243,27 @@ def name_for(rel):
     return DISPLAY.get(rel, rel.split('/')[-1])
 
 
-def strip_file(items):
-    for it in items:
-        it.pop('file', None)
-    return items
+def pick_cover(key, items):
+    sub = COVER_OVERRIDE.get(key)
+    if sub:
+        for it in items:
+            if sub.lower() in it.get('file', '').lower():
+                return it['thumb']
+    return items[0]['thumb']
+
+
+def category_node(rel, items):
+    return {'type': 'category', 'name': name_for(rel), 'folder': rel,
+            'cover': pick_cover(rel, items), 'count': len(items), 'items': items}
+
+
+def strip_files(node):
+    if node['type'] == 'group':
+        for c in node['children']:
+            strip_files(c)
+    else:
+        for it in node['items']:
+            it.pop('file', None)
 
 
 def main():
@@ -226,26 +278,30 @@ def main():
     tree = []
     for top in tops:
         direct = images_in(top)
-        if direct:
-            cover = pick_cover(top, direct)
-            tree.append({'type': 'category', 'name': name_for(top), 'folder': top,
-                         'cover': cover, 'count': len(direct), 'items': strip_file(direct)})
-            continue
-        children = []
+        sub_children = []
         for sub in subdirs(top):
             rel = top + '/' + sub
             imgs = images_in(rel)
-            if not imgs:
-                continue
-            children.append({'type': 'category', 'name': name_for(rel), 'folder': rel,
-                             'cover': pick_cover(rel, imgs), 'count': len(imgs),
-                             'items': strip_file(imgs)})
-        if children:
+            if imgs:
+                sub_children.append(category_node(rel, imgs))
+
+        if direct and sub_children:
+            children = [category_node(top, direct)] + sub_children
+            all_items = [it for c in children for it in c['items']]
             tree.append({'type': 'group', 'name': name_for(top), 'folder': top,
-                         'cover': children[0]['cover'],
+                         'cover': pick_cover(top, all_items),
                          'count': sum(c['count'] for c in children), 'children': children})
+        elif sub_children:
+            all_items = [it for c in sub_children for it in c['items']]
+            tree.append({'type': 'group', 'name': name_for(top), 'folder': top,
+                         'cover': pick_cover(top, all_items),
+                         'count': sum(c['count'] for c in sub_children), 'children': sub_children})
+        elif direct:
+            tree.append(category_node(top, direct))
 
     tree.sort(key=lambda n: n['name'].lower())
+    for n in tree:
+        strip_files(n)
 
     for extra in ['Other/image1.jpg', 'Other/image2.jpg', 'Other/image 3.jpg',
                   'Team/team-1.jpeg', 'Team/team-2.jpeg']:
@@ -267,7 +323,7 @@ def main():
         else:
             print(f"  {n['name']}: {n['count']}")
             total += n['count']
-    print(f"Total fotos: {total}")
+    print(f"Total fotos (tras fusionar): {total}")
 
 
 if __name__ == '__main__':
