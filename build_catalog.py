@@ -3,16 +3,10 @@
 
 Uso:  python3 build_catalog.py     (requiere Pillow: pip install Pillow)
 
-Qué hace:
-  1. Recorre las carpetas de categorias (soporta 2 niveles: grupos con
-     subcategorias, y categorias planas).
-  2. Toma el NOMBRE de cada pieza del nombre del archivo y lo limpia.
-  3. Genera una MINIATURA WebP liviana de cada foto en  thumbs/…  para que
-     la pagina cargue rapido. La foto original se usa solo en el visor grande.
-  4. Escribe assets/catalog.json (lo que lee la pagina).
-
-Para agregar fotos: ponlas en la carpeta de su categoria y vuelve a correr
-este script.
+- Recorre las carpetas (soporta grupos con subcategorias y categorias planas).
+- De cada archivo saca:  TITULO limpio  +  MEDIDAS  +  NOTA (detalles).
+- Genera miniaturas WebP livianas en thumbs/ (para carga rapida).
+- Escribe assets/catalog.json.
 """
 import os
 import re
@@ -27,8 +21,8 @@ except ImportError:
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SKIP = {'.git', '.github', '.claude', 'assets', 'thumbs', 'Other', 'Team'}
 VALID = ('.png', '.jpg', '.jpeg', '.webp')
-THUMB_MAXW = 700       # ancho maximo de la miniatura (px)
-THUMB_QUALITY = 78     # calidad WebP
+THUMB_MAXW = 700
+THUMB_QUALITY = 78
 
 DISPLAY = {
     'Accesories': 'Accessories',
@@ -47,26 +41,109 @@ DISPLAY = {
     'Pedestals and columns': 'Pedestals & Columns',
 }
 
+# Portada elegida a mano por categoria (substring del nombre de archivo)
+COVER_OVERRIDE = {
+    'Furniture': 'country wood table',
+}
 
-def clean_title(filename):
-    name = filename.rsplit('.', 1)[0]
+# palabras que van en minuscula dentro de un titulo (excepto al inicio)
+MINOR = {'a', 'an', 'and', 'the', 'of', 'with', 'in', 'on', 'or', 'to', 'for', 'x'}
+# se mantienen tal cual (siglas)
+KEEP_UPPER = {'LED', 'U', 'US', 'TV', 'DJ'}
+
+
+def _units(name):
+    """Limpia el texto crudo del nombre de archivo (medidas, guiones, etc.)."""
+    name = name.rsplit('.', 1)[0]
     name = re.sub(r'\s*\(\d+\)\s*$', '', name)
     name = name.replace('´´', '"').replace('’’', '"').replace("''", '"')
-    name = name.replace('´', "'").replace('’', "'")
+    name = name.replace('”', '"').replace('“', '"').replace('″', '"')
+    name = name.replace('´', "'").replace('’', "'").replace('‘', "'").replace('′', "'")
     name = re.sub(r'(\d+)\s+(\d+)_(\d+)_', r'\1 \2/\3"', name)
     name = re.sub(r'(\d+)_(\d+)_', r'\1/\2"', name)
     name = re.sub(r'(\d)_', r'\1"', name)
     name = name.replace('_', ' ')
     name = re.sub(r'\.([A-Za-z])', r'. \1', name)
     name = re.sub(r'\s+', ' ', name).strip()
-    name = name.strip(' .,-')
-    if name:
-        name = name[0].upper() + name[1:]
     return name
 
 
+def titlecase(s):
+    words = s.split(' ')
+    out = []
+    for i, w in enumerate(words):
+        if not w:
+            continue
+        if any(c.isdigit() for c in w):        # medidas / cantidades: intactas
+            out.append(w)
+        elif w.upper() in KEEP_UPPER:
+            out.append(w.upper())
+        elif w.isupper() and len(w) > 1:
+            out.append(w)                       # ya es sigla
+        elif i > 0 and w.lower() in MINOR:
+            out.append(w.lower())
+        else:
+            out.append(w[0].upper() + w[1:])
+    r = ' '.join(out).strip()
+    return (r[0].upper() + r[1:]) if r else r
+
+
+DIM = r'\d[\d\s./]*"?(?:\s*[HWD])?'
+LEAD_DIM = re.compile(r'^\s*(' + DIM + r'(?:\s*[x×]\s*' + DIM + r')*)\s+(?=\S)')
+NOTE_SPLIT = re.compile(
+    r'\b(available in|available as|available with|also available|'
+    r'this item|this table|it has|vase is|the large urn|the smaller urn|complete)\b',
+    re.I)
+DIMS_ONLY = re.compile(r'^[\d\s./"HWDx×.-]+$')
+
+
+def parse_name(filename):
+    """Devuelve (titulo, medidas, nota) a partir del nombre de archivo."""
+    base = _units(filename)
+    note = ''
+
+    if '. ' in base:
+        base, note = base.split('. ', 1)
+        note = note.strip()
+
+    m = NOTE_SPLIT.search(base)
+    if m:
+        extra = base[m.start():].strip()
+        base = base[:m.start()].strip(' .,')
+        note = (extra + ('. ' + note if note else '')).strip()
+
+    # quita conjunciones colgadas al final del titulo ("... tall, and")
+    base = re.sub(r'[\s,]+(?:and|or|&)$', '', base, flags=re.I).strip(' ,.-')
+
+    dims = ''
+    m = LEAD_DIM.match(base)
+    if m and '"' in m.group(1):
+        dims = m.group(1).strip()
+        base = base[m.end():].strip()
+
+    # medidas al final del titulo ("Veranda Arbor, 48\"Wx12\"Dx88\"H")
+    if not dims:
+        m = re.search(r'[,\s]+(' + DIM + r'(?:\s*[x×]\s*' + DIM + r')*)\s*$', base)
+        if m and '"' in m.group(1):
+            dims = m.group(1).strip()
+            base = base[:m.start()].strip(' ,.-')
+
+    if not dims and note and DIMS_ONLY.match(note):
+        dims, note = note.strip(' .'), ''
+
+    if dims:
+        dims = re.sub(r'\s*[x×]\s*', ' × ', dims)
+        dims = re.sub(r'\s+', ' ', dims).strip(' .,')
+
+    title = titlecase(base.strip(' .,-'))
+    # nota: capitaliza primera letra, quita puntuacion sobrante
+    note = re.sub(r'\s+', ' ', note).strip(' .,')
+    if note:
+        note = note[0].upper() + note[1:]
+    return title, dims, note
+
+
 def make_thumb(rel):
-    """Genera thumbs/<rel>.webp y devuelve su ruta relativa (o el original)."""
     thumb_rel = 'thumbs/' + os.path.splitext(rel)[0] + '.webp'
     if not HAVE_PIL:
         return rel
@@ -98,15 +175,25 @@ def images_in(rel):
     d = os.path.join(ROOT, rel)
     files = [f for f in os.listdir(d)
              if f.lower().endswith(VALID) and f.lower() != 'logo.jpg']
-    files.sort(key=lambda f: clean_title(f).lower())
+    files.sort(key=lambda f: parse_name(f)[0].lower())
     items = []
     for f in files:
         src = rel + '/' + f
-        title = clean_title(f)
+        title, dims, note = parse_name(f)
         if f.lower().startswith('chatgpt image'):
-            title = ''
-        items.append({'src': src, 'thumb': make_thumb(src), 'title': title})
+            title, dims, note = '', '', ''
+        items.append({'src': src, 'thumb': make_thumb(src),
+                      'title': title, 'dims': dims, 'note': note, 'file': f})
     return items
+
+
+def pick_cover(folder, items):
+    sub = COVER_OVERRIDE.get(folder)
+    if sub:
+        for it in items:
+            if sub.lower() in it['file'].lower():
+                return it['thumb']
+    return items[0]['thumb']
 
 
 def subdirs(rel):
@@ -117,6 +204,12 @@ def subdirs(rel):
 
 def name_for(rel):
     return DISPLAY.get(rel, rel.split('/')[-1])
+
+
+def strip_file(items):
+    for it in items:
+        it.pop('file', None)
+    return items
 
 
 def main():
@@ -132,8 +225,9 @@ def main():
     for top in tops:
         direct = images_in(top)
         if direct:
+            cover = pick_cover(top, direct)
             tree.append({'type': 'category', 'name': name_for(top), 'folder': top,
-                         'cover': direct[0]['thumb'], 'count': len(direct), 'items': direct})
+                         'cover': cover, 'count': len(direct), 'items': strip_file(direct)})
             continue
         children = []
         for sub in subdirs(top):
@@ -142,7 +236,8 @@ def main():
             if not imgs:
                 continue
             children.append({'type': 'category', 'name': name_for(rel), 'folder': rel,
-                             'cover': imgs[0]['thumb'], 'count': len(imgs), 'items': imgs})
+                             'cover': pick_cover(rel, imgs), 'count': len(imgs),
+                             'items': strip_file(imgs)})
         if children:
             tree.append({'type': 'group', 'name': name_for(top), 'folder': top,
                          'cover': children[0]['cover'],
@@ -150,7 +245,6 @@ def main():
 
     tree.sort(key=lambda n: n['name'].lower())
 
-    # miniaturas para las imagenes del home (Our Story + Team)
     for extra in ['Other/image1.jpg', 'Other/image2.jpg', 'Other/image 3.jpg',
                   'Team/team-1.jpeg', 'Team/team-2.jpeg']:
         if os.path.exists(os.path.join(ROOT, extra)):
