@@ -1,225 +1,1006 @@
 [
   {
-    "folder": "Arches",
+    "type": "group",
+    "name": "Accessories",
+    "folder": "Accesories",
+    "cover": "Accesories/Charder C/11´´ Round Clear Glass Charger Plate With Silver Ball Trim(1).png",
+    "count": 23,
+    "children": [
+      {
+        "type": "category",
+        "name": "Charger Plates",
+        "folder": "Accesories/Charder C",
+        "cover": "Accesories/Charder C/11´´ Round Clear Glass Charger Plate With Silver Ball Trim(1).png",
+        "count": 12,
+        "items": [
+          {
+            "src": "Accesories/Charder C/11´´ Round Clear Glass Charger Plate With Silver Ball Trim(1).png",
+            "title": "11\" Round Clear Glass Charger Plate With Silver Ball Trim"
+          },
+          {
+            "src": "Accesories/Charder C/11´´ Round Clear Glass Charger Plate With Silver Ball Trim.png",
+            "title": "11\" Round Clear Glass Charger Plate With Silver Ball Trim"
+          },
+          {
+            "src": "Accesories/Charder C/13´´ Round Clear Glass Charger Plate With Gold Ball Trim.png",
+            "title": "13\" Round Clear Glass Charger Plate With Gold Ball Trim"
+          },
+          {
+            "src": "Accesories/Charder C/13´´ Round White Frosted Glass Charger Plate With Silver Ball Trim.png",
+            "title": "13\" Round White Frosted Glass Charger Plate With Silver Ball Trim"
+          },
+          {
+            "src": "Accesories/Charder C/13´´ Square Black High Glass Ceramic Charger Plate.png",
+            "title": "13\" Square Black High Glass Ceramic Charger Plate"
+          },
+          {
+            "src": "Accesories/Charder C/Clear Glass Silver Rim.png",
+            "title": "Clear Glass Silver Rim"
+          },
+          {
+            "src": "Accesories/Charder C/Clear Glass Sunburts Charger.png",
+            "title": "Clear Glass Sunburts Charger"
+          },
+          {
+            "src": "Accesories/Charder C/Clear Glass With Gold Rim.png",
+            "title": "Clear Glass With Gold Rim"
+          },
+          {
+            "src": "Accesories/Charder C/Frost Glass With Silver Beads.png",
+            "title": "Frost Glass With Silver Beads"
+          },
+          {
+            "src": "Accesories/Charder C/Light Blue Glass Sunburst Charger.png",
+            "title": "Light Blue Glass Sunburst Charger"
+          },
+          {
+            "src": "Accesories/Charder C/Light Green Glass Sunburst Charger.png",
+            "title": "Light Green Glass Sunburst Charger"
+          },
+          {
+            "src": "Accesories/Charder C/Sultry Glass Sunburst Charger .png",
+            "title": "Sultry Glass Sunburst Charger"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "name": "Shades",
+        "folder": "Accesories/Shades",
+        "cover": "Accesories/Shades/13´´ Square Black High Glass Ceramic Charger Plate(1).png",
+        "count": 11,
+        "items": [
+          {
+            "src": "Accesories/Shades/13´´ Square Black High Glass Ceramic Charger Plate(1).png",
+            "title": "13\" Square Black High Glass Ceramic Charger Plate"
+          },
+          {
+            "src": "Accesories/Shades/13´´ Square Black High Glass Ceramic Charger Plate.png",
+            "title": "13\" Square Black High Glass Ceramic Charger Plate"
+          },
+          {
+            "src": "Accesories/Shades/Beaded shade with hanging beads. Available in sand, gold, and silver..png",
+            "title": "Beaded shade with hanging beads. Available in sand, gold, and silver"
+          },
+          {
+            "src": "Accesories/Shades/Black cylinder beaded shade.png",
+            "title": "Black cylinder beaded shade"
+          },
+          {
+            "src": "Accesories/Shades/Brown Beaded Shade.png",
+            "title": "Brown Beaded Shade"
+          },
+          {
+            "src": "Accesories/Shades/Gold cylinder beaded shade.png",
+            "title": "Gold cylinder beaded shade"
+          },
+          {
+            "src": "Accesories/Shades/Gold pierced shade.png",
+            "title": "Gold pierced shade"
+          },
+          {
+            "src": "Accesories/Shades/Gold, clear, brown, and amber beads complete this shade and fringe.png",
+            "title": "Gold, clear, brown, and amber beads complete this shade and fringe"
+          },
+          {
+            "src": "Accesories/Shades/Ivory pleated fabric shade.png",
+            "title": "Ivory pleated fabric shade"
+          },
+          {
+            "src": "Accesories/Shades/Silver cylinder beaded shade.png",
+            "title": "Silver cylinder beaded shade"
+          },
+          {
+            "src": "Accesories/Shades/White Pleated Fabric Shade.png",
+            "title": "White Pleated Fabric Shade"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "category",
     "name": "Arches",
-    "cover": "1.png",
-    "images": [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "7.png",
-      "8.png",
-      "9.png",
-      "10.png",
-      "11.png"
+    "folder": "Arches",
+    "cover": "Arches/8_ Greek 4 column chuppa with 4_x8_ top. Available in Ivory and Gray.png",
+    "count": 11,
+    "items": [
+      {
+        "src": "Arches/8_ Greek 4 column chuppa with 4_x8_ top. Available in Ivory and Gray.png",
+        "title": "8\" Greek 4 column chuppa with 4\"x8\" top. Available in Ivory and Gray"
+      },
+      {
+        "src": "Arches/Butterfly arch. Available in white and natural wrought iron.png",
+        "title": "Butterfly arch. Available in white and natural wrought iron"
+      },
+      {
+        "src": "Arches/Chuppa poles are 7 feet tall, and available in either gold or silver.png",
+        "title": "Chuppa poles are 7 feet tall, and available in either gold or silver"
+      },
+      {
+        "src": "Arches/Chuppa with 7 foot iron columns and 4_x8_ top.png",
+        "title": "Chuppa with 7 foot iron columns and 4\"x8\" top"
+      },
+      {
+        "src": "Arches/Clear Column white top chuppah  7x7x7.png",
+        "title": "Clear Column white top chuppah 7x7x7"
+      },
+      {
+        "src": "Arches/Veranda arbor, 48_Wx12_Dx88_H.png",
+        "title": "Veranda arbor, 48\"Wx12\"Dx88\"H"
+      },
+      {
+        "src": "Arches/Wrought iron archway with point_.png",
+        "title": "Wrought iron archway with point"
+      },
+      {
+        "src": "Arches/Wrought iron classic round arch. 85_H x 50_W.png",
+        "title": "Wrought iron classic round arch. 85\"H x 50\"W"
+      },
+      {
+        "src": "Arches/Wrought iron gaelic gazebo.Available in white. 120_H x 99_W x 99_D.png",
+        "title": "Wrought iron gaelic gazebo. Available in white. 120\"H x 99\"W x 99\"D"
+      },
+      {
+        "src": "Arches/Wrought iron grecian arbor. Available in white. 80_Wx18_Dx1O2_H.png",
+        "title": "Wrought iron grecian arbor. Available in white. 80\"Wx18\"Dx1O2\"H"
+      },
+      {
+        "src": "Arches/Wrought iron with point, 55_Wx12_Dx101_H.png",
+        "title": "Wrought iron with point, 55\"Wx12\"Dx101\"H"
+      }
     ]
   },
   {
-    "folder": "Candelabras",
+    "type": "category",
+    "name": "Bar",
+    "folder": "Bar",
+    "cover": "Bar/ChatGPT Image 14 jul 2026, 19_33_07.png",
+    "count": 7,
+    "items": [
+      {
+        "src": "Bar/ChatGPT Image 14 jul 2026, 19_33_07.png",
+        "title": ""
+      },
+      {
+        "src": "Bar/ChatGPT Image 14 jul 2026, 19_38_21.png",
+        "title": ""
+      },
+      {
+        "src": "Bar/ChatGPT Image 14 jul 2026, 20_26_22.png",
+        "title": ""
+      },
+      {
+        "src": "Bar/ChatGPT Image 14 jul 2026, 20_31_05.png",
+        "title": ""
+      },
+      {
+        "src": "Bar/ChatGPT Image 14 jul 2026, 20_34_11.png",
+        "title": ""
+      },
+      {
+        "src": "Bar/ChatGPT Image 14 jul 2026, 20_41_14.png",
+        "title": ""
+      },
+      {
+        "src": "Bar/ChatGPT Image 14 jul 2026, 20_50_39.png",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "type": "category",
     "name": "Candelabras",
-    "cover": "1.png",
-    "images": [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "7.png",
-      "8.png",
-      "9.png",
-      "10.png",
-      "11.png",
-      "12.png",
-      "13.png",
-      "14.png",
-      "15.png",
-      "16.png",
-      "17.png",
-      "18.png",
-      "19.png",
-      "20.png"
+    "folder": "Candelabras",
+    "cover": "Candelabras/10 arm all crystal contemporary candelabra with candle hurricanes.png",
+    "count": 20,
+    "items": [
+      {
+        "src": "Candelabras/10 arm all crystal contemporary candelabra with candle hurricanes.png",
+        "title": "10 arm all crystal contemporary candelabra with candle hurricanes"
+      },
+      {
+        "src": "Candelabras/24_ gold 4 arm candelabra.png",
+        "title": "24\" gold 4 arm candelabra"
+      },
+      {
+        "src": "Candelabras/24_ gold 4 arm candelabra(1).png",
+        "title": "24\" gold 4 arm candelabra"
+      },
+      {
+        "src": "Candelabras/24_ gold 5 arm candelabra.png",
+        "title": "24\" gold 5 arm candelabra"
+      },
+      {
+        "src": "Candelabras/24_ silver 5 arm candelabra.png",
+        "title": "24\" silver 5 arm candelabra"
+      },
+      {
+        "src": "Candelabras/30_ crystal and gold 4 arm candelabra with dish.png",
+        "title": "30\" crystal and gold 4 arm candelabra with dish"
+      },
+      {
+        "src": "Candelabras/30_ crystal and silver 5 arm candelabra.png",
+        "title": "30\" crystal and silver 5 arm candelabra"
+      },
+      {
+        "src": "Candelabras/30_ crystal and silver 5 arm candelabra(1).png",
+        "title": "30\" crystal and silver 5 arm candelabra"
+      },
+      {
+        "src": "Candelabras/30_ silver candelabra. Available as 5 candle or 4 arm with a center bowl.png",
+        "title": "30\" silver candelabra. Available as 5 candle or 4 arm with a center bowl"
+      },
+      {
+        "src": "Candelabras/39_ four arm silver candelabra.png",
+        "title": "39\" four arm silver candelabra"
+      },
+      {
+        "src": "Candelabras/39_ silver 5 arm candelabra.png",
+        "title": "39\" silver 5 arm candelabra"
+      },
+      {
+        "src": "Candelabras/5_ 4 arm candelabra with center bowl_.png",
+        "title": "5\" 4 arm candelabra with center bowl"
+      },
+      {
+        "src": "Candelabras/64_ 13 arm wrought iron candelabra.png",
+        "title": "64\" 13 arm wrought iron candelabra"
+      },
+      {
+        "src": "Candelabras/64_ 13 arm wrought iron candelabra in gold.png",
+        "title": "64\" 13 arm wrought iron candelabra in gold"
+      },
+      {
+        "src": "Candelabras/8 arm gold contemporary candelabra with glass hurricanes.png",
+        "title": "8 arm gold contemporary candelabra with glass hurricanes"
+      },
+      {
+        "src": "Candelabras/9 arm all crystal candelabra with hanging prism.png",
+        "title": "9 arm all crystal candelabra with hanging prism"
+      },
+      {
+        "src": "Candelabras/Large gold 5 arm candelabra.png",
+        "title": "Large gold 5 arm candelabra"
+      },
+      {
+        "src": "Candelabras/Large gold 5 arm candelabra(1).png",
+        "title": "Large gold 5 arm candelabra"
+      },
+      {
+        "src": "Candelabras/Round footed 5 arm crystal candelabra.png",
+        "title": "Round footed 5 arm crystal candelabra"
+      },
+      {
+        "src": "Candelabras/U-Shape crystal candelabra.png",
+        "title": "U-Shape crystal candelabra"
+      }
     ]
   },
   {
-    "folder": "Candle Display",
-    "name": "Candle Displays",
-    "cover": "1.png",
-    "images": [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "7.png"
+    "type": "group",
+    "name": "Candle Holders",
+    "folder": "Candle Holders",
+    "cover": "Candle Holders/Candle Display/36_ iron stand with glass vase.png",
+    "count": 34,
+    "children": [
+      {
+        "type": "category",
+        "name": "Candle Displays",
+        "folder": "Candle Holders/Candle Display",
+        "cover": "Candle Holders/Candle Display/36_ iron stand with glass vase.png",
+        "count": 7,
+        "items": [
+          {
+            "src": "Candle Holders/Candle Display/36_ iron stand with glass vase.png",
+            "title": "36\" iron stand with glass vase"
+          },
+          {
+            "src": "Candle Holders/Candle Display/46_ rust iron stand with glass vase.png",
+            "title": "46\" rust iron stand with glass vase"
+          },
+          {
+            "src": "Candle Holders/Candle Display/48_ iron stand with glass vase.png",
+            "title": "48\" iron stand with glass vase"
+          },
+          {
+            "src": "Candle Holders/Candle Display/5´ pedestal candle holder.png",
+            "title": "5' pedestal candle holder"
+          },
+          {
+            "src": "Candle Holders/Candle Display/70_ rust iron stand with glass vase.png",
+            "title": "70\" rust iron stand with glass vase"
+          },
+          {
+            "src": "Candle Holders/Candle Display/72_ iron stand with glass vase.png",
+            "title": "72\" iron stand with glass vase"
+          },
+          {
+            "src": "Candle Holders/Candle Display/84_ iron stand with glass vase.png",
+            "title": "84\" iron stand with glass vase"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "name": "Candlesticks",
+        "folder": "Candle Holders/Candle Sticks",
+        "cover": "Candle Holders/Candle Sticks/10 1_2_ silver candlestick.png",
+        "count": 7,
+        "items": [
+          {
+            "src": "Candle Holders/Candle Sticks/10 1_2_ silver candlestick.png",
+            "title": "10 1/2\" silver candlestick"
+          },
+          {
+            "src": "Candle Holders/Candle Sticks/10_ glass heavy square base column candlestick.png",
+            "title": "10\" glass heavy square base column candlestick"
+          },
+          {
+            "src": "Candle Holders/Candle Sticks/10_ gold candlestick_.png",
+            "title": "10\" gold candlestick"
+          },
+          {
+            "src": "Candle Holders/Candle Sticks/11 1_2_ antique gold candlestick.png",
+            "title": "11 1/2\" antique gold candlestick"
+          },
+          {
+            "src": "Candle Holders/Candle Sticks/12_ gold candlestick.png",
+            "title": "12\" gold candlestick"
+          },
+          {
+            "src": "Candle Holders/Candle Sticks/6_ brown candlestick_.png",
+            "title": "6\" brown candlestick"
+          },
+          {
+            "src": "Candle Holders/Candle Sticks/Crystal candlesticks. Available in 7_, 8 1_2_, and 10_ heights.png",
+            "title": "Crystal candlesticks. Available in 7\", 8 1/2\", and 10\" heights"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "name": "Votive Holders",
+        "folder": "Candle Holders/Votive Holders",
+        "cover": "Candle Holders/Votive Holders/11´´ Silver satin table lamp.png",
+        "count": 10,
+        "items": [
+          {
+            "src": "Candle Holders/Votive Holders/11´´ Silver satin table lamp.png",
+            "title": "11\" Silver satin table lamp"
+          },
+          {
+            "src": "Candle Holders/Votive Holders/7´´x3´´ Cut crystal votive holder.png",
+            "title": "7\"x3\" Cut crystal votive holder"
+          },
+          {
+            "src": "Candle Holders/Votive Holders/8´´ Cut crystal votive holder with silver pedestal.png",
+            "title": "8\" Cut crystal votive holder with silver pedestal"
+          },
+          {
+            "src": "Candle Holders/Votive Holders/8´´ Cut crystal votive holder with stand.png",
+            "title": "8\" Cut crystal votive holder with stand"
+          },
+          {
+            "src": "Candle Holders/Votive Holders/Crystal flared top votive holder.png",
+            "title": "Crystal flared top votive holder"
+          },
+          {
+            "src": "Candle Holders/Votive Holders/Crystal shotglass votive holder(1).png",
+            "title": "Crystal shotglass votive holder"
+          },
+          {
+            "src": "Candle Holders/Votive Holders/Crystal shotglass votive holder.png",
+            "title": "Crystal shotglass votive holder"
+          },
+          {
+            "src": "Candle Holders/Votive Holders/Glass table lamp with white frosted shade.png",
+            "title": "Glass table lamp with white frosted shade"
+          },
+          {
+            "src": "Candle Holders/Votive Holders/Rounded Crystal Votive Holder.png",
+            "title": "Rounded Crystal Votive Holder"
+          },
+          {
+            "src": "Candle Holders/Votive Holders/Silver beaded votive holder.png",
+            "title": "Silver beaded votive holder"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "name": "Votive Pegs",
+        "folder": "Candle Holders/Votive Pegs",
+        "cover": "Candle Holders/Votive Pegs/Blue crackle votive party light_.png",
+        "count": 10,
+        "items": [
+          {
+            "src": "Candle Holders/Votive Pegs/Blue crackle votive party light_.png",
+            "title": "Blue crackle votive party light"
+          },
+          {
+            "src": "Candle Holders/Votive Pegs/Clear glass votive holder with cut star pattern and nipple.png",
+            "title": "Clear glass votive holder with cut star pattern and nipple"
+          },
+          {
+            "src": "Candle Holders/Votive Pegs/Clear shot glass votive holder with nipple.png",
+            "title": "Clear shot glass votive holder with nipple"
+          },
+          {
+            "src": "Candle Holders/Votive Pegs/Gold mosiac votive holder.png",
+            "title": "Gold mosiac votive holder"
+          },
+          {
+            "src": "Candle Holders/Votive Pegs/Green crackle votive party light_.png",
+            "title": "Green crackle votive party light"
+          },
+          {
+            "src": "Candle Holders/Votive Pegs/Large clear glass flaired tulip votive holder with nipple.png",
+            "title": "Large clear glass flaired tulip votive holder with nipple"
+          },
+          {
+            "src": "Candle Holders/Votive Pegs/Large cut glass votive holder with nipple.png",
+            "title": "Large cut glass votive holder with nipple"
+          },
+          {
+            "src": "Candle Holders/Votive Pegs/Mirrored mosiac votive holder.png",
+            "title": "Mirrored mosiac votive holder"
+          },
+          {
+            "src": "Candle Holders/Votive Pegs/Red crackle votive party light.png",
+            "title": "Red crackle votive party light"
+          },
+          {
+            "src": "Candle Holders/Votive Pegs/Swirl glass votive holder with nipple.png",
+            "title": "Swirl glass votive holder with nipple"
+          }
+        ]
+      }
     ]
   },
   {
-    "folder": "Candle Sticks",
-    "name": "Candle Sticks",
-    "cover": "1.png",
-    "images": [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "7.png"
+    "type": "group",
+    "name": "Centerpieces",
+    "folder": "Centerpieces",
+    "cover": "Centerpieces/Centerpieces Bowls/  10 1_2_ gold footed bowl with handles_.png",
+    "count": 26,
+    "children": [
+      {
+        "type": "category",
+        "name": "Centerpiece Bowls",
+        "folder": "Centerpieces/Centerpieces Bowls",
+        "cover": "Centerpieces/Centerpieces Bowls/  10 1_2_ gold footed bowl with handles_.png",
+        "count": 8,
+        "items": [
+          {
+            "src": "Centerpieces/Centerpieces Bowls/  10 1_2_ gold footed bowl with handles_.png",
+            "title": "10 1/2\" gold footed bowl with handles"
+          },
+          {
+            "src": "Centerpieces/Centerpieces Bowls/ 10 1_2_ silver footed bowl with handles.png",
+            "title": "10 1/2\" silver footed bowl with handles"
+          },
+          {
+            "src": "Centerpieces/Centerpieces Bowls/10_ cut crystal bowl with silver pedestal.png",
+            "title": "10\" cut crystal bowl with silver pedestal"
+          },
+          {
+            "src": "Centerpieces/Centerpieces Bowls/10_ footed cut crystal bowl.png",
+            "title": "10\" footed cut crystal bowl"
+          },
+          {
+            "src": "Centerpieces/Centerpieces Bowls/7_ gold pedestal with glass vase. Vase is 7_ high 5 3_4_ wide.png",
+            "title": "7\" gold pedestal with glass vase. Vase is 7\" high 5 3/4\" wide"
+          },
+          {
+            "src": "Centerpieces/Centerpieces Bowls/  8 1_2_ gold footed bowl with handles_.png",
+            "title": "8 1/2\" gold footed bowl with handles"
+          },
+          {
+            "src": "Centerpieces/Centerpieces Bowls/ 8 1_2_ silver footed bowl with handles.png",
+            "title": "8 1/2\" silver footed bowl with handles"
+          },
+          {
+            "src": "Centerpieces/Centerpieces Bowls/Heavy cut crystal bowl. 10_ high 9_ square _.png",
+            "title": "Heavy cut crystal bowl. 10\" high 9\" square"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "name": "Centerpiece Pedestals",
+        "folder": "Centerpieces/Certepiece Pedestals",
+        "cover": "Centerpieces/Certepiece Pedestals/24_ gold pedestal. Available with center dish or with center bowl.png",
+        "count": 18,
+        "items": [
+          {
+            "src": "Centerpieces/Certepiece Pedestals/24_ gold pedestal. Available with center dish or with center bowl.png",
+            "title": "24\" gold pedestal. Available with center dish or with center bowl"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/24_ silver pedestal. Available with cap and center dish or center bowl_.png",
+            "title": "24\" silver pedestal. Available with cap and center dish or center bowl"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/24_ stand with glass bell jar.png",
+            "title": "24\" stand with glass bell jar"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/26_ silver square footed pedestal.png",
+            "title": "26\" silver square footed pedestal"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/26_ trumpet vase.png",
+            "title": "26\" trumpet vase"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/27.5_x7.8_ cast iron pillar candle holder.This item can be custom painted.png",
+            "title": "27.5\"x7.8\" cast iron pillar candle holder. This item can be custom painted"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/30_ gold pedestal.png",
+            "title": "30\" gold pedestal"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/30_ hexagonal vase. This item can be custom painted any color_.png",
+            "title": "30\" hexagonal vase. This item can be custom painted any color"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/30_ silver pedestal with bowl_.png",
+            "title": "30\" silver pedestal with bowl"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/32_ cut crystal pedestal with square base.png",
+            "title": "32\" cut crystal pedestal with square base"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/32_ gold and crystal pedestal with cap and dish.png",
+            "title": "32\" gold and crystal pedestal with cap and dish"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/32_ gold ornate footed centerpice pedestal_.png",
+            "title": "32\" gold ornate footed centerpice pedestal"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/32_ silver and crystal pedestal with cap and dish.png",
+            "title": "32\" silver and crystal pedestal with cap and dish"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/33 1_4_ trumpet vase.png",
+            "title": "33 1/4\" trumpet vase"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/36_ stand with glass bell jar.png",
+            "title": "36\" stand with glass bell jar"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/40_x 11_ cast iron pillar candle holder. This item can be custom painted.png",
+            "title": "40\"x 11\" cast iron pillar candle holder. This item can be custom painted"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/48_ stand with glass bell jar.png",
+            "title": "48\" stand with glass bell jar"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/Floor vase. Available in 27 1_2_, 311_2_, and 35 1_2_ heights.png",
+            "title": "Floor vase. Available in 27 1/2\", 311/2\", and 35 1/2\" heights"
+          }
+        ]
+      }
     ]
   },
   {
-    "folder": "Centerpieces Bowls",
-    "name": "Centerpiece Bowls",
-    "cover": "1.png",
-    "images": [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "7.png",
-      "8.png"
-    ]
-  },
-  {
-    "folder": "Certepiece Pedestals",
-    "name": "Centerpiece Pedestals",
-    "cover": "8.png",
-    "images": [
-      "8.png",
-      "9.png",
-      "14.png",
-      "15.png"
-    ]
-  },
-  {
-    "folder": "Chairs",
+    "type": "category",
     "name": "Chairs",
-    "cover": "1.png",
-    "images": [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "7.png",
-      "8.png",
-      "9.png",
-      "10.png",
-      "11.png",
-      "12.png",
-      "13.png",
-      "14.png",
-      "15.png",
-      "16.png",
-      "17.png",
-      "18.png",
-      "19.png",
-      "20.png",
-      "21.png",
-      "22.png",
-      "23.png",
-      "24.jpg",
-      "25.png",
-      "26.png",
-      "27.png",
-      "28.png",
-      "29.png",
-      "30.png"
+    "folder": "Chairs",
+    "cover": "Chairs/Black Ballroom Chair.png",
+    "count": 39,
+    "items": [
+      {
+        "src": "Chairs/Black Ballroom Chair.png",
+        "title": "Black Ballroom Chair"
+      },
+      {
+        "src": "Chairs/Black Barstool.png",
+        "title": "Black Barstool"
+      },
+      {
+        "src": "Chairs/Black Garden Chairs.png",
+        "title": "Black Garden Chairs"
+      },
+      {
+        "src": "Chairs/Black Lamour Cushions.png",
+        "title": "Black Lamour Cushions"
+      },
+      {
+        "src": "Chairs/Brown Bengaline Cushions.png",
+        "title": "Brown Bengaline Cushions"
+      },
+      {
+        "src": "Chairs/Chaclear.png",
+        "title": "Chaclear"
+      },
+      {
+        "src": "Chairs/Chivari bar stools. Available in gold, white, black, silver, fruitwood.png",
+        "title": "Chivari bar stools. Available in gold, white, black, silver, fruitwood"
+      },
+      {
+        "src": "Chairs/Clear acrylic chair.png",
+        "title": "Clear acrylic chair"
+      },
+      {
+        "src": "Chairs/Clear Chavarría Chairs.jpg",
+        "title": "Clear Chavarría Chairs"
+      },
+      {
+        "src": "Chairs/Clear Chavarría Chairs 2.jpg",
+        "title": "Clear Chavarría Chairs 2"
+      },
+      {
+        "src": "Chairs/Clear grooved pattern chair.png",
+        "title": "Clear grooved pattern chair"
+      },
+      {
+        "src": "Chairs/Clear Infinity Chairs.jpg",
+        "title": "Clear Infinity Chairs"
+      },
+      {
+        "src": "Chairs/Clear Infinity Chairs 2.jpg",
+        "title": "Clear Infinity Chairs 2"
+      },
+      {
+        "src": "Chairs/Cross Back Fruitwood Chairs_.jpg",
+        "title": "Cross Back Fruitwood Chairs"
+      },
+      {
+        "src": "Chairs/_Cross Back Fruitwood Chairs 2.jpg",
+        "title": "Cross Back Fruitwood Chairs 2"
+      },
+      {
+        "src": "Chairs/Cross Back Natural Chairs.jpg",
+        "title": "Cross Back Natural Chairs"
+      },
+      {
+        "src": "Chairs/Cross Back Natural Chairs 2.jpg",
+        "title": "Cross Back Natural Chairs 2"
+      },
+      {
+        "src": "Chairs/Fruitwood ballroom chair(1).png",
+        "title": "Fruitwood ballroom chair"
+      },
+      {
+        "src": "Chairs/Fruitwood ballroom chair.png",
+        "title": "Fruitwood ballroom chair"
+      },
+      {
+        "src": "Chairs/Gold Ballroom Chair.png",
+        "title": "Gold Ballroom Chair"
+      },
+      {
+        "src": "Chairs/Gold Barstool.png",
+        "title": "Gold Barstool"
+      },
+      {
+        "src": "Chairs/Gold Lamour Cushions.jpg",
+        "title": "Gold Lamour Cushions"
+      },
+      {
+        "src": "Chairs/Leatherette bar chair. Available in black or white.png",
+        "title": "Leatherette bar chair. Available in black or white"
+      },
+      {
+        "src": "Chairs/Leatherette dining chair. Available in black or white.png",
+        "title": "Leatherette dining chair. Available in black or white"
+      },
+      {
+        "src": "Chairs/Mahogany Barstool.png",
+        "title": "Mahogany Barstool"
+      },
+      {
+        "src": "Chairs/Olive Green Bengaline Cushions.png",
+        "title": "Olive Green Bengaline Cushions"
+      },
+      {
+        "src": "Chairs/Pearl.png",
+        "title": "Pearl"
+      },
+      {
+        "src": "Chairs/Pearl Bengaline Cushions.png",
+        "title": "Pearl Bengaline Cushions"
+      },
+      {
+        "src": "Chairs/Pearl Bengaline Cushions(1).png",
+        "title": "Pearl Bengaline Cushions"
+      },
+      {
+        "src": "Chairs/Pearl essence Chivari ballroom chair.png",
+        "title": "Pearl essence Chivari ballroom chair"
+      },
+      {
+        "src": "Chairs/Silver Ballroom Chair.png",
+        "title": "Silver Ballroom Chair"
+      },
+      {
+        "src": "Chairs/Silver Barstool.png",
+        "title": "Silver Barstool"
+      },
+      {
+        "src": "Chairs/Silver Bengaline Cushions.png",
+        "title": "Silver Bengaline Cushions"
+      },
+      {
+        "src": "Chairs/Smoked transparent chair.png",
+        "title": "Smoked transparent chair"
+      },
+      {
+        "src": "Chairs/Soft leatherette dining chair.png",
+        "title": "Soft leatherette dining chair"
+      },
+      {
+        "src": "Chairs/Sultry beige ballroom chair.png",
+        "title": "Sultry beige ballroom chair"
+      },
+      {
+        "src": "Chairs/White ballroom chair.png",
+        "title": "White ballroom chair"
+      },
+      {
+        "src": "Chairs/White Barstool.png",
+        "title": "White Barstool"
+      },
+      {
+        "src": "Chairs/White Garden Chairs.png",
+        "title": "White Garden Chairs"
+      }
     ]
   },
   {
-    "folder": "Charder C",
-    "name": "Charger Plates",
-    "cover": "1.png",
-    "images": [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "7.png",
-      "8.png",
-      "10.png",
-      "11.png",
-      "12.png",
-      "13.png"
+    "type": "category",
+    "name": "Displays",
+    "folder": "Displays",
+    "cover": "Displays/5_x4_ Extra large urn with large handles. This item can be custom painted any color_.png",
+    "count": 4,
+    "items": [
+      {
+        "src": "Displays/5_x4_ Extra large urn with large handles. This item can be custom painted any color_.png",
+        "title": "5\"x4\" Extra large urn with large handles. This item can be custom painted any color"
+      },
+      {
+        "src": "Displays/Shiny white urns. The large urn stands 60_ tall with a 33_ opening and a 17_ base. The smaller urn stands 35_ tall with a 18_ opening and a 10_ base.png",
+        "title": "Shiny white urns. The large urn stands 60\" tall with a 33\" opening and a 17\" base. The smaller urn stands 35\" tall with a 18\" opening and a 10\" base"
+      },
+      {
+        "src": "Displays/Shiny white vase stands 40_ all with a 9_ base, and a 4 3_4_ opening.png",
+        "title": "Shiny white vase stands 40\" all with a 9\" base, and a 4 3/4\" opening"
+      },
+      {
+        "src": "Displays/Shiny white vase stands 76_ tall with a 17_ opening and a 10_ base.png",
+        "title": "Shiny white vase stands 76\" tall with a 17\" opening and a 10\" base"
+      }
     ]
   },
   {
-    "folder": "Dance floors",
-    "name": "Dance Floors",
-    "cover": "1.png",
-    "images": [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "7.png",
-      "8.png",
-      "9.png"
+    "type": "category",
+    "name": "Furniture",
+    "folder": "Furniture",
+    "cover": "Furniture/30_ x30_ low on wheels  36_ x 30 low on wheels(1).jpg",
+    "count": 16,
+    "items": [
+      {
+        "src": "Furniture/30_ x30_ low on wheels  36_ x 30 low on wheels(1).jpg",
+        "title": "30\" x30\" low on wheels 36\" x 30 low on wheels"
+      },
+      {
+        "src": "Furniture/30_ x30_ low on wheels  36_ x 30 low on wheels.jpg",
+        "title": "30\" x30\" low on wheels 36\" x 30 low on wheels"
+      },
+      {
+        "src": "Furniture/     30_x30_ low cocktail tables     _       36_x 30_ low cocktail table                           48_ rd tables_         _          _60_ rd  tables    72_ rd tables _.jpg",
+        "title": "30\"x30\" low cocktail tables 36\"x 30\" low cocktail table 48\" rd tables 60\" rd tables 72\" rd tables"
+      },
+      {
+        "src": "Furniture/     30_x30_ low cocktail tables     _       36_x 30_ low cocktail table                           48_ rd tables_         _          _60_ rd  tables                   72_ rd tables _.jpg",
+        "title": "30\"x30\" low cocktail tables 36\"x 30\" low cocktail table 48\" rd tables 60\" rd tables 72\" rd tables"
+      },
+      {
+        "src": "Furniture/6_x18_x30_ class room tables 8_x18x30_ class room tables 6_x18_x42_ high class room tables 8_x18_x42_ high class room tables.jpg",
+        "title": "6\"x18\"x30\" class room tables 8\"x18x30\" class room tables 6\"x18\"x42\" high class room tables 8\"x18\"x42\" high class room tables"
+      },
+      {
+        "src": "Furniture/             6_x30x30 foot tables                     8_x30x30 foot table          8_x42_x30 Rectangular Tuscan              table(42_wide)                  10_x42_x30 Rectangular Tuscan table (42_ wide) _.jpg",
+        "title": "6\"x30x30 foot tables 8\"x30x30 foot table 8\"x42\"x30 Rectangular Tuscan table(42\"wide) 10\"x42\"x30 Rectangular Tuscan table (42\" wide)"
+      },
+      {
+        "src": "Furniture/6´ serp tables.jpg",
+        "title": "6' serp tables"
+      },
+      {
+        "src": "Furniture/Clear acrylic high cocktail table size 24”x42” high.jpg",
+        "title": "Clear acrylic high cocktail table size 24”x42” high"
+      },
+      {
+        "src": "Furniture/Country wood table. It has cast iron legs with a distressed wood top. This table measures W98_xD39_xH31.jpg",
+        "title": "Country wood table. It has cast iron legs with a distressed wood top. This table measures W98\"xD39\"xH31"
+      },
+      {
+        "src": "Furniture/Glass top bar table.jpg",
+        "title": "Glass top bar table"
+      },
+      {
+        "src": "Furniture/Handicap ramps.png",
+        "title": "Handicap ramps"
+      },
+      {
+        "src": "Furniture/Hemstitch color Napkins.jpg",
+        "title": "Hemstitch color Napkins"
+      },
+      {
+        "src": "Furniture/High cocktail 30_x 42_ high.jpg",
+        "title": "High cocktail 30\"x 42\" high"
+      },
+      {
+        "src": "Furniture/Mirrored cocktail table, 36_x36_ square.jpg",
+        "title": "Mirrored cocktail table, 36\"x36\" square"
+      },
+      {
+        "src": "Furniture/White Day Bed Size 6’.png",
+        "title": "White Day Bed Size 6'"
+      },
+      {
+        "src": "Furniture/White riser with stairs.png",
+        "title": "White riser with stairs"
+      }
     ]
   },
   {
-    "folder": "Shades",
-    "name": "Shades",
-    "cover": "1.png",
-    "images": [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "6.png",
-      "7.png",
-      "8.png",
-      "9.png",
-      "10.png",
-      "11.png",
-      "12.png"
+    "type": "category",
+    "name": "Lamps & Lighting",
+    "folder": "Lamps and Lighting",
+    "cover": "Lamps and Lighting/8_ single lamp post with round lamp.png",
+    "count": 2,
+    "items": [
+      {
+        "src": "Lamps and Lighting/8_ single lamp post with round lamp.png",
+        "title": "8\" single lamp post with round lamp"
+      },
+      {
+        "src": "Lamps and Lighting/8_ single lamp post with teardrop lamp.png",
+        "title": "8\" single lamp post with teardrop lamp"
+      }
     ]
   },
   {
-    "folder": "Votive Holders",
-    "name": "Votive Holders",
-    "cover": "1.png",
-    "images": [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "7.png",
-      "8.png",
-      "9.png",
-      "10.png"
+    "type": "category",
+    "name": "Pedestals & Columns",
+    "folder": "Pedestals and columns",
+    "cover": "Pedestals and columns/28_ ivory plain fluted pedestal.png",
+    "count": 11,
+    "items": [
+      {
+        "src": "Pedestals and columns/28_ ivory plain fluted pedestal.png",
+        "title": "28\" ivory plain fluted pedestal"
+      },
+      {
+        "src": "Pedestals and columns/28_ rust plain fluted pedestal.png",
+        "title": "28\" rust plain fluted pedestal"
+      },
+      {
+        "src": "Pedestals and columns/28_ stone grey plain fluted pedestal_.png",
+        "title": "28\" stone grey plain fluted pedestal"
+      },
+      {
+        "src": "Pedestals and columns/3_ stone grey plain fluted pedestal.png",
+        "title": "3\" stone grey plain fluted pedestal"
+      },
+      {
+        "src": "Pedestals and columns/ 4_ ivory plain fluted pedestal _.png",
+        "title": "4\" ivory plain fluted pedestal"
+      },
+      {
+        "src": "Pedestals and columns/4_ stone grey plain fluted pe4_ stone grey greek pedestal. Also available in Ivory.png",
+        "title": "4\" stone grey plain fluted pe4\" stone grey greek pedestal. Also available in Ivory"
+      },
+      {
+        "src": "Pedestals and columns/4_ stone grey plain fluted pedestal_.png",
+        "title": "4\" stone grey plain fluted pedestal"
+      },
+      {
+        "src": "Pedestals and columns/6_ stone grey greek column _.png",
+        "title": "6\" stone grey greek column"
+      },
+      {
+        "src": "Pedestals and columns/7_ stone grey greek column_.png",
+        "title": "7\" stone grey greek column"
+      },
+      {
+        "src": "Pedestals and columns/8_ ivory greek column_.png",
+        "title": "8\" ivory greek column"
+      },
+      {
+        "src": "Pedestals and columns/Silver metal display stands. Available in 49_ and 32_ heights both with a 12_ base and top_.png",
+        "title": "Silver metal display stands. Available in 49\" and 32\" heights both with a 12\" base and top"
+      }
     ]
   },
   {
-    "folder": "Votive Pegs",
-    "name": "Votive Pegs",
-    "cover": "1.png",
-    "images": [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "7.png",
-      "8.png",
-      "9.png",
-      "10.png"
+    "type": "category",
+    "name": "Urns",
+    "folder": "Urns",
+    "cover": "Urns/16_and 19_ rust woven urn.png",
+    "count": 13,
+    "items": [
+      {
+        "src": "Urns/16_and 19_ rust woven urn.png",
+        "title": "16\"and 19\" rust woven urn"
+      },
+      {
+        "src": "Urns/18_ stone grey urn.png",
+        "title": "18\" stone grey urn"
+      },
+      {
+        "src": "Urns/21_ ivory urn.png",
+        "title": "21\" ivory urn"
+      },
+      {
+        "src": "Urns/21_ stone grey star urn.png",
+        "title": "21\" stone grey star urn"
+      },
+      {
+        "src": "Urns/21_ stone grey urn.png",
+        "title": "21\" stone grey urn"
+      },
+      {
+        "src": "Urns/24_ ivory fluted urn.png",
+        "title": "24\" ivory fluted urn"
+      },
+      {
+        "src": "Urns/24_ stone grey cache pot.png",
+        "title": "24\" stone grey cache pot"
+      },
+      {
+        "src": "Urns/24_ stone grey fluted urn.png",
+        "title": "24\" stone grey fluted urn"
+      },
+      {
+        "src": "Urns/36_ stone grey leaf urn.png",
+        "title": "36\" stone grey leaf urn"
+      },
+      {
+        "src": "Urns/Ivory basket-weave planter.png",
+        "title": "Ivory basket-weave planter"
+      },
+      {
+        "src": "Urns/Ivory low squat urn.png",
+        "title": "Ivory low squat urn"
+      },
+      {
+        "src": "Urns/Stone grey low squat urn.png",
+        "title": "Stone grey low squat urn"
+      },
+      {
+        "src": "Urns/urns.png",
+        "title": "Urns"
+      }
     ]
   }
 ]

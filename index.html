@@ -5,101 +5,53 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tommy Wholesale Rental — Event Decor Catalog</title>
 <link rel="icon" href="Other/logo.jpg" type="image/jpeg">
-<meta name="description" content="Tommy Wholesale Rental — premium event decorations for rent: arches, candelabras, centerpieces, chairs, charger plates, dance floors and more. Serving all New England.">
+<meta name="description" content="Tommy Wholesale Rental — premium event decorations for rent: arches, candelabras, centerpieces, chairs, charger plates, furniture and more. Serving all New England.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --red:#C4161C;
-    --red-dark:#9E0F14;
-    --black:#141414;
-    --ink:#1d1d1d;
-    --white:#ffffff;
-    --bg:#f7f6f4;
-    --muted:#6b6b6b;
-    --line:#e6e4e0;
-    --shadow:0 10px 30px rgba(0,0,0,.10);
-    --radius:14px;
+    --red:#C4161C;--red-dark:#9E0F14;--black:#141414;--ink:#1d1d1d;--white:#fff;
+    --bg:#f7f6f4;--muted:#6b6b6b;--line:#e6e4e0;--shadow:0 10px 30px rgba(0,0,0,.10);--radius:14px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{
-    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-    color:var(--ink);background:var(--bg);line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
+  body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
   h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif}
   a{color:inherit;text-decoration:none}
   img{display:block;max-width:100%}
 
-  /* ---------- Header ---------- */
-  header{
-    position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);
-    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
-  }
-  .bar{
-    max-width:1200px;margin:0 auto;padding:12px 20px;
-    display:flex;align-items:center;justify-content:space-between;gap:20px;
-  }
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .bar{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
   .brand{display:flex;align-items:center;gap:12px;min-width:0;cursor:pointer}
   .brand img{height:52px;width:auto}
   .contact-top{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-  .phone{
-    display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--black);
-    white-space:nowrap;
-  }
+  .phone{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--black);white-space:nowrap}
   .phone svg{width:18px;height:18px;fill:var(--red)}
   .phone:hover{color:var(--red)}
 
-  /* ---------- Hero ---------- */
-  .hero{
-    position:relative;background:var(--black);color:var(--white);
-    padding:74px 20px 66px;text-align:center;overflow:hidden;
-  }
-  .hero:before{
-    content:"";position:absolute;inset:0;
-    background:
-      radial-gradient(1200px 400px at 50% -10%, rgba(196,22,28,.35), transparent 60%),
-      repeating-linear-gradient(45deg, rgba(255,255,255,.02) 0 12px, transparent 12px 24px);
-  }
+  .hero{position:relative;background:var(--black);color:var(--white);padding:74px 20px 66px;text-align:center;overflow:hidden}
+  .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(1200px 400px at 50% -10%, rgba(196,22,28,.35), transparent 60%),repeating-linear-gradient(45deg, rgba(255,255,255,.02) 0 12px, transparent 12px 24px)}
   .hero .inner{position:relative;max-width:820px;margin:0 auto}
-  .kicker{
-    display:inline-block;letter-spacing:.28em;text-transform:uppercase;
-    font-size:.72rem;font-weight:700;color:#fff;background:var(--red);
-    padding:7px 14px;border-radius:100px;margin-bottom:22px;
-  }
+  .kicker{display:inline-block;letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;font-weight:700;color:#fff;background:var(--red);padding:7px 14px;border-radius:100px;margin-bottom:22px}
   .hero h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.08;font-weight:800}
   .hero h1 span{color:var(--red)}
   .hero p{margin:18px auto 0;max-width:620px;color:#d8d8d8;font-size:1.06rem}
-  .hero .cta{
-    display:inline-flex;gap:14px;margin-top:30px;flex-wrap:wrap;justify-content:center;
-  }
-  .btn{
-    display:inline-flex;align-items:center;gap:9px;font-weight:600;
-    padding:13px 24px;border-radius:100px;transition:.2s;border:2px solid transparent;cursor:pointer;
-  }
+  .hero .cta{display:inline-flex;gap:14px;margin-top:30px;flex-wrap:wrap;justify-content:center}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;padding:13px 24px;border-radius:100px;transition:.2s;border:2px solid transparent;cursor:pointer}
   .btn-red{background:var(--red);color:#fff}
   .btn-red:hover{background:var(--red-dark);transform:translateY(-2px)}
   .btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
   .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
 
-  /* ---------- Sections ---------- */
   .section{max-width:1200px;margin:0 auto;padding:64px 20px}
   .section-head{text-align:center;margin-bottom:40px}
-  .section-head .tag{
-    color:var(--red);font-weight:700;letter-spacing:.22em;text-transform:uppercase;
-    font-size:.74rem;
-  }
+  .section-head .tag{color:var(--red);font-weight:700;letter-spacing:.22em;text-transform:uppercase;font-size:.74rem}
   .section-head h2{font-size:clamp(1.7rem,3.6vw,2.6rem);margin-top:8px;color:var(--black)}
   .section-head p{color:var(--muted);max-width:620px;margin:12px auto 0}
 
-  /* ---------- Our Story ---------- */
   .story{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .story .wrap{
-    max-width:1200px;margin:0 auto;padding:64px 20px;
-    display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:center;
-  }
+  .story .wrap{max-width:1200px;margin:0 auto;padding:64px 20px;display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:center}
   .story .tag{color:var(--red);font-weight:700;letter-spacing:.22em;text-transform:uppercase;font-size:.74rem}
   .story h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin:8px 0 16px;color:var(--black)}
   .story p{color:#4a4a4a;font-size:1.03rem}
@@ -107,109 +59,65 @@
   .story .pics img{width:100%;height:100%;object-fit:cover;border-radius:12px;box-shadow:var(--shadow)}
   .story .pics img:first-child{grid-row:1 / span 2}
 
-  /* ---------- Search / filter ---------- */
   .toolbar{max-width:680px;margin:0 auto 34px;position:relative}
-  .toolbar input{
-    width:100%;padding:15px 18px 15px 48px;border:1px solid var(--line);border-radius:100px;
-    font-size:1rem;font-family:inherit;background:#fff;box-shadow:var(--shadow);color:var(--ink);
-  }
+  .toolbar input{width:100%;padding:15px 18px 15px 48px;border:1px solid var(--line);border-radius:100px;font-size:1rem;font-family:inherit;background:#fff;box-shadow:var(--shadow);color:var(--ink)}
   .toolbar input:focus{outline:none;border-color:var(--red)}
   .toolbar svg{position:absolute;left:17px;top:50%;transform:translateY(-50%);width:20px;height:20px;fill:var(--muted)}
   .noresult{grid-column:1/-1;text-align:center;color:var(--muted);padding:20px}
 
-  /* ---------- Category grid ---------- */
-  .grid{
-    display:grid;gap:22px;
-    grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
-  }
-  .card{
-    background:var(--white);border-radius:var(--radius);overflow:hidden;
-    box-shadow:var(--shadow);cursor:pointer;transition:.25s;border:1px solid var(--line);
-    display:flex;flex-direction:column;
-  }
+  .grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+  .card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);cursor:pointer;transition:.25s;border:1px solid var(--line);display:flex;flex-direction:column}
   .card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.16)}
   .card .thumb{position:relative;aspect-ratio:1/1;overflow:hidden;background:#efeee9}
   .card .thumb img{width:100%;height:100%;object-fit:cover;transition:.4s}
   .card:hover .thumb img{transform:scale(1.06)}
-  .card .badge{
-    position:absolute;top:12px;left:12px;background:var(--red);color:#fff;
-    font-size:.72rem;font-weight:700;padding:5px 11px;border-radius:100px;
-  }
+  .card .badge{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font-size:.72rem;font-weight:700;padding:5px 11px;border-radius:100px}
+  .card .badge.grp{background:var(--black)}
   .card .meta{padding:15px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px}
   .card .meta h3{font-size:1.12rem;color:var(--black)}
-  .card .meta .go{
-    color:var(--red);font-weight:700;font-size:.85rem;display:inline-flex;align-items:center;gap:5px;flex-shrink:0;
-  }
+  .card .meta .go{color:var(--red);font-weight:700;font-size:.85rem;display:inline-flex;align-items:center;gap:5px;flex-shrink:0;white-space:nowrap}
 
-  /* ---------- Gallery view ---------- */
-  .back{
-    display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--black);
-    margin-bottom:26px;cursor:pointer;
-  }
+  .back{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--black);margin-bottom:26px;cursor:pointer}
   .back:hover{color:var(--red)}
+
   .masonry{columns:4 260px;column-gap:18px}
-  .masonry .item{
-    break-inside:avoid;margin-bottom:18px;border-radius:12px;overflow:hidden;
-    box-shadow:var(--shadow);cursor:pointer;background:#efeee9;transition:.25s;
-  }
-  .masonry .item:hover{transform:scale(1.015);box-shadow:0 16px 36px rgba(0,0,0,.18)}
-  .masonry .item img{width:100%;height:auto}
+  .masonry .item{break-inside:avoid;margin-bottom:18px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow);cursor:pointer;background:#fff;transition:.25s;border:1px solid var(--line)}
+  .masonry .item:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(0,0,0,.18)}
+  .masonry .item img{width:100%;height:auto;background:#efeee9}
+  .masonry .cap{padding:10px 12px;font-size:.86rem;font-weight:500;color:#2a2a2a;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
   .hidden{display:none}
 
-  /* ---------- Lightbox ---------- */
-  .lb{
-    position:fixed;inset:0;z-index:100;background:rgba(15,15,15,.94);
-    display:none;align-items:center;justify-content:center;
-  }
+  .lb{position:fixed;inset:0;z-index:100;background:rgba(15,15,15,.94);display:none;align-items:center;justify-content:center;flex-direction:column;padding:20px}
   .lb.open{display:flex}
-  .lb img{max-width:92vw;max-height:86vh;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
-  .lb .x,.lb .nav{
-    position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;
-    cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;
-    transition:.2s;
-  }
+  .lb img{max-width:92vw;max-height:78vh;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+  .lb .lb-cap{color:#fff;margin-top:16px;font-weight:600;font-size:1rem;text-align:center;max-width:90vw}
+  .lb .x,.lb .nav{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:.2s}
   .lb .x{top:20px;right:22px;width:46px;height:46px;font-size:1.6rem}
   .lb .nav{top:50%;transform:translateY(-50%);width:54px;height:54px;font-size:2rem}
-  .lb .prev{left:18px}
-  .lb .next{right:18px}
+  .lb .prev{left:18px}.lb .next{right:18px}
   .lb .x:hover,.lb .nav:hover{background:var(--red)}
-  .lb .counter{
-    position:absolute;bottom:22px;left:50%;transform:translateX(-50%);
-    color:#fff;font-weight:600;background:rgba(0,0,0,.4);padding:6px 16px;border-radius:100px;
-  }
+  .lb .counter{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);color:#fff;font-weight:600;background:rgba(0,0,0,.4);padding:6px 16px;border-radius:100px}
 
-  /* ---------- Contact ---------- */
   .contact{background:var(--black);color:#fff}
   .contact .section{padding:60px 20px}
-  .contact .head h2{color:#fff}
-  .contact .head .tag{color:var(--red)}
+  .contact .head h2{color:#fff}.contact .head .tag{color:var(--red)}
   .contact .layout{display:grid;grid-template-columns:1fr 1.15fr;gap:34px;align-items:start;margin-top:36px}
   .cards{display:grid;gap:16px}
-  .ccard{
-    background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);
-    border-radius:var(--radius);padding:22px;display:flex;gap:16px;align-items:center;text-align:left;
-  }
-  .ccard .ic{
-    width:48px;height:48px;border-radius:50%;background:var(--red);flex-shrink:0;
-    display:flex;align-items:center;justify-content:center;
-  }
+  .ccard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:22px;display:flex;gap:16px;align-items:center;text-align:left}
+  .ccard .ic{width:48px;height:48px;border-radius:50%;background:var(--red);flex-shrink:0;display:flex;align-items:center;justify-content:center}
   .ccard .ic svg{width:22px;height:22px;fill:#fff}
   .ccard h3{color:#fff;font-family:'Inter';font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
   .ccard a,.ccard p{color:#d6d6d6;font-size:1.02rem;display:block}
   .ccard a:hover{color:var(--red)}
 
-  /* ---------- Form ---------- */
   .form-wrap{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
   .form-wrap h3{color:var(--black);font-size:1.4rem;margin-bottom:4px}
   .form-wrap .sub{color:var(--muted);font-size:.95rem;margin-bottom:20px}
   .frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .field{margin-bottom:14px}
   .field label{display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:5px}
-  .field input,.field select,.field textarea{
-    width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:9px;
-    font-family:inherit;font-size:.98rem;color:var(--ink);background:#fff;
-  }
+  .field input,.field select,.field textarea{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:9px;font-family:inherit;font-size:.98rem;color:var(--ink);background:#fff}
   .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--red)}
   .field textarea{resize:vertical;min-height:96px}
   .form-wrap button{width:100%;justify-content:center;font-size:1.02rem;margin-top:4px}
@@ -226,18 +134,14 @@
     .contact .layout{grid-template-columns:1fr}
   }
   @media(max-width:640px){
-    .contact-top{gap:10px 14px}
-    .phone{font-size:.86rem}
-    .brand img{height:40px}
+    .contact-top{gap:10px 14px}.phone{font-size:.86rem}.brand img{height:40px}
     .section{padding:48px 16px}
     .grid{grid-template-columns:1fr 1fr;gap:12px}
     .card .meta{padding:11px 12px;flex-direction:column;align-items:flex-start;gap:4px}
-    .card .meta h3{font-size:.98rem}
-    .card .badge{font-size:.66rem;padding:4px 9px}
+    .card .meta h3{font-size:.98rem}.card .badge{font-size:.66rem;padding:4px 9px}
     .masonry{columns:2 150px;column-gap:12px}
-    .masonry .item{margin-bottom:12px}
-    .frow{grid-template-columns:1fr}
-    .story .pics{height:260px}
+    .masonry .item{margin-bottom:12px}.masonry .cap{font-size:.78rem;padding:8px 10px}
+    .frow{grid-template-columns:1fr}.story .pics{height:260px}
   }
 </style>
 </head>
@@ -245,28 +149,21 @@
 
 <header>
   <div class="bar">
-    <div class="brand" onclick="showHome()">
+    <div class="brand" onclick="goHome()">
       <img src="Other/logo.jpg" alt="Tommy Wholesale Rental logo">
     </div>
     <div class="contact-top">
-      <a class="phone" href="tel:+16175045321">
-        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>
-        617-504-5321
-      </a>
-      <a class="phone" href="tel:+15087187498">
-        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>
-        508-718-7498
-      </a>
+      <a class="phone" href="tel:+16175045321"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>617-504-5321</a>
+      <a class="phone" href="tel:+15087187498"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>508-718-7498</a>
     </div>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero" id="top">
   <div class="inner">
     <span class="kicker">Event Rental Decor</span>
     <h1>Elegant Decor for <span>Unforgettable</span> Events</h1>
-    <p>Premium rental props and accessories for the creative designer — arches, candelabras, centerpieces, chairs, charger plates, dance floors and more. Proudly serving all of New England.</p>
+    <p>Premium rental props and accessories for the creative designer — arches, candelabras, centerpieces, chairs, charger plates, furniture and more. Proudly serving all of New England.</p>
     <div class="cta">
       <a class="btn btn-red" href="#catalog">Browse the Catalog</a>
       <a class="btn btn-ghost" href="#contact">Request a Quote</a>
@@ -274,7 +171,6 @@
   </div>
 </section>
 
-<!-- OUR STORY -->
 <section class="story" id="story">
   <div class="wrap">
     <div class="txt">
@@ -290,8 +186,8 @@
   </div>
 </section>
 
-<!-- CATALOG (categories) -->
 <main>
+  <!-- HOME: top-level categories & groups -->
   <section class="section" id="catalog">
     <div class="section-head">
       <span class="tag">Our Collection</span>
@@ -300,27 +196,26 @@
     </div>
     <div class="toolbar">
       <svg viewBox="0 0 24 24"><path d="M10 4a6 6 0 104.47 10.03l4.75 4.75 1.41-1.41-4.75-4.75A6 6 0 0010 4zm0 2a4 4 0 110 8 4 4 0 010-8z"/></svg>
-      <input id="search" type="search" placeholder="Search categories… (e.g. chairs, candelabras)" oninput="filterCats(this.value)" autocomplete="off">
+      <input id="search" type="search" placeholder="Search… (e.g. gold candelabra, chiavari chair)" oninput="filterHome(this.value)" autocomplete="off">
     </div>
     <div class="grid" id="catGrid"></div>
   </section>
 
-  <!-- GALLERY (single category) -->
+  <!-- GROUP: subcategories of a group -->
+  <section class="section hidden" id="groupView">
+    <div class="back" onclick="goHome()"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15 18l-6-6 6-6v12z"/></svg>Back to all categories</div>
+    <div class="section-head"><span class="tag">Collection</span><h2 id="grpTitle"></h2><p id="grpCount"></p></div>
+    <div class="grid" id="grpGrid"></div>
+  </section>
+
+  <!-- GALLERY: items in a category -->
   <section class="section hidden" id="gallery">
-    <div class="back" onclick="showHome()">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15 18l-6-6 6-6v12z"/></svg>
-      Back to all categories
-    </div>
-    <div class="section-head">
-      <span class="tag">Gallery</span>
-      <h2 id="galTitle"></h2>
-      <p id="galCount"></p>
-    </div>
+    <div class="back" id="galBack"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15 18l-6-6 6-6v12z"/></svg><span id="galBackText">Back to all categories</span></div>
+    <div class="section-head"><span class="tag">Gallery</span><h2 id="galTitle"></h2><p id="galCount"></p></div>
     <div class="masonry" id="masonry"></div>
   </section>
 </main>
 
-<!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="section">
     <div class="section-head head">
@@ -330,57 +225,26 @@
     </div>
     <div class="layout">
       <div class="cards">
-        <div class="ccard">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg></div>
-          <div><h3>Call / Text</h3><a href="tel:+16175045321">617-504-5321</a><a href="tel:+15087187498">508-718-7498</a></div>
-        </div>
-        <div class="ccard">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg></div>
-          <div><h3>Service Area</h3><p>All New England — MA, CT, VT, RI &amp; NH</p></div>
-        </div>
-        <div class="ccard">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 8V4l8 8-8 8v-4H4V8z"/></svg></div>
-          <div><h3>Rentals For</h3><p>Weddings · Quinceañeras · Corporate &amp; private events</p></div>
-        </div>
+        <div class="ccard"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg></div><div><h3>Call / Text</h3><a href="tel:+16175045321">617-504-5321</a><a href="tel:+15087187498">508-718-7498</a></div></div>
+        <div class="ccard"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg></div><div><h3>Service Area</h3><p>All New England — MA, CT, VT, RI &amp; NH</p></div></div>
+        <div class="ccard"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 8V4l8 8-8 8v-4H4V8z"/></svg></div><div><h3>Rentals For</h3><p>Weddings · Quinceañeras · Corporate &amp; private events</p></div></div>
       </div>
-
       <div class="form-wrap">
         <h3>Request a Quote</h3>
         <p class="sub">Fill out the form and we'll reach out shortly.</p>
         <form id="quoteForm" onsubmit="return submitForm(event)">
           <div class="frow">
-            <div class="field">
-              <label for="name">Name *</label>
-              <input id="name" name="name" type="text" required>
-            </div>
-            <div class="field">
-              <label for="phone">Phone *</label>
-              <input id="phone" name="phone" type="tel" required>
-            </div>
+            <div class="field"><label for="name">Name *</label><input id="name" name="name" type="text" required></div>
+            <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" required></div>
           </div>
           <div class="frow">
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email">
-            </div>
-            <div class="field">
-              <label for="eventDate">Event date</label>
-              <input id="eventDate" name="eventDate" type="date">
-            </div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email"></div>
+            <div class="field"><label for="eventDate">Event date</label><input id="eventDate" name="eventDate" type="date"></div>
           </div>
-          <div class="field">
-            <label for="eventType">Event type</label>
-            <select id="eventType" name="eventType">
-              <option value="">Select…</option>
-              <option>Wedding</option>
-              <option>Quinceañera</option>
-              <option>Corporate event</option>
-              <option>Private party</option>
-              <option>Other</option>
-            </select>
+          <div class="field"><label for="eventType">Event type</label>
+            <select id="eventType" name="eventType"><option value="">Select…</option><option>Wedding</option><option>Quinceañera</option><option>Corporate event</option><option>Private party</option><option>Other</option></select>
           </div>
-          <div class="field">
-            <label for="message">What are you looking for?</label>
+          <div class="field"><label for="message">What are you looking for?</label>
             <textarea id="message" name="message" placeholder="Tell us the items, quantities, or the look you want…"></textarea>
           </div>
           <button class="btn btn-red" type="submit" id="submitBtn">Send Request</button>
@@ -395,125 +259,148 @@
   <p>&copy; <span id="year"></span> <strong>Tommy Wholesale Rental</strong> — Event Decor Rentals · 617-504-5321 · 508-718-7498</p>
 </footer>
 
-<!-- LIGHTBOX -->
 <div class="lb" id="lb">
   <button class="x" onclick="closeLb()">&times;</button>
   <button class="nav prev" onclick="lbStep(-1)">&#8249;</button>
   <img id="lbImg" src="" alt="">
   <button class="nav next" onclick="lbStep(1)">&#8250;</button>
+  <div class="lb-cap" id="lbCap"></div>
   <div class="counter" id="lbCounter"></div>
 </div>
 
 <script>
-/* =========================================================================
-   CONTACT FORM  ->  GOOGLE SHEET
-   Paste the URL of your Google Apps Script Web App below (see README.md).
-   While it stays as "PASTE_YOUR_APPS_SCRIPT_URL_HERE" the form shows a
-   friendly notice instead of sending.
-   ========================================================================= */
+/* Contact form -> Google Sheet (see README.md / google-apps-script.gs) */
 const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxOU-THCFypaCGCfzfczQ-_nfB8-tR3zrc__gLUH5DxiNNgILR66Y90v5iatxLfZyhxRw/exec";
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
 let CATALOG = [];
-let current = null;
+let currentItems = [];   // items shown in the open gallery
 let lbIndex = 0;
 
 const enc = p => p.split('/').map(encodeURIComponent).join('/');
+const esc = s => (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
 async function init(){
   try{
-    const res = await fetch('assets/catalog.json');
-    CATALOG = await res.json();
+    CATALOG = await (await fetch('assets/catalog.json')).json();
   }catch(e){
-    document.getElementById('catGrid').innerHTML =
-      '<p class="noresult">Catalog could not load.</p>';
+    document.getElementById('catGrid').innerHTML = '<p class="noresult">Catalog could not load.</p>';
     return;
   }
-  renderCategories(CATALOG);
+  renderHome(CATALOG);
   handleHash();
 }
 
-function cardHTML(c, i){
+/* ---------- cards ---------- */
+function cardHTML(node, onclick){
+  const badgeCls = node.type === 'group' ? 'badge grp' : 'badge';
+  const badgeTxt = node.type === 'group'
+      ? node.children.length + ' types · ' + node.count + ' photos'
+      : node.count + ' photos';
+  const go = node.type === 'group' ? 'Explore' : 'View';
   return `
-    <div class="card" onclick="openCategory(${i})">
+    <div class="card" onclick="${onclick}">
       <div class="thumb">
-        <span class="badge">${c.images.length} photos</span>
-        <img loading="lazy" src="${enc(c.folder+'/'+c.cover)}" alt="${c.name}">
+        <span class="${badgeCls}">${badgeTxt}</span>
+        <img loading="lazy" src="${enc(node.cover)}" alt="${esc(node.name)}">
       </div>
       <div class="meta">
-        <h3>${c.name}</h3>
-        <span class="go">View
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 6l6 6-6 6V6z"/></svg>
-        </span>
+        <h3>${esc(node.name)}</h3>
+        <span class="go">${go}<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 6l6 6-6 6V6z"/></svg></span>
       </div>
     </div>`;
 }
 
-function renderCategories(list){
+function renderHome(list){
   const grid = document.getElementById('catGrid');
-  if(!list.length){
-    grid.innerHTML = '<p class="noresult">No categories match your search.</p>';
-    return;
-  }
-  grid.innerHTML = list.map(c => cardHTML(c, CATALOG.indexOf(c))).join('');
+  if(!list.length){ grid.innerHTML = '<p class="noresult">No categories match your search.</p>'; return; }
+  grid.innerHTML = list.map(node => {
+    const i = CATALOG.indexOf(node);
+    const target = node.type === 'group' ? 'g'+i : 'c'+i;
+    return cardHTML(node, `location.hash='${target}'`);
+  }).join('');
 }
 
-function filterCats(q){
+/* ---------- search ---------- */
+function matchNode(node, q){
+  if(node.name.toLowerCase().includes(q)) return true;
+  if(node.type === 'group') return node.children.some(c => matchNode(c, q));
+  return (node.items||[]).some(it => (it.title||'').toLowerCase().includes(q));
+}
+function filterHome(q){
   q = q.trim().toLowerCase();
-  const list = q ? CATALOG.filter(c => c.name.toLowerCase().includes(q)) : CATALOG;
-  renderCategories(list);
+  renderHome(q ? CATALOG.filter(n => matchNode(n, q)) : CATALOG);
 }
 
-function openCategory(i){ current = CATALOG[i]; location.hash = 'cat-'+i; }
+/* ---------- views ---------- */
+function setView(view){
+  // view: 'home' | 'group' | 'gallery'
+  document.getElementById('top').classList.toggle('hidden', view!=='home');
+  document.getElementById('story').classList.toggle('hidden', view!=='home');
+  document.getElementById('catalog').classList.toggle('hidden', view!=='home');
+  document.getElementById('groupView').classList.toggle('hidden', view!=='group');
+  document.getElementById('gallery').classList.toggle('hidden', view!=='gallery');
+}
 
-function renderGallery(){
-  // Hide the home-only sections (hero + Our Story) while viewing a gallery
-  document.getElementById('top').classList.add('hidden');
-  document.getElementById('story').classList.add('hidden');
-  document.getElementById('catalog').classList.add('hidden');
-  const gal = document.getElementById('gallery');
-  gal.classList.remove('hidden');
-  document.getElementById('galTitle').textContent = current.name;
-  document.getElementById('galCount').textContent = current.images.length + ' items available for rent';
-  document.getElementById('masonry').innerHTML = current.images.map((img,idx)=>`
+function showHome(){ setView('home'); }
+
+function showGroup(i){
+  const g = CATALOG[i];
+  if(!g || g.type!=='group'){ showHome(); return; }
+  setView('group');
+  document.getElementById('grpTitle').textContent = g.name;
+  document.getElementById('grpCount').textContent = g.children.length + ' collections · ' + g.count + ' items';
+  document.getElementById('grpGrid').innerHTML = g.children.map((c,j) =>
+    cardHTML(c, `location.hash='c${i}.${j}'`)).join('');
+  window.scrollTo({top:0});
+}
+
+function showGallery(cat, backHash, backText){
+  setView('gallery');
+  currentItems = cat.items || [];
+  document.getElementById('galTitle').textContent = cat.name;
+  document.getElementById('galCount').textContent = currentItems.length + ' items available for rent';
+  document.getElementById('galBackText').textContent = backText;
+  document.getElementById('galBack').onclick = () => { location.hash = backHash; };
+  document.getElementById('masonry').innerHTML = currentItems.map((it,idx)=>`
     <div class="item" onclick="openLb(${idx})">
-      <img loading="lazy" src="${enc(current.folder+'/'+img)}" alt="${current.name} ${idx+1}">
+      <img loading="lazy" src="${enc(it.src)}" alt="${esc(it.title||cat.name)}">
+      ${it.title ? `<div class="cap">${esc(it.title)}</div>` : ''}
     </div>`).join('');
   window.scrollTo({top:0});
 }
 
-function showHome(){
-  if(location.hash) location.hash = '';
-  else handleHash();
-}
+function goHome(){ if(location.hash) location.hash=''; else handleHash(); }
 
 function handleHash(){
   const h = location.hash.replace('#','');
-  if(h.startsWith('cat-')){
-    const i = parseInt(h.slice(4),10);
-    if(!isNaN(i) && CATALOG[i]){ current = CATALOG[i]; renderGallery(); return; }
+  if(!h || h==='catalog' || h==='top' || h==='contact' || h==='story'){ showHome(); return; }
+  if(h[0]==='g'){ showGroup(parseInt(h.slice(1),10)); return; }
+  if(h[0]==='c'){
+    const rest = h.slice(1);
+    if(rest.includes('.')){
+      const [gi,ci] = rest.split('.').map(Number);
+      const g = CATALOG[gi];
+      if(g && g.children && g.children[ci]){ showGallery(g.children[ci], 'g'+gi, 'Back to '+g.name); return; }
+    } else {
+      const i = parseInt(rest,10);
+      if(!isNaN(i) && CATALOG[i] && CATALOG[i].type==='category'){ showGallery(CATALOG[i], '', 'Back to all categories'); return; }
+    }
   }
-  document.getElementById('gallery').classList.add('hidden');
-  document.getElementById('catalog').classList.remove('hidden');
-  document.getElementById('top').classList.remove('hidden');
-  document.getElementById('story').classList.remove('hidden');
-  current = null;
+  showHome();
 }
 window.addEventListener('hashchange', handleHash);
 
-/* Lightbox */
-function openLb(idx){
-  lbIndex = idx;
-  document.getElementById('lb').classList.add('open');
-  document.body.style.overflow='hidden';
-  updateLb();
-}
+/* ---------- lightbox ---------- */
+function openLb(idx){ lbIndex=idx; document.getElementById('lb').classList.add('open'); document.body.style.overflow='hidden'; updateLb(); }
 function updateLb(){
-  document.getElementById('lbImg').src = enc(current.folder+'/'+current.images[lbIndex]);
-  document.getElementById('lbCounter').textContent = (lbIndex+1)+' / '+current.images.length;
+  const it = currentItems[lbIndex];
+  document.getElementById('lbImg').src = enc(it.src);
+  document.getElementById('lbCap').textContent = it.title || '';
+  document.getElementById('lbCounter').textContent = (lbIndex+1)+' / '+currentItems.length;
 }
-function lbStep(d){ lbIndex=(lbIndex+d+current.images.length)%current.images.length; updateLb(); }
+function lbStep(d){ lbIndex=(lbIndex+d+currentItems.length)%currentItems.length; updateLb(); }
 function closeLb(){ document.getElementById('lb').classList.remove('open'); document.body.style.overflow=''; }
 document.getElementById('lb').addEventListener('click', e=>{ if(e.target.id==='lb') closeLb(); });
 document.addEventListener('keydown', e=>{
@@ -523,40 +410,19 @@ document.addEventListener('keydown', e=>{
   if(e.key==='ArrowRight') lbStep(1);
 });
 
-/* Contact form -> Google Sheet */
+/* ---------- contact form ---------- */
 function submitForm(e){
   e.preventDefault();
-  const form = document.getElementById('quoteForm');
-  const btn = document.getElementById('submitBtn');
-  const msg = document.getElementById('formMsg');
-
-  if(FORM_ENDPOINT.indexOf('PASTE_YOUR') === 0){
-    msg.className = 'form-msg err';
-    msg.textContent = 'The form is not connected yet. Please call us at 617-504-5321.';
-    return false;
+  const form=document.getElementById('quoteForm'), btn=document.getElementById('submitBtn'), msg=document.getElementById('formMsg');
+  if(FORM_ENDPOINT.indexOf('PASTE_YOUR')===0){
+    msg.className='form-msg err'; msg.textContent='The form is not connected yet. Please call us at 617-504-5321.'; return false;
   }
-
-  btn.disabled = true;
-  const original = btn.textContent;
-  btn.textContent = 'Sending…';
-  msg.className = 'form-msg';
-  msg.style.display = 'none';
-
-  // Apps Script web apps don't return CORS headers, so we use no-cors:
-  // the request still reaches the script and the row is saved. The response
-  // is opaque (we can't read it), so completion is treated as success.
-  fetch(FORM_ENDPOINT, { method:'POST', mode:'no-cors', body: new FormData(form) })
-    .then(() => {
-      msg.className = 'form-msg ok';
-      msg.textContent = 'Thank you! We received your request and will be in touch soon.';
-      form.reset();
-    })
-    .catch(() => {
-      msg.className = 'form-msg err';
-      msg.textContent = 'Sorry, something went wrong. Please call us at 617-504-5321.';
-    })
-    .finally(() => { btn.disabled = false; btn.textContent = original; });
-
+  btn.disabled=true; const original=btn.textContent; btn.textContent='Sending…';
+  msg.className='form-msg'; msg.style.display='none';
+  fetch(FORM_ENDPOINT,{method:'POST',mode:'no-cors',body:new FormData(form)})
+    .then(()=>{ msg.className='form-msg ok'; msg.textContent='Thank you! We received your request and will be in touch soon.'; form.reset(); })
+    .catch(()=>{ msg.className='form-msg err'; msg.textContent='Sorry, something went wrong. Please call us at 617-504-5321.'; })
+    .finally(()=>{ btn.disabled=false; btn.textContent=original; });
   return false;
 }
 
