@@ -27,15 +27,23 @@ Solo se hace **una vez**:
 
 Las fotos viven en carpetas por categoría (por ejemplo `Chairs/`, `Candelabras/`, etc.).
 
-1. Agrega o borra imágenes (`.png`, `.jpg`) dentro de la carpeta de la categoría.
-2. Vuelve a generar el catálogo ejecutando:
+1. Agrega o borra imágenes dentro de la carpeta de la categoría. **El nombre
+   del archivo es el nombre que se mostrará** en la página (ej.
+   `Gold 5 arm candelabra.png`).
+2. Vuelve a generar el catálogo y las miniaturas ejecutando:
 
    ```bash
+   pip install Pillow      # solo la primera vez
    python3 build_catalog.py
    ```
 
-   Esto actualiza `assets/catalog.json`, que es lo que la página lee para mostrar todo.
+   Esto actualiza `assets/catalog.json` y crea miniaturas WebP livianas en
+   `thumbs/` (para que la página cargue rápido). La foto original se usa solo
+   en el visor a pantalla completa.
 3. Sube los cambios (commit + push a `main`). El sitio se actualiza automáticamente.
+
+> **Velocidad:** la galería usa las miniaturas de `thumbs/` (≈10× más livianas
+> que el PNG original), por eso carga rápido aunque haya muchas fotos.
 
 ## 📨 Formulario de contacto (Google Sheet)
 
@@ -55,10 +63,12 @@ mediante un Google Apps Script. Para activarlo:
 
 > Mientras no se configure, el formulario muestra un aviso y pide llamar por teléfono.
 
-## 🖼️ Nota sobre la carpeta `Other`
+## 🖼️ Carpetas especiales (no son categorías)
 
-La carpeta `Other/` **no es una categoría**: contiene el logo y las imágenes de
-portada que se muestran en la sección "Our Story". Por eso el script la ignora.
+- **`Other/`** — logo e imágenes de portada de la sección "Our Story".
+- **`Team/`** — fotos del equipo que se muestran en la sección "Meet the Team".
+
+El script las ignora para el catálogo, pero sí les genera miniatura.
 
 ## 📂 Estructura
 

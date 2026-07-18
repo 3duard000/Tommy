@@ -1,25 +1,35 @@
 #!/usr/bin/env python3
-"""Regenera assets/catalog.json a partir de las carpetas de categorias.
+"""Regenera assets/catalog.json y las miniaturas WebP.
 
-Uso:  python3 build_catalog.py
+Uso:  python3 build_catalog.py     (requiere Pillow: pip install Pillow)
 
-Estructura soportada (2 niveles):
-  - Carpeta con imagenes directas           -> categoria (se ve como galeria)
-  - Carpeta con subcarpetas que tienen fotos -> grupo (muestra subcategorias)
+Qué hace:
+  1. Recorre las carpetas de categorias (soporta 2 niveles: grupos con
+     subcategorias, y categorias planas).
+  2. Toma el NOMBRE de cada pieza del nombre del archivo y lo limpia.
+  3. Genera una MINIATURA WebP liviana de cada foto en  thumbs/…  para que
+     la pagina cargue rapido. La foto original se usa solo en el visor grande.
+  4. Escribe assets/catalog.json (lo que lee la pagina).
 
-El nombre de cada pieza se toma del NOMBRE DEL ARCHIVO y se limpia para que
-se vea bien en la pagina (se quitan guiones bajos, sufijos (1), etc.).
-Para agregar/quitar fotos: edita las carpetas y vuelve a correr este script.
+Para agregar fotos: ponlas en la carpeta de su categoria y vuelve a correr
+este script.
 """
 import os
 import re
 import json
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
-SKIP = {'.git', '.github', '.claude', 'assets', 'Other'}
-VALID = ('.png', '.jpg', '.jpeg', '.webp')
+try:
+    from PIL import Image
+    HAVE_PIL = True
+except ImportError:
+    HAVE_PIL = False
 
-# Nombres bonitos para mostrar (ruta de la carpeta -> nombre visible)
+ROOT = os.path.dirname(os.path.abspath(__file__))
+SKIP = {'.git', '.github', '.claude', 'assets', 'thumbs', 'Other', 'Team'}
+VALID = ('.png', '.jpg', '.jpeg', '.webp')
+THUMB_MAXW = 700       # ancho maximo de la miniatura (px)
+THUMB_QUALITY = 78     # calidad WebP
+
 DISPLAY = {
     'Accesories': 'Accessories',
     'Accesories/Charder C': 'Charger Plates',
@@ -32,48 +42,70 @@ DISPLAY = {
     'Centerpieces': 'Centerpieces',
     'Centerpieces/Centerpieces Bowls': 'Centerpiece Bowls',
     'Centerpieces/Certepiece Pedestals': 'Centerpiece Pedestals',
+    'Dance floors': 'Dance Floors',
     'Lamps and Lighting': 'Lamps & Lighting',
     'Pedestals and columns': 'Pedestals & Columns',
 }
 
 
 def clean_title(filename):
-    """Convierte un nombre de archivo en un titulo presentable."""
-    name = filename.rsplit('.', 1)[0]                 # quita extension
-    name = re.sub(r'\s*\(\d+\)\s*$', '', name)        # quita sufijo duplicado (1)
-    # acentos/apostrofes usados como medidas: ´´ '' -> "  (pulgadas) ; ´ -> ' (pies)
+    name = filename.rsplit('.', 1)[0]
+    name = re.sub(r'\s*\(\d+\)\s*$', '', name)
     name = name.replace('´´', '"').replace('’’', '"').replace("''", '"')
     name = name.replace('´', "'").replace('’', "'")
-    # "10 1_2_" -> 10 1/2"   (fraccion con numero entero)
     name = re.sub(r'(\d+)\s+(\d+)_(\d+)_', r'\1 \2/\3"', name)
-    # "1_2_" -> 1/2"
     name = re.sub(r'(\d+)_(\d+)_', r'\1/\2"', name)
-    # "24_" -> 24"  (pulgadas)
     name = re.sub(r'(\d)_', r'\1"', name)
-    # guiones bajos restantes -> espacio
     name = name.replace('_', ' ')
-    # espacio despues de punto pegado a una letra: "white.Available" -> "white. Available"
     name = re.sub(r'\.([A-Za-z])', r'. \1', name)
-    name = re.sub(r'\s+', ' ', name).strip()          # colapsa espacios
-    name = name.strip(' .,-')                          # limpia bordes
+    name = re.sub(r'\s+', ' ', name).strip()
+    name = name.strip(' .,-')
     if name:
         name = name[0].upper() + name[1:]
     return name
+
+
+def make_thumb(rel):
+    """Genera thumbs/<rel>.webp y devuelve su ruta relativa (o el original)."""
+    thumb_rel = 'thumbs/' + os.path.splitext(rel)[0] + '.webp'
+    if not HAVE_PIL:
+        return rel
+    src = os.path.join(ROOT, rel)
+    dst = os.path.join(ROOT, thumb_rel)
+    os.makedirs(os.path.dirname(dst), exist_ok=True)
+    if os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src):
+        return thumb_rel
+    try:
+        im = Image.open(src)
+        if im.mode in ('RGBA', 'LA', 'P'):
+            im = im.convert('RGBA')
+            bg = Image.new('RGBA', im.size, (255, 255, 255, 255))
+            bg.alpha_composite(im)
+            im = bg.convert('RGB')
+        else:
+            im = im.convert('RGB')
+        w, h = im.size
+        if w > THUMB_MAXW:
+            im = im.resize((THUMB_MAXW, round(h * THUMB_MAXW / w)), Image.LANCZOS)
+        im.save(dst, 'WEBP', quality=THUMB_QUALITY, method=6)
+        return thumb_rel
+    except Exception as e:
+        print('  ! no se pudo miniaturizar', rel, '->', e)
+        return rel
 
 
 def images_in(rel):
     d = os.path.join(ROOT, rel)
     files = [f for f in os.listdir(d)
              if f.lower().endswith(VALID) and f.lower() != 'logo.jpg']
-    # ordena por titulo limpio, alfabetico
     files.sort(key=lambda f: clean_title(f).lower())
     items = []
     for f in files:
+        src = rel + '/' + f
         title = clean_title(f)
-        # nombres tipo "ChatGPT Image ..." no son nombres reales -> sin titulo
         if f.lower().startswith('chatgpt image'):
             title = ''
-        items.append({'src': (rel + '/' + f), 'title': title})
+        items.append({'src': src, 'thumb': make_thumb(src), 'title': title})
     return items
 
 
@@ -84,13 +116,15 @@ def subdirs(rel):
 
 
 def name_for(rel):
-    if rel in DISPLAY:
-        return DISPLAY[rel]
-    return rel.split('/')[-1]
+    return DISPLAY.get(rel, rel.split('/')[-1])
 
 
 def main():
     os.chdir(ROOT)
+    if not HAVE_PIL:
+        print('AVISO: Pillow no esta instalado; no se generaran miniaturas.')
+        print('       Instala con:  pip install Pillow')
+
     tops = sorted([x for x in os.listdir('.')
                    if os.path.isdir(x) and x not in SKIP and not x.startswith('.')])
 
@@ -98,43 +132,29 @@ def main():
     for top in tops:
         direct = images_in(top)
         if direct:
-            # categoria hoja
-            tree.append({
-                'type': 'category',
-                'name': name_for(top),
-                'folder': top,
-                'cover': direct[0]['src'],
-                'count': len(direct),
-                'items': direct,
-            })
+            tree.append({'type': 'category', 'name': name_for(top), 'folder': top,
+                         'cover': direct[0]['thumb'], 'count': len(direct), 'items': direct})
             continue
-        # grupo con subcategorias
         children = []
         for sub in subdirs(top):
             rel = top + '/' + sub
             imgs = images_in(rel)
             if not imgs:
                 continue
-            children.append({
-                'type': 'category',
-                'name': name_for(rel),
-                'folder': rel,
-                'cover': imgs[0]['src'],
-                'count': len(imgs),
-                'items': imgs,
-            })
+            children.append({'type': 'category', 'name': name_for(rel), 'folder': rel,
+                             'cover': imgs[0]['thumb'], 'count': len(imgs), 'items': imgs})
         if children:
-            tree.append({
-                'type': 'group',
-                'name': name_for(top),
-                'folder': top,
-                'cover': children[0]['cover'],
-                'count': sum(c['count'] for c in children),
-                'children': children,
-            })
+            tree.append({'type': 'group', 'name': name_for(top), 'folder': top,
+                         'cover': children[0]['cover'],
+                         'count': sum(c['count'] for c in children), 'children': children})
 
-    # ordena el nivel superior por nombre visible
     tree.sort(key=lambda n: n['name'].lower())
+
+    # miniaturas para las imagenes del home (Our Story + Team)
+    for extra in ['Other/image1.jpg', 'Other/image2.jpg', 'Other/image 3.jpg',
+                  'Team/team-1.jpeg', 'Team/team-2.jpeg']:
+        if os.path.exists(os.path.join(ROOT, extra)):
+            make_thumb(extra)
 
     os.makedirs('assets', exist_ok=True)
     with open('assets/catalog.json', 'w', encoding='utf-8') as fh:

@@ -125,6 +125,11 @@
   .form-msg.ok{display:block;background:#e8f6ec;color:#1c7a3a;border:1px solid #b6e2c2}
   .form-msg.err{display:block;background:#fdecec;color:#b3261e;border:1px solid #f3c3c0}
 
+  .team{background:var(--white);border-top:1px solid var(--line)}
+  .team-photos{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:stretch}
+  .team-photos figure{flex:1 1 340px;max-width:520px}
+  .team-photos img{width:100%;height:100%;max-height:480px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow)}
+
   footer{background:#0c0c0c;color:#8a8a8a;text-align:center;padding:26px 20px;font-size:.88rem}
   footer strong{color:#fff}
 
@@ -179,9 +184,9 @@
       <p>Tommy Wholesale Rental is a leading wholesale rental company. We specialize in providing a wide range of rental props and accessories for the creative designer, including candlesticks, candelabras, fountains, ceremony chuppahs and arches, chairs, dance floors, and much more. Our items can be used standalone or further enhanced with flowers, fabric, greenery, and candles to create stunning event displays. We proudly serve all New England states, including Massachusetts, Connecticut, Vermont, Rhode Island, and New Hampshire.</p>
     </div>
     <div class="pics">
-      <img loading="lazy" src="Other/image1.jpg" alt="Event decor setup">
-      <img loading="lazy" src="Other/image2.jpg" alt="Event decor setup">
-      <img loading="lazy" src="Other/image%203.jpg" alt="Event decor setup">
+      <img loading="lazy" decoding="async" src="thumbs/Other/image1.webp" alt="Event decor setup">
+      <img loading="lazy" decoding="async" src="thumbs/Other/image2.webp" alt="Event decor setup">
+      <img loading="lazy" decoding="async" src="thumbs/Other/image%203.webp" alt="Event decor setup">
     </div>
   </div>
 </section>
@@ -215,6 +220,21 @@
     <div class="masonry" id="masonry"></div>
   </section>
 </main>
+
+<!-- OUR TEAM -->
+<section class="team" id="team">
+  <div class="section">
+    <div class="section-head">
+      <span class="tag">Our People</span>
+      <h2>Meet the Team</h2>
+      <p>The family and crew behind every event we help bring to life.</p>
+    </div>
+    <div class="team-photos">
+      <figure><img loading="lazy" decoding="async" src="thumbs/Team/team-1.webp" alt="Tommy Wholesale Rental team"></figure>
+      <figure><img loading="lazy" decoding="async" src="thumbs/Team/team-2.webp" alt="Tommy Wholesale Rental team"></figure>
+    </div>
+  </div>
+</section>
 
 <section class="contact" id="contact">
   <div class="section">
@@ -303,7 +323,7 @@ function cardHTML(node, onclick){
     <div class="card" onclick="${onclick}">
       <div class="thumb">
         <span class="${badgeCls}">${badgeTxt}</span>
-        <img loading="lazy" src="${enc(node.cover)}" alt="${esc(node.name)}">
+        <img loading="lazy" decoding="async" src="${enc(node.cover)}" alt="${esc(node.name)}">
       </div>
       <div class="meta">
         <h3>${esc(node.name)}</h3>
@@ -338,6 +358,7 @@ function setView(view){
   // view: 'home' | 'group' | 'gallery'
   document.getElementById('top').classList.toggle('hidden', view!=='home');
   document.getElementById('story').classList.toggle('hidden', view!=='home');
+  document.getElementById('team').classList.toggle('hidden', view!=='home');
   document.getElementById('catalog').classList.toggle('hidden', view!=='home');
   document.getElementById('groupView').classList.toggle('hidden', view!=='group');
   document.getElementById('gallery').classList.toggle('hidden', view!=='gallery');
@@ -365,7 +386,7 @@ function showGallery(cat, backHash, backText){
   document.getElementById('galBack').onclick = () => { location.hash = backHash; };
   document.getElementById('masonry').innerHTML = currentItems.map((it,idx)=>`
     <div class="item" onclick="openLb(${idx})">
-      <img loading="lazy" src="${enc(it.src)}" alt="${esc(it.title||cat.name)}">
+      <img loading="lazy" decoding="async" src="${enc(it.thumb||it.src)}" onerror="this.onerror=null;this.src='${enc(it.src)}'" alt="${esc(it.title||cat.name)}">
       ${it.title ? `<div class="cap">${esc(it.title)}</div>` : ''}
     </div>`).join('');
   window.scrollTo({top:0});
