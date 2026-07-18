@@ -21,8 +21,8 @@ except ImportError:
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SKIP = {'.git', '.github', '.claude', 'assets', 'thumbs', 'Other', 'Team'}
 VALID = ('.png', '.jpg', '.jpeg', '.webp')
-THUMB_MAXW = 700
-THUMB_QUALITY = 78
+THUMB_MAXW = 500
+THUMB_QUALITY = 75
 
 DISPLAY = {
     'Accesories': 'Accessories',
@@ -88,17 +88,17 @@ def titlecase(s):
     return (r[0].upper() + r[1:]) if r else r
 
 
-DIM = r'\d[\d\s./]*"?(?:\s*[HWD])?'
-LEAD_DIM = re.compile(r'^\s*(' + DIM + r'(?:\s*[x×]\s*' + DIM + r')*)\s+(?=\S)')
 NOTE_SPLIT = re.compile(
     r'\b(available in|available as|available with|also available|'
     r'this item|this table|it has|vase is|the large urn|the smaller urn|complete)\b',
     re.I)
 DIMS_ONLY = re.compile(r'^[\d\s./"HWDx×.-]+$')
+# medida en pulgadas: siempre lleva "  (con fraccion, H/W/D y cadenas con x)
+MEAS = re.compile(r'\d[\d\s./]*"(?:\s*[HWD])?(?:\s*[x×]\s*\d[\d\s./]*"?(?:\s*[HWD])?)*')
 
 
 def parse_name(filename):
-    """Devuelve (titulo, medidas, nota) a partir del nombre de archivo."""
+    """Devuelve (titulo, medidas, nota). Las medidas SIEMPRE salen del titulo."""
     base = _units(filename)
     note = ''
 
@@ -112,21 +112,24 @@ def parse_name(filename):
         base = base[:m.start()].strip(' .,')
         note = (extra + ('. ' + note if note else '')).strip()
 
-    # quita conjunciones colgadas al final del titulo ("... tall, and")
-    base = re.sub(r'[\s,]+(?:and|or|&)$', '', base, flags=re.I).strip(' ,.-')
-
+    # extrae TODAS las medidas en pulgadas del titulo -> linea de medidas
     dims = ''
-    m = LEAD_DIM.match(base)
-    if m and '"' in m.group(1):
-        dims = m.group(1).strip()
-        base = base[m.end():].strip()
+    found = MEAS.findall(base)
+    if found:
+        base = MEAS.sub(' ', base)
+        parts = []
+        for d in found:
+            d = re.sub(r'\s*[x×]\s*', ' × ', d)
+            d = re.sub(r'\s+', ' ', d).strip(' .,')
+            if d:
+                parts.append(d)
+        dims = ' / '.join(parts)
 
-    # medidas al final del titulo ("Veranda Arbor, 48\"Wx12\"Dx88\"H")
-    if not dims:
-        m = re.search(r'[,\s]+(' + DIM + r'(?:\s*[x×]\s*' + DIM + r')*)\s*$', base)
-        if m and '"' in m.group(1):
-            dims = m.group(1).strip()
-            base = base[:m.start()].strip(' ,.-')
+    # limpia conectores/puntuacion sueltos que hayan quedado
+    base = re.sub(r'\s+', ' ', base)
+    base = re.sub(r'^\s*(?:and|with|&|x|,)\s+', '', base, flags=re.I)
+    base = re.sub(r'\s+(?:and|with|&|x)\s*$', '', base, flags=re.I)
+    base = re.sub(r'\s+,', ',', base).strip(' ,.-')
 
     if not dims and note and DIMS_ONLY.match(note):
         dims, note = note.strip(' .'), ''
@@ -135,11 +138,10 @@ def parse_name(filename):
         dims = re.sub(r'\s*[x×]\s*', ' × ', dims)
         dims = re.sub(r'\s+', ' ', dims).strip(' .,')
 
-    title = titlecase(base.strip(' .,-'))
-    # nota: capitaliza primera letra, quita puntuacion sobrante
     note = re.sub(r'\s+', ' ', note).strip(' .,')
     if note:
         note = note[0].upper() + note[1:]
+    title = titlecase(base)
     return title, dims, note
 
 
