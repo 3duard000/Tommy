@@ -211,8 +211,8 @@
       {
         "src": "Arches/Chuppa with 7 foot iron columns and 4_x8_ top.png",
         "thumb": "thumbs/Arches/Chuppa with 7 foot iron columns and 4_x8_ top.webp",
-        "title": "Chuppa with 7 Foot Iron Columns and 4\"x8\" Top",
-        "dims": "",
+        "title": "Chuppa with 7 Foot Iron Columns and Top",
+        "dims": "4\" × 8\"",
         "note": ""
       },
       {
@@ -225,8 +225,8 @@
       {
         "src": "Arches/8_ Greek 4 column chuppa with 4_x8_ top. Available in Ivory and Gray.png",
         "thumb": "thumbs/Arches/8_ Greek 4 column chuppa with 4_x8_ top. Available in Ivory and Gray.webp",
-        "title": "Greek 4 Column Chuppa with 4\"x8\" Top",
-        "dims": "8\"",
+        "title": "Greek 4 Column Chuppa with Top",
+        "dims": "8\" / 4\" × 8\"",
         "note": "Available in Ivory and Gray"
       },
       {
@@ -1341,25 +1341,25 @@
         "note": "This item can be custom painted any color"
       },
       {
+        "src": "Displays/Shiny White Floor Vase. 76\".png",
+        "thumb": "thumbs/Displays/Shiny White Floor Vase. 76\".webp",
+        "title": "Shiny White Floor Vase",
+        "dims": "76\"",
+        "note": ""
+      },
+      {
+        "src": "Displays/Shiny White Floor Vase. 40\".png",
+        "thumb": "thumbs/Displays/Shiny White Floor Vase. 40\".webp",
+        "title": "Shiny White Floor Vase",
+        "dims": "40\"",
+        "note": ""
+      },
+      {
         "src": "Displays/Shiny white urns. The large urn stands 60_ tall with a 33_ opening and a 17_ base. The smaller urn stands 35_ tall with a 18_ opening and a 10_ base.png",
         "thumb": "thumbs/Displays/Shiny white urns. The large urn stands 60_ tall with a 33_ opening and a 17_ base. The smaller urn stands 35_ tall with a 18_ opening and a 10_ base.webp",
         "title": "Shiny White Urns",
         "dims": "",
         "note": "The large urn stands 60\" tall with a 33\" opening and a 17\" base. The smaller urn stands 35\" tall with a 18\" opening and a 10\" base"
-      },
-      {
-        "src": "Displays/Shiny white vase stands 40_ all with a 9_ base, and a 4 3_4_ opening.png",
-        "thumb": "thumbs/Displays/Shiny white vase stands 40_ all with a 9_ base, and a 4 3_4_ opening.webp",
-        "title": "Shiny White Vase Stands 40\" All with a 9\" Base, and a 4 3/4\" Opening",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Displays/Shiny white vase stands 76_ tall with a 17_ opening and a 10_ base.png",
-        "thumb": "thumbs/Displays/Shiny white vase stands 76_ tall with a 17_ opening and a 10_ base.webp",
-        "title": "Shiny White Vase Stands 76\" Tall with a 17\" Opening and a 10\" Base",
-        "dims": "",
-        "note": ""
       }
     ]
   },
@@ -1564,9 +1564,9 @@
         "note": ""
       },
       {
-        "src": "Pedestals and columns/4_ stone grey plain fluted pe4_ stone grey greek pedestal. Also available in Ivory.png",
-        "thumb": "thumbs/Pedestals and columns/4_ stone grey plain fluted pe4_ stone grey greek pedestal. Also available in Ivory.webp",
-        "title": "Stone Grey Plain Fluted pe4\" Stone Grey Greek Pedestal",
+        "src": "Pedestals and columns/4_ Stone Grey Greek Pedestal. Also available in Ivory.png",
+        "thumb": "thumbs/Pedestals and columns/4_ Stone Grey Greek Pedestal. Also available in Ivory.webp",
+        "title": "Stone Grey Greek Pedestal",
         "dims": "4\"",
         "note": "Also available in Ivory"
       },
@@ -1597,16 +1597,9 @@
     "type": "category",
     "name": "Urns",
     "folder": "Urns",
-    "cover": "thumbs/Urns/16_and 19_ rust woven urn.webp",
+    "cover": "thumbs/Urns/Ivory basket-weave planter.webp",
     "count": 13,
     "items": [
-      {
-        "src": "Urns/16_and 19_ rust woven urn.png",
-        "thumb": "thumbs/Urns/16_and 19_ rust woven urn.webp",
-        "title": "16\"and 19\" Rust Woven Urn",
-        "dims": "",
-        "note": ""
-      },
       {
         "src": "Urns/Ivory basket-weave planter.png",
         "thumb": "thumbs/Urns/Ivory basket-weave planter.webp",
@@ -1633,6 +1626,13 @@
         "thumb": "thumbs/Urns/21_ ivory urn.webp",
         "title": "Ivory Urn",
         "dims": "21\"",
+        "note": ""
+      },
+      {
+        "src": "Urns/16_and 19_ rust woven urn.png",
+        "thumb": "thumbs/Urns/16_and 19_ rust woven urn.webp",
+        "title": "Rust Woven Urn",
+        "dims": "16\" / 19\"",
         "note": ""
       },
       {
