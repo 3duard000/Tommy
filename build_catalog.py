@@ -49,6 +49,50 @@ COVER_OVERRIDE = {
     'Centerpieces': 'silver footed bowl with handles',
 }
 
+# Descripcion general por categoria / grupo (nombre visible -> texto)
+DESC = {
+    'Accessories': 'The finishing touches — charger plates and beaded lampshades that complete a refined table.',
+    'Charger Plates': 'Enhance your dining experience with our stylish chargers, designed to sit seamlessly beneath dinner plates. Crafted for both beauty and function, they protect your table while adding a sophisticated layer to any setting.',
+    'Shades': 'Create an intimate, romantic ambiance with our elegant table lampshades, perfect for weddings and special events. These charming accents add a soft, warm glow to your decor.',
+    'Arches': 'Frame your perfect moment with our elegant arches and chuppahs. Whether you prefer classic or modern styles, our rentals provide the perfect backdrop for your vows, creating a stunning focal point for your special day.',
+    'Bar': 'Statement bars for any event — from classic white and black designs to rustic and modern LED-lit styles.',
+    'Candelabras': 'Add timeless elegance to your event with our exquisite candelabras. These striking centerpieces bring sophistication and warmth, creating a captivating ambiance with their classic design and soft candlelight.',
+    'Candle Holders': 'Candlelight for every setting — displays, candlesticks, votive holders and votive pegs.',
+    'Candle Displays': 'Showcase your candles with our elegant display rentals, featuring aisle stands, wrought iron, and glass pillar holders. They add height, style, and a warm glow to your decor.',
+    'Candlesticks': 'Elevate your event decor with our classic candlestick rentals — a touch of timeless elegance that creates a warm, inviting atmosphere with their graceful design and soft candlelight.',
+    'Votive Holders': 'Enhance your event decor with our elegant votive holders, designed to cast a warm, ambient glow and add a touch of charm and intimacy to any table setting.',
+    'Votive Pegs': 'Illuminate your event with our stylish votive pegs, perfect for adding a warm, intimate glow to any setting and creating a cozy, inviting atmosphere.',
+    'Centerpieces': 'Bowls and pedestals to build stunning floral centerpieces with height and drama.',
+    'Centerpiece Bowls': 'Complete your table setting with our elegant centerpiece bowls, perfect for florists and decorators to create stunning floral arrangements with timeless sophistication.',
+    'Centerpiece Pedestals': 'Make a bold statement with our versatile centerpiece pedestals. Perfect for elevating floral arrangements on tables or creating striking displays on the floor.',
+    'Chairs': 'Discover our range of stylish chair rentals. From elegant ballroom and classic Chiavari chairs to sleek leatherette and clear acrylic options, we offer seating that combines comfort and sophistication.',
+    'Cushions': 'Soft seat cushions in a range of colors to complete and add comfort to your chairs.',
+    'Dance Floors': 'Available in red, black, and white — all with a high-shine finish. Your dance floor can be made in almost any even size (note: every floor has a 5" edging).',
+    'Displays': 'Create stunning focal points with our large display pieces, perfect for showcasing floral arrangements or candles. They add height and drama, transforming any space.',
+    'Furniture': 'Complete your event with our stylish furniture rentals, including tables and bar furniture. Designed for comfort and elegance for any occasion.',
+    'Lamps & Lighting': 'Brighten your event with our elegant lamps and lighting rentals, creating a warm, inviting atmosphere that enhances the ambiance of any occasion.',
+    'Pedestals & Columns': 'Elevate your event decor with our elegant pedestals and columns. Ideal for floral displays or dramatic focal points, adding height and sophistication to any space.',
+    'Urns': 'Add timeless elegance with our classic urn rentals, perfect for showcasing beautiful floral arrangements indoors or outdoors.',
+}
+
+# Orden por estilo para las sillas (para que no salgan "regadas")
+CHAIR_STYLE = [
+    (('chivari', 'chiavari', 'ballroom', 'pearl essence'), 0),
+    (('cross back',), 1),
+    (('infinity', 'acrylic', 'clear', 'smoked', 'transparent', 'grooved', 'chaclear'), 2),
+    (('leatherette',), 3),
+    (('garden',), 4),
+    (('barstool', 'bar stool', 'bar chair'), 5),
+]
+
+
+def chair_key(title):
+    t = title.lower()
+    for kws, rank in CHAIR_STYLE:
+        if any(k in t for k in kws):
+            return (rank, t)
+    return (9, t)
+
 MINOR = {'a', 'an', 'and', 'the', 'of', 'with', 'in', 'on', 'or', 'to', 'for', 'x'}
 KEEP_UPPER = {'LED', 'U', 'US', 'TV', 'DJ'}
 
@@ -190,29 +234,22 @@ def _whiteness(thumb_rel):
 
 
 def dedup(items):
-    """Fusiona items con el mismo titulo. Usa la imagen con el fondo mas blanco."""
+    """Fusiona SOLO fotos duplicadas exactas (mismo titulo Y misma medida).
+    Distintas medidas = productos distintos -> tarjetas separadas."""
     groups, order = {}, []
     for it in items:
-        t = it['title']
-        if t not in groups:
-            groups[t] = []
-            order.append(t)
-        groups[t].append(it)
+        key = (it['title'], it['dims'])
+        if key not in groups:
+            groups[key] = []
+            order.append(key)
+        groups[key].append(it)
     out = []
-    for t in order:
-        g = groups[t]
+    for key in order:
+        g = groups[key]
         base = dict(max(g, key=lambda it: _whiteness(it['thumb'])))  # el mas blanco
-        dims = []
-        note = ''
         for it in g:
-            for tok in (it['dims'].split(' / ') if it['dims'] else []):
-                tok = tok.strip()
-                if tok and tok not in dims:
-                    dims.append(tok)
-            if not note and it.get('note'):
-                note = it['note']
-        base['dims'] = ' / '.join(sorted(dims, key=_dim_key))
-        base['note'] = note
+            if not base.get('note') and it.get('note'):
+                base['note'] = it['note']
         out.append(base)
     return out
 
@@ -221,7 +258,10 @@ def images_in(rel):
     d = os.path.join(ROOT, rel)
     files = [f for f in os.listdir(d)
              if f.lower().endswith(VALID) and f.lower() != 'logo.jpg']
-    files.sort(key=lambda f: parse_name(f)[0].lower())
+    if rel == 'Chairs':
+        files.sort(key=lambda f: chair_key(parse_name(f)[0]))
+    else:
+        files.sort(key=lambda f: parse_name(f)[0].lower())
     items = []
     for f in files:
         src = rel + '/' + f
@@ -253,7 +293,8 @@ def pick_cover(key, items):
 
 
 def category_node(rel, items):
-    return {'type': 'category', 'name': name_for(rel), 'folder': rel,
+    nm = name_for(rel)
+    return {'type': 'category', 'name': nm, 'folder': rel, 'desc': DESC.get(nm, ''),
             'cover': pick_cover(rel, items), 'count': len(items), 'items': items}
 
 
@@ -289,12 +330,12 @@ def main():
             children = [category_node(top, direct)] + sub_children
             all_items = [it for c in children for it in c['items']]
             tree.append({'type': 'group', 'name': name_for(top), 'folder': top,
-                         'cover': pick_cover(top, all_items),
+                         'desc': DESC.get(name_for(top), ''), 'cover': pick_cover(top, all_items),
                          'count': sum(c['count'] for c in children), 'children': children})
         elif sub_children:
             all_items = [it for c in sub_children for it in c['items']]
             tree.append({'type': 'group', 'name': name_for(top), 'folder': top,
-                         'cover': pick_cover(top, all_items),
+                         'desc': DESC.get(name_for(top), ''), 'cover': pick_cover(top, all_items),
                          'count': sum(c['count'] for c in sub_children), 'children': sub_children})
         elif direct:
             tree.append(category_node(top, direct))

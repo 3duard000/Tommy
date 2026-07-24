@@ -3,6 +3,7 @@
     "type": "group",
     "name": "Accessories",
     "folder": "Accesories",
+    "desc": "The finishing touches — charger plates and beaded lampshades that complete a refined table.",
     "cover": "thumbs/Accesories/Charder C/Clear Glass Silver Rim.webp",
     "count": 21,
     "children": [
@@ -10,6 +11,7 @@
         "type": "category",
         "name": "Charger Plates",
         "folder": "Accesories/Charder C",
+        "desc": "Enhance your dining experience with our stylish chargers, designed to sit seamlessly beneath dinner plates. Crafted for both beauty and function, they protect your table while adding a sophisticated layer to any setting.",
         "cover": "thumbs/Accesories/Charder C/Clear Glass Silver Rim.webp",
         "count": 11,
         "items": [
@@ -96,6 +98,7 @@
         "type": "category",
         "name": "Shades",
         "folder": "Accesories/Shades",
+        "desc": "Create an intimate, romantic ambiance with our elegant table lampshades, perfect for weddings and special events. These charming accents add a soft, warm glow to your decor.",
         "cover": "thumbs/Accesories/Shades/Beaded shade with hanging beads. Available in sand, gold, and silver..webp",
         "count": 10,
         "items": [
@@ -177,6 +180,7 @@
     "type": "category",
     "name": "Arches",
     "folder": "Arches",
+    "desc": "Frame your perfect moment with our elegant arches and chuppahs. Whether you prefer classic or modern styles, our rentals provide the perfect backdrop for your vows, creating a stunning focal point for your special day.",
     "cover": "thumbs/Arches/Butterfly arch. Available in white and natural wrought iron.webp",
     "count": 11,
     "items": [
@@ -212,7 +216,7 @@
         "src": "Arches/8_ Greek 4 column chuppa with 4_x8_ top. Available in Ivory and Gray.png",
         "thumb": "thumbs/Arches/8_ Greek 4 column chuppa with 4_x8_ top. Available in Ivory and Gray.webp",
         "title": "Greek 4 Column Chuppa with Top",
-        "dims": "4\" × 8\" / 8\"",
+        "dims": "8\" / 4\" × 8\"",
         "note": "Available in Ivory and Gray"
       },
       {
@@ -263,6 +267,7 @@
     "type": "category",
     "name": "Bar",
     "folder": "Bar",
+    "desc": "Statement bars for any event — from classic white and black designs to rustic and modern LED-lit styles.",
     "cover": "thumbs/Bar/Black Bar.webp",
     "count": 7,
     "items": [
@@ -321,8 +326,9 @@
     "type": "category",
     "name": "Candelabras",
     "folder": "Candelabras",
+    "desc": "Add timeless elegance to your event with our exquisite candelabras. These striking centerpieces bring sophistication and warmth, creating a captivating ambiance with their classic design and soft candlelight.",
     "cover": "thumbs/Candelabras/10 arm all crystal contemporary candelabra with candle hurricanes.webp",
-    "count": 16,
+    "count": 17,
     "items": [
       {
         "src": "Candelabras/10 arm all crystal contemporary candelabra with candle hurricanes.png",
@@ -416,10 +422,17 @@
         "note": ""
       },
       {
+        "src": "Candelabras/39_ silver 5 arm candelabra.png",
+        "thumb": "thumbs/Candelabras/39_ silver 5 arm candelabra.webp",
+        "title": "Silver 5 Arm Candelabra",
+        "dims": "39\"",
+        "note": ""
+      },
+      {
         "src": "Candelabras/24_ silver 5 arm candelabra.png",
         "thumb": "thumbs/Candelabras/24_ silver 5 arm candelabra.webp",
         "title": "Silver 5 Arm Candelabra",
-        "dims": "24\" / 39\"",
+        "dims": "24\"",
         "note": ""
       },
       {
@@ -442,15 +455,17 @@
     "type": "group",
     "name": "Candle Holders",
     "folder": "Candle Holders",
+    "desc": "Candlelight for every setting — displays, candlesticks, votive holders and votive pegs.",
     "cover": "thumbs/Candle Holders/Candle Display/5´ pedestal candle holder.webp",
-    "count": 28,
+    "count": 33,
     "children": [
       {
         "type": "category",
         "name": "Candle Displays",
         "folder": "Candle Holders/Candle Display",
+        "desc": "Showcase your candles with our elegant display rentals, featuring aisle stands, wrought iron, and glass pillar holders. They add height, style, and a warm glow to your decor.",
         "cover": "thumbs/Candle Holders/Candle Display/5´ pedestal candle holder.webp",
-        "count": 3,
+        "count": 7,
         "items": [
           {
             "src": "Candle Holders/Candle Display/5´ pedestal candle holder.png",
@@ -463,14 +478,42 @@
             "src": "Candle Holders/Candle Display/36_ iron stand with glass vase.png",
             "thumb": "thumbs/Candle Holders/Candle Display/36_ iron stand with glass vase.webp",
             "title": "Iron Stand with Glass Vase",
-            "dims": "36\" / 48\" / 72\" / 84\"",
+            "dims": "36\"",
+            "note": ""
+          },
+          {
+            "src": "Candle Holders/Candle Display/72_ iron stand with glass vase.png",
+            "thumb": "thumbs/Candle Holders/Candle Display/72_ iron stand with glass vase.webp",
+            "title": "Iron Stand with Glass Vase",
+            "dims": "72\"",
+            "note": ""
+          },
+          {
+            "src": "Candle Holders/Candle Display/84_ iron stand with glass vase.png",
+            "thumb": "thumbs/Candle Holders/Candle Display/84_ iron stand with glass vase.webp",
+            "title": "Iron Stand with Glass Vase",
+            "dims": "84\"",
+            "note": ""
+          },
+          {
+            "src": "Candle Holders/Candle Display/48_ iron stand with glass vase.png",
+            "thumb": "thumbs/Candle Holders/Candle Display/48_ iron stand with glass vase.webp",
+            "title": "Iron Stand with Glass Vase",
+            "dims": "48\"",
             "note": ""
           },
           {
             "src": "Candle Holders/Candle Display/46_ rust iron stand with glass vase.png",
             "thumb": "thumbs/Candle Holders/Candle Display/46_ rust iron stand with glass vase.webp",
             "title": "Rust Iron Stand with Glass Vase",
-            "dims": "46\" / 70\"",
+            "dims": "46\"",
+            "note": ""
+          },
+          {
+            "src": "Candle Holders/Candle Display/70_ rust iron stand with glass vase.png",
+            "thumb": "thumbs/Candle Holders/Candle Display/70_ rust iron stand with glass vase.webp",
+            "title": "Rust Iron Stand with Glass Vase",
+            "dims": "70\"",
             "note": ""
           }
         ]
@@ -479,8 +522,9 @@
         "type": "category",
         "name": "Candlesticks",
         "folder": "Candle Holders/Candle Sticks",
+        "desc": "Elevate your event decor with our classic candlestick rentals — a touch of timeless elegance that creates a warm, inviting atmosphere with their graceful design and soft candlelight.",
         "cover": "thumbs/Candle Holders/Candle Sticks/11 1_2_ antique gold candlestick.webp",
-        "count": 6,
+        "count": 7,
         "items": [
           {
             "src": "Candle Holders/Candle Sticks/11 1_2_ antique gold candlestick.png",
@@ -511,10 +555,17 @@
             "note": ""
           },
           {
+            "src": "Candle Holders/Candle Sticks/10_ gold candlestick_.png",
+            "thumb": "thumbs/Candle Holders/Candle Sticks/10_ gold candlestick_.webp",
+            "title": "Gold Candlestick",
+            "dims": "10\"",
+            "note": ""
+          },
+          {
             "src": "Candle Holders/Candle Sticks/12_ gold candlestick.png",
             "thumb": "thumbs/Candle Holders/Candle Sticks/12_ gold candlestick.webp",
             "title": "Gold Candlestick",
-            "dims": "10\" / 12\"",
+            "dims": "12\"",
             "note": ""
           },
           {
@@ -530,6 +581,7 @@
         "type": "category",
         "name": "Votive Holders",
         "folder": "Candle Holders/Votive Holders",
+        "desc": "Enhance your event decor with our elegant votive holders, designed to cast a warm, ambient glow and add a touch of charm and intimacy to any table setting.",
         "cover": "thumbs/Candle Holders/Votive Holders/Crystal flared top votive holder.webp",
         "count": 9,
         "items": [
@@ -602,6 +654,7 @@
         "type": "category",
         "name": "Votive Pegs",
         "folder": "Candle Holders/Votive Pegs",
+        "desc": "Illuminate your event with our stylish votive pegs, perfect for adding a warm, intimate glow to any setting and creating a cozy, inviting atmosphere.",
         "cover": "thumbs/Candle Holders/Votive Pegs/Blue crackle votive party light_.webp",
         "count": 10,
         "items": [
@@ -683,15 +736,17 @@
     "type": "group",
     "name": "Centerpieces",
     "folder": "Centerpieces",
-    "cover": "thumbs/Centerpieces/Centerpieces Bowls/ 10 1_2_ silver footed bowl with handles.webp",
-    "count": 19,
+    "desc": "Bowls and pedestals to build stunning floral centerpieces with height and drama.",
+    "cover": "thumbs/Centerpieces/Centerpieces Bowls/ 8 1_2_ silver footed bowl with handles.webp",
+    "count": 26,
     "children": [
       {
         "type": "category",
         "name": "Centerpiece Bowls",
         "folder": "Centerpieces/Centerpieces Bowls",
+        "desc": "Complete your table setting with our elegant centerpiece bowls, perfect for florists and decorators to create stunning floral arrangements with timeless sophistication.",
         "cover": "thumbs/Centerpieces/Centerpieces Bowls/10_ cut crystal bowl with silver pedestal.webp",
-        "count": 6,
+        "count": 8,
         "items": [
           {
             "src": "Centerpieces/Centerpieces Bowls/10_ cut crystal bowl with silver pedestal.png",
@@ -711,7 +766,14 @@
             "src": "Centerpieces/Centerpieces Bowls/  8 1_2_ gold footed bowl with handles_.png",
             "thumb": "thumbs/Centerpieces/Centerpieces Bowls/  8 1_2_ gold footed bowl with handles_.webp",
             "title": "Gold Footed Bowl with Handles",
-            "dims": "8 1/2\" / 10 1/2\"",
+            "dims": "8 1/2\"",
+            "note": ""
+          },
+          {
+            "src": "Centerpieces/Centerpieces Bowls/  10 1_2_ gold footed bowl with handles_.png",
+            "thumb": "thumbs/Centerpieces/Centerpieces Bowls/  10 1_2_ gold footed bowl with handles_.webp",
+            "title": "Gold Footed Bowl with Handles",
+            "dims": "10 1/2\"",
             "note": ""
           },
           {
@@ -729,10 +791,17 @@
             "note": "10\" high 9\" square"
           },
           {
+            "src": "Centerpieces/Centerpieces Bowls/ 8 1_2_ silver footed bowl with handles.png",
+            "thumb": "thumbs/Centerpieces/Centerpieces Bowls/ 8 1_2_ silver footed bowl with handles.webp",
+            "title": "Silver Footed Bowl with Handles",
+            "dims": "8 1/2\"",
+            "note": ""
+          },
+          {
             "src": "Centerpieces/Centerpieces Bowls/ 10 1_2_ silver footed bowl with handles.png",
             "thumb": "thumbs/Centerpieces/Centerpieces Bowls/ 10 1_2_ silver footed bowl with handles.webp",
             "title": "Silver Footed Bowl with Handles",
-            "dims": "8 1/2\" / 10 1/2\"",
+            "dims": "10 1/2\"",
             "note": ""
           }
         ]
@@ -741,14 +810,22 @@
         "type": "category",
         "name": "Centerpiece Pedestals",
         "folder": "Centerpieces/Certepiece Pedestals",
-        "cover": "thumbs/Centerpieces/Certepiece Pedestals/40_x 11_ cast iron pillar candle holder. This item can be custom painted.webp",
-        "count": 13,
+        "desc": "Make a bold statement with our versatile centerpiece pedestals. Perfect for elevating floral arrangements on tables or creating striking displays on the floor.",
+        "cover": "thumbs/Centerpieces/Certepiece Pedestals/27.5_x7.8_ cast iron pillar candle holder.This item can be custom painted.webp",
+        "count": 18,
         "items": [
+          {
+            "src": "Centerpieces/Certepiece Pedestals/27.5_x7.8_ cast iron pillar candle holder.This item can be custom painted.png",
+            "thumb": "thumbs/Centerpieces/Certepiece Pedestals/27.5_x7.8_ cast iron pillar candle holder.This item can be custom painted.webp",
+            "title": "Cast Iron Pillar Candle Holder",
+            "dims": "27.5\" × 7.8\"",
+            "note": "This item can be custom painted"
+          },
           {
             "src": "Centerpieces/Certepiece Pedestals/40_x 11_ cast iron pillar candle holder. This item can be custom painted.png",
             "thumb": "thumbs/Centerpieces/Certepiece Pedestals/40_x 11_ cast iron pillar candle holder. This item can be custom painted.webp",
             "title": "Cast Iron Pillar Candle Holder",
-            "dims": "27.5\" × 7.8\" / 40\" × 11\"",
+            "dims": "40\" × 11\"",
             "note": "This item can be custom painted"
           },
           {
@@ -783,8 +860,15 @@
             "src": "Centerpieces/Certepiece Pedestals/24_ gold pedestal. Available with center dish or with center bowl.png",
             "thumb": "thumbs/Centerpieces/Certepiece Pedestals/24_ gold pedestal. Available with center dish or with center bowl.webp",
             "title": "Gold Pedestal",
-            "dims": "24\" / 30\"",
+            "dims": "24\"",
             "note": "Available with center dish or with center bowl"
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/30_ gold pedestal.png",
+            "thumb": "thumbs/Centerpieces/Certepiece Pedestals/30_ gold pedestal.webp",
+            "title": "Gold Pedestal",
+            "dims": "30\"",
+            "note": ""
           },
           {
             "src": "Centerpieces/Certepiece Pedestals/30_ hexagonal vase. This item can be custom painted any color_.png",
@@ -825,14 +909,35 @@
             "src": "Centerpieces/Certepiece Pedestals/36_ stand with glass bell jar.png",
             "thumb": "thumbs/Centerpieces/Certepiece Pedestals/36_ stand with glass bell jar.webp",
             "title": "Stand with Glass Bell Jar",
-            "dims": "24\" / 36\" / 48\"",
+            "dims": "36\"",
+            "note": ""
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/24_ stand with glass bell jar.png",
+            "thumb": "thumbs/Centerpieces/Certepiece Pedestals/24_ stand with glass bell jar.webp",
+            "title": "Stand with Glass Bell Jar",
+            "dims": "24\"",
+            "note": ""
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/48_ stand with glass bell jar.png",
+            "thumb": "thumbs/Centerpieces/Certepiece Pedestals/48_ stand with glass bell jar.webp",
+            "title": "Stand with Glass Bell Jar",
+            "dims": "48\"",
             "note": ""
           },
           {
             "src": "Centerpieces/Certepiece Pedestals/26_ trumpet vase.png",
             "thumb": "thumbs/Centerpieces/Certepiece Pedestals/26_ trumpet vase.webp",
             "title": "Trumpet Vase",
-            "dims": "26\" / 33 1/4\"",
+            "dims": "26\"",
+            "note": ""
+          },
+          {
+            "src": "Centerpieces/Certepiece Pedestals/33 1_4_ trumpet vase.png",
+            "thumb": "thumbs/Centerpieces/Certepiece Pedestals/33 1_4_ trumpet vase.webp",
+            "title": "Trumpet Vase",
+            "dims": "33 1/4\"",
             "note": ""
           }
         ]
@@ -843,6 +948,7 @@
     "type": "group",
     "name": "Chairs",
     "folder": "Chairs",
+    "desc": "Discover our range of stylish chair rentals. From elegant ballroom and classic Chiavari chairs to sleek leatherette and clear acrylic options, we offer seating that combines comfort and sophistication.",
     "cover": "thumbs/Chairs/Black Ballroom Chair.webp",
     "count": 33,
     "children": [
@@ -850,6 +956,7 @@
         "type": "category",
         "name": "Chairs",
         "folder": "Chairs",
+        "desc": "Discover our range of stylish chair rentals. From elegant ballroom and classic Chiavari chairs to sleek leatherette and clear acrylic options, we offer seating that combines comfort and sophistication.",
         "cover": "thumbs/Chairs/Black Ballroom Chair.webp",
         "count": 27,
         "items": [
@@ -861,16 +968,65 @@
             "note": ""
           },
           {
-            "src": "Chairs/Black Barstool.png",
-            "thumb": "thumbs/Chairs/Black Barstool.webp",
-            "title": "Black Barstool",
+            "src": "Chairs/Chivari bar stools. Available in gold, white, black, silver, fruitwood.png",
+            "thumb": "thumbs/Chairs/Chivari bar stools. Available in gold, white, black, silver, fruitwood.webp",
+            "title": "Chivari Bar Stools",
+            "dims": "",
+            "note": "Available in gold, white, black, silver, fruitwood"
+          },
+          {
+            "src": "Chairs/Fruitwood ballroom chair(1).png",
+            "thumb": "thumbs/Chairs/Fruitwood ballroom chair(1).webp",
+            "title": "Fruitwood Ballroom Chair",
             "dims": "",
             "note": ""
           },
           {
-            "src": "Chairs/Black Garden Chairs.png",
-            "thumb": "thumbs/Chairs/Black Garden Chairs.webp",
-            "title": "Black Garden Chairs",
+            "src": "Chairs/Gold Ballroom Chair.png",
+            "thumb": "thumbs/Chairs/Gold Ballroom Chair.webp",
+            "title": "Gold Ballroom Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Pearl essence Chivari ballroom chair.png",
+            "thumb": "thumbs/Chairs/Pearl essence Chivari ballroom chair.webp",
+            "title": "Pearl Essence Chivari Ballroom Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Silver Ballroom Chair.png",
+            "thumb": "thumbs/Chairs/Silver Ballroom Chair.webp",
+            "title": "Silver Ballroom Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Sultry beige ballroom chair.png",
+            "thumb": "thumbs/Chairs/Sultry beige ballroom chair.webp",
+            "title": "Sultry Beige Ballroom Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/White ballroom chair.png",
+            "thumb": "thumbs/Chairs/White ballroom chair.webp",
+            "title": "White Ballroom Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Cross Back Fruitwood Chairs_.jpg",
+            "thumb": "thumbs/Chairs/Cross Back Fruitwood Chairs_.webp",
+            "title": "Cross Back Fruitwood Chairs",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Cross Back Natural Chairs.jpg",
+            "thumb": "thumbs/Chairs/Cross Back Natural Chairs.webp",
+            "title": "Cross Back Natural Chairs",
             "dims": "",
             "note": ""
           },
@@ -880,13 +1036,6 @@
             "title": "Chaclear",
             "dims": "",
             "note": ""
-          },
-          {
-            "src": "Chairs/Chivari bar stools. Available in gold, white, black, silver, fruitwood.png",
-            "thumb": "thumbs/Chairs/Chivari bar stools. Available in gold, white, black, silver, fruitwood.webp",
-            "title": "Chivari Bar Stools",
-            "dims": "",
-            "note": "Available in gold, white, black, silver, fruitwood"
           },
           {
             "src": "Chairs/Clear acrylic chair.png",
@@ -917,37 +1066,9 @@
             "note": ""
           },
           {
-            "src": "Chairs/Cross Back Fruitwood Chairs_.jpg",
-            "thumb": "thumbs/Chairs/Cross Back Fruitwood Chairs_.webp",
-            "title": "Cross Back Fruitwood Chairs",
-            "dims": "",
-            "note": ""
-          },
-          {
-            "src": "Chairs/Cross Back Natural Chairs.jpg",
-            "thumb": "thumbs/Chairs/Cross Back Natural Chairs.webp",
-            "title": "Cross Back Natural Chairs",
-            "dims": "",
-            "note": ""
-          },
-          {
-            "src": "Chairs/Fruitwood ballroom chair(1).png",
-            "thumb": "thumbs/Chairs/Fruitwood ballroom chair(1).webp",
-            "title": "Fruitwood Ballroom Chair",
-            "dims": "",
-            "note": ""
-          },
-          {
-            "src": "Chairs/Gold Ballroom Chair.png",
-            "thumb": "thumbs/Chairs/Gold Ballroom Chair.webp",
-            "title": "Gold Ballroom Chair",
-            "dims": "",
-            "note": ""
-          },
-          {
-            "src": "Chairs/Gold Barstool.png",
-            "thumb": "thumbs/Chairs/Gold Barstool.webp",
-            "title": "Gold Barstool",
+            "src": "Chairs/Smoked transparent chair.png",
+            "thumb": "thumbs/Chairs/Smoked transparent chair.webp",
+            "title": "Smoked Transparent Chair",
             "dims": "",
             "note": ""
           },
@@ -966,30 +1087,44 @@
             "note": "Available in black or white"
           },
           {
+            "src": "Chairs/Soft leatherette dining chair.png",
+            "thumb": "thumbs/Chairs/Soft leatherette dining chair.webp",
+            "title": "Soft Leatherette Dining Chair",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Black Garden Chairs.png",
+            "thumb": "thumbs/Chairs/Black Garden Chairs.webp",
+            "title": "Black Garden Chairs",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/White Garden Chairs.png",
+            "thumb": "thumbs/Chairs/White Garden Chairs.webp",
+            "title": "White Garden Chairs",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Black Barstool.png",
+            "thumb": "thumbs/Chairs/Black Barstool.webp",
+            "title": "Black Barstool",
+            "dims": "",
+            "note": ""
+          },
+          {
+            "src": "Chairs/Gold Barstool.png",
+            "thumb": "thumbs/Chairs/Gold Barstool.webp",
+            "title": "Gold Barstool",
+            "dims": "",
+            "note": ""
+          },
+          {
             "src": "Chairs/Mahogany Barstool.png",
             "thumb": "thumbs/Chairs/Mahogany Barstool.webp",
             "title": "Mahogany Barstool",
-            "dims": "",
-            "note": ""
-          },
-          {
-            "src": "Chairs/Pearl.png",
-            "thumb": "thumbs/Chairs/Pearl.webp",
-            "title": "Pearl",
-            "dims": "",
-            "note": ""
-          },
-          {
-            "src": "Chairs/Pearl essence Chivari ballroom chair.png",
-            "thumb": "thumbs/Chairs/Pearl essence Chivari ballroom chair.webp",
-            "title": "Pearl Essence Chivari Ballroom Chair",
-            "dims": "",
-            "note": ""
-          },
-          {
-            "src": "Chairs/Silver Ballroom Chair.png",
-            "thumb": "thumbs/Chairs/Silver Ballroom Chair.webp",
-            "title": "Silver Ballroom Chair",
             "dims": "",
             "note": ""
           },
@@ -1001,34 +1136,6 @@
             "note": ""
           },
           {
-            "src": "Chairs/Smoked transparent chair.png",
-            "thumb": "thumbs/Chairs/Smoked transparent chair.webp",
-            "title": "Smoked Transparent Chair",
-            "dims": "",
-            "note": ""
-          },
-          {
-            "src": "Chairs/Soft leatherette dining chair.png",
-            "thumb": "thumbs/Chairs/Soft leatherette dining chair.webp",
-            "title": "Soft Leatherette Dining Chair",
-            "dims": "",
-            "note": ""
-          },
-          {
-            "src": "Chairs/Sultry beige ballroom chair.png",
-            "thumb": "thumbs/Chairs/Sultry beige ballroom chair.webp",
-            "title": "Sultry Beige Ballroom Chair",
-            "dims": "",
-            "note": ""
-          },
-          {
-            "src": "Chairs/White ballroom chair.png",
-            "thumb": "thumbs/Chairs/White ballroom chair.webp",
-            "title": "White Ballroom Chair",
-            "dims": "",
-            "note": ""
-          },
-          {
             "src": "Chairs/White Barstool.png",
             "thumb": "thumbs/Chairs/White Barstool.webp",
             "title": "White Barstool",
@@ -1036,9 +1143,9 @@
             "note": ""
           },
           {
-            "src": "Chairs/White Garden Chairs.png",
-            "thumb": "thumbs/Chairs/White Garden Chairs.webp",
-            "title": "White Garden Chairs",
+            "src": "Chairs/Pearl.png",
+            "thumb": "thumbs/Chairs/Pearl.webp",
+            "title": "Pearl",
             "dims": "",
             "note": ""
           }
@@ -1048,6 +1155,7 @@
         "type": "category",
         "name": "Cushions",
         "folder": "Chairs/Cushions",
+        "desc": "Soft seat cushions in a range of colors to complete and add comfort to your chairs.",
         "cover": "thumbs/Chairs/Cushions/Black Lamour Cushions.webp",
         "count": 6,
         "items": [
@@ -1101,6 +1209,7 @@
     "type": "category",
     "name": "Dance Floors",
     "folder": "Dance floors",
+    "desc": "Available in red, black, and white — all with a high-shine finish. Your dance floor can be made in almost any even size (note: every floor has a 5\" edging).",
     "cover": "thumbs/Dance floors/Bamboo and White Checkered Dance Floor.webp",
     "count": 9,
     "items": [
@@ -1173,8 +1282,9 @@
     "type": "category",
     "name": "Displays",
     "folder": "Displays",
+    "desc": "Create stunning focal points with our large display pieces, perfect for showcasing floral arrangements or candles. They add height and drama, transforming any space.",
     "cover": "thumbs/Displays/5_x4_ Extra large urn with large handles. This item can be custom painted any color_.webp",
-    "count": 3,
+    "count": 4,
     "items": [
       {
         "src": "Displays/5_x4_ Extra large urn with large handles. This item can be custom painted any color_.png",
@@ -1187,7 +1297,14 @@
         "src": "Displays/Shiny White Floor Vase. 76\".png",
         "thumb": "thumbs/Displays/Shiny White Floor Vase. 76\".webp",
         "title": "Shiny White Floor Vase",
-        "dims": "40\" / 76\"",
+        "dims": "76\"",
+        "note": ""
+      },
+      {
+        "src": "Displays/Shiny White Floor Vase. 40\".png",
+        "thumb": "thumbs/Displays/Shiny White Floor Vase. 40\".webp",
+        "title": "Shiny White Floor Vase",
+        "dims": "40\"",
         "note": ""
       },
       {
@@ -1203,6 +1320,7 @@
     "type": "category",
     "name": "Furniture",
     "folder": "Furniture",
+    "desc": "Complete your event with our stylish furniture rentals, including tables and bar furniture. Designed for comfort and elegance for any occasion.",
     "cover": "thumbs/Furniture/Country wood table. It has cast iron legs with a distressed wood top. This table measures W98_xD39_xH31.webp",
     "count": 14,
     "items": [
@@ -1310,6 +1428,7 @@
     "type": "category",
     "name": "Lamps & Lighting",
     "folder": "Lamps and Lighting",
+    "desc": "Brighten your event with our elegant lamps and lighting rentals, creating a warm, inviting atmosphere that enhances the ambiance of any occasion.",
     "cover": "thumbs/Lamps and Lighting/8_ single lamp post with round lamp.webp",
     "count": 2,
     "items": [
@@ -1333,8 +1452,9 @@
     "type": "category",
     "name": "Pedestals & Columns",
     "folder": "Pedestals and columns",
+    "desc": "Elevate your event decor with our elegant pedestals and columns. Ideal for floral displays or dramatic focal points, adding height and sophistication to any space.",
     "cover": "thumbs/Pedestals and columns/8_ ivory greek column_.webp",
-    "count": 7,
+    "count": 11,
     "items": [
       {
         "src": "Pedestals and columns/8_ ivory greek column_.png",
@@ -1344,10 +1464,17 @@
         "note": ""
       },
       {
+        "src": "Pedestals and columns/ 4_ ivory plain fluted pedestal _.png",
+        "thumb": "thumbs/Pedestals and columns/ 4_ ivory plain fluted pedestal _.webp",
+        "title": "Ivory Plain Fluted Pedestal",
+        "dims": "4\"",
+        "note": ""
+      },
+      {
         "src": "Pedestals and columns/28_ ivory plain fluted pedestal.png",
         "thumb": "thumbs/Pedestals and columns/28_ ivory plain fluted pedestal.webp",
         "title": "Ivory Plain Fluted Pedestal",
-        "dims": "4\" / 28\"",
+        "dims": "28\"",
         "note": ""
       },
       {
@@ -1368,7 +1495,14 @@
         "src": "Pedestals and columns/6_ stone grey greek column _.png",
         "thumb": "thumbs/Pedestals and columns/6_ stone grey greek column _.webp",
         "title": "Stone Grey Greek Column",
-        "dims": "6\" / 7\"",
+        "dims": "6\"",
+        "note": ""
+      },
+      {
+        "src": "Pedestals and columns/7_ stone grey greek column_.png",
+        "thumb": "thumbs/Pedestals and columns/7_ stone grey greek column_.webp",
+        "title": "Stone Grey Greek Column",
+        "dims": "7\"",
         "note": ""
       },
       {
@@ -1379,10 +1513,24 @@
         "note": "Also available in Ivory"
       },
       {
+        "src": "Pedestals and columns/28_ stone grey plain fluted pedestal_.png",
+        "thumb": "thumbs/Pedestals and columns/28_ stone grey plain fluted pedestal_.webp",
+        "title": "Stone Grey Plain Fluted Pedestal",
+        "dims": "28\"",
+        "note": ""
+      },
+      {
         "src": "Pedestals and columns/3_ stone grey plain fluted pedestal.png",
         "thumb": "thumbs/Pedestals and columns/3_ stone grey plain fluted pedestal.webp",
         "title": "Stone Grey Plain Fluted Pedestal",
-        "dims": "3\" / 4\" / 28\"",
+        "dims": "3\"",
+        "note": ""
+      },
+      {
+        "src": "Pedestals and columns/4_ stone grey plain fluted pedestal_.png",
+        "thumb": "thumbs/Pedestals and columns/4_ stone grey plain fluted pedestal_.webp",
+        "title": "Stone Grey Plain Fluted Pedestal",
+        "dims": "4\"",
         "note": ""
       }
     ]
@@ -1391,8 +1539,9 @@
     "type": "category",
     "name": "Urns",
     "folder": "Urns",
+    "desc": "Add timeless elegance with our classic urn rentals, perfect for showcasing beautiful floral arrangements indoors or outdoors.",
     "cover": "thumbs/Urns/Ivory basket-weave planter.webp",
-    "count": 12,
+    "count": 13,
     "items": [
       {
         "src": "Urns/Ivory basket-weave planter.png",
@@ -1465,10 +1614,17 @@
         "note": ""
       },
       {
+        "src": "Urns/18_ stone grey urn.png",
+        "thumb": "thumbs/Urns/18_ stone grey urn.webp",
+        "title": "Stone Grey Urn",
+        "dims": "18\"",
+        "note": ""
+      },
+      {
         "src": "Urns/21_ stone grey urn.png",
         "thumb": "thumbs/Urns/21_ stone grey urn.webp",
         "title": "Stone Grey Urn",
-        "dims": "18\" / 21\"",
+        "dims": "21\"",
         "note": ""
       },
       {
