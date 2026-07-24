@@ -1320,52 +1320,10 @@
     "type": "category",
     "name": "Furniture",
     "folder": "Furniture",
-    "desc": "Complete your event with our stylish furniture rentals, including tables and bar furniture. Designed for comfort and elegance for any occasion.",
-    "cover": "thumbs/Furniture/Country wood table. It has cast iron legs with a distressed wood top. This table measures W98_xD39_xH31.webp",
-    "count": 14,
+    "desc": "Complete your event with our furniture rentals — day beds, ramps, napkins and event essentials designed for comfort and elegance.",
+    "cover": "thumbs/Furniture/White Day Bed.webp",
+    "count": 3,
     "items": [
-      {
-        "src": "Furniture/Banquet and Tuscan Tables.jpg",
-        "thumb": "thumbs/Furniture/Banquet and Tuscan Tables.webp",
-        "title": "Banquet and Tuscan Tables",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Furniture/Classroom Tables.jpg",
-        "thumb": "thumbs/Furniture/Classroom Tables.webp",
-        "title": "Classroom Tables",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Furniture/Clear Acrylic High Cocktail Table.jpg",
-        "thumb": "thumbs/Furniture/Clear Acrylic High Cocktail Table.webp",
-        "title": "Clear Acrylic High Cocktail Table",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Furniture/Cocktail and Round Tables 2.jpg",
-        "thumb": "thumbs/Furniture/Cocktail and Round Tables 2.webp",
-        "title": "Cocktail and Round Tables",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Furniture/Country wood table. It has cast iron legs with a distressed wood top. This table measures W98_xD39_xH31.jpg",
-        "thumb": "thumbs/Furniture/Country wood table. It has cast iron legs with a distressed wood top. This table measures W98_xD39_xH31.webp",
-        "title": "Country Wood Table",
-        "dims": "",
-        "note": "It has cast iron legs with a distressed wood top. This table measures W98\"xD39\"xH31"
-      },
-      {
-        "src": "Furniture/Glass top bar table.jpg",
-        "thumb": "thumbs/Furniture/Glass top bar table.webp",
-        "title": "Glass Top Bar Table",
-        "dims": "",
-        "note": ""
-      },
       {
         "src": "Furniture/Handicap ramps.png",
         "thumb": "thumbs/Furniture/Handicap ramps.webp",
@@ -1381,44 +1339,9 @@
         "note": ""
       },
       {
-        "src": "Furniture/High Cocktail Table.jpg",
-        "thumb": "thumbs/Furniture/High Cocktail Table.webp",
-        "title": "High Cocktail Table",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Furniture/Low Tables on Wheels 2.jpg",
-        "thumb": "thumbs/Furniture/Low Tables on Wheels 2.webp",
-        "title": "Low Tables on Wheels",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Furniture/Mirrored Cocktail Table.jpg",
-        "thumb": "thumbs/Furniture/Mirrored Cocktail Table.webp",
-        "title": "Mirrored Cocktail Table",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Furniture/Serpentine Tables.jpg",
-        "thumb": "thumbs/Furniture/Serpentine Tables.webp",
-        "title": "Serpentine Tables",
-        "dims": "",
-        "note": ""
-      },
-      {
         "src": "Furniture/White Day Bed.png",
         "thumb": "thumbs/Furniture/White Day Bed.webp",
         "title": "White Day Bed",
-        "dims": "",
-        "note": ""
-      },
-      {
-        "src": "Furniture/White riser with stairs.png",
-        "thumb": "thumbs/Furniture/White riser with stairs.webp",
-        "title": "White Riser with Stairs",
         "dims": "",
         "note": ""
       }
@@ -1531,6 +1454,103 @@
         "thumb": "thumbs/Pedestals and columns/4_ stone grey plain fluted pedestal_.webp",
         "title": "Stone Grey Plain Fluted Pedestal",
         "dims": "4\"",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "Risers & Stages",
+    "folder": "Risers",
+    "desc": "Sturdy risers and staging to add height and create a focal point — perfect for cakes, head tables and performances.",
+    "cover": "thumbs/Risers/White riser with stairs.webp",
+    "count": 1,
+    "items": [
+      {
+        "src": "Risers/White riser with stairs.png",
+        "thumb": "thumbs/Risers/White riser with stairs.webp",
+        "title": "White Riser with Stairs",
+        "dims": "",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "name": "Tables",
+    "folder": "Tables",
+    "desc": "A full range of event tables — banquet, cocktail, round, serpentine, classroom and specialty tables in wood, glass and mirrored finishes.",
+    "cover": "thumbs/Tables/Country wood table. It has cast iron legs with a distressed wood top. This table measures W98_xD39_xH31.webp",
+    "count": 10,
+    "items": [
+      {
+        "src": "Tables/Banquet and Tuscan Tables.jpg",
+        "thumb": "thumbs/Tables/Banquet and Tuscan Tables.webp",
+        "title": "Banquet and Tuscan Tables",
+        "dims": "",
+        "note": ""
+      },
+      {
+        "src": "Tables/Classroom Tables.jpg",
+        "thumb": "thumbs/Tables/Classroom Tables.webp",
+        "title": "Classroom Tables",
+        "dims": "",
+        "note": ""
+      },
+      {
+        "src": "Tables/Clear Acrylic High Cocktail Table.jpg",
+        "thumb": "thumbs/Tables/Clear Acrylic High Cocktail Table.webp",
+        "title": "Clear Acrylic High Cocktail Table",
+        "dims": "",
+        "note": ""
+      },
+      {
+        "src": "Tables/Cocktail and Round Tables 2.jpg",
+        "thumb": "thumbs/Tables/Cocktail and Round Tables 2.webp",
+        "title": "Cocktail and Round Tables",
+        "dims": "",
+        "note": ""
+      },
+      {
+        "src": "Tables/Country wood table. It has cast iron legs with a distressed wood top. This table measures W98_xD39_xH31.jpg",
+        "thumb": "thumbs/Tables/Country wood table. It has cast iron legs with a distressed wood top. This table measures W98_xD39_xH31.webp",
+        "title": "Country Wood Table",
+        "dims": "",
+        "note": "It has cast iron legs with a distressed wood top. This table measures W98\"xD39\"xH31"
+      },
+      {
+        "src": "Tables/Glass top bar table.jpg",
+        "thumb": "thumbs/Tables/Glass top bar table.webp",
+        "title": "Glass Top Bar Table",
+        "dims": "",
+        "note": ""
+      },
+      {
+        "src": "Tables/High Cocktail Table.jpg",
+        "thumb": "thumbs/Tables/High Cocktail Table.webp",
+        "title": "High Cocktail Table",
+        "dims": "",
+        "note": ""
+      },
+      {
+        "src": "Tables/Low Tables on Wheels 2.jpg",
+        "thumb": "thumbs/Tables/Low Tables on Wheels 2.webp",
+        "title": "Low Tables on Wheels",
+        "dims": "",
+        "note": ""
+      },
+      {
+        "src": "Tables/Mirrored Cocktail Table.jpg",
+        "thumb": "thumbs/Tables/Mirrored Cocktail Table.webp",
+        "title": "Mirrored Cocktail Table",
+        "dims": "",
+        "note": ""
+      },
+      {
+        "src": "Tables/Serpentine Tables.jpg",
+        "thumb": "thumbs/Tables/Serpentine Tables.webp",
+        "title": "Serpentine Tables",
+        "dims": "",
         "note": ""
       }
     ]

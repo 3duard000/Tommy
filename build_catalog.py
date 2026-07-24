@@ -41,11 +41,13 @@ DISPLAY = {
     'Dance floors': 'Dance Floors',
     'Lamps and Lighting': 'Lamps & Lighting',
     'Pedestals and columns': 'Pedestals & Columns',
+    'Risers': 'Risers & Stages',
 }
 
 # Portada elegida a mano (substring del nombre de archivo)
 COVER_OVERRIDE = {
-    'Furniture': 'country wood table',
+    'Tables': 'country wood table',
+    'Furniture': 'white day bed',
     'Centerpieces': 'silver footed bowl with handles',
 }
 
@@ -69,7 +71,9 @@ DESC = {
     'Cushions': 'Soft seat cushions in a range of colors to complete and add comfort to your chairs.',
     'Dance Floors': 'Available in red, black, and white — all with a high-shine finish. Your dance floor can be made in almost any even size (note: every floor has a 5" edging).',
     'Displays': 'Create stunning focal points with our large display pieces, perfect for showcasing floral arrangements or candles. They add height and drama, transforming any space.',
-    'Furniture': 'Complete your event with our stylish furniture rentals, including tables and bar furniture. Designed for comfort and elegance for any occasion.',
+    'Furniture': 'Complete your event with our furniture rentals — day beds, ramps, napkins and event essentials designed for comfort and elegance.',
+    'Tables': 'A full range of event tables — banquet, cocktail, round, serpentine, classroom and specialty tables in wood, glass and mirrored finishes.',
+    'Risers & Stages': 'Sturdy risers and staging to add height and create a focal point — perfect for cakes, head tables and performances.',
     'Lamps & Lighting': 'Brighten your event with our elegant lamps and lighting rentals, creating a warm, inviting atmosphere that enhances the ambiance of any occasion.',
     'Pedestals & Columns': 'Elevate your event decor with our elegant pedestals and columns. Ideal for floral displays or dramatic focal points, adding height and sophistication to any space.',
     'Urns': 'Add timeless elegance with our classic urn rentals, perfect for showcasing beautiful floral arrangements indoors or outdoors.',
@@ -345,6 +349,7 @@ def main():
         strip_files(n)
 
     for extra in ['Other/image1.jpg', 'Other/image2.jpg', 'Other/image 3.jpg',
+                  'Other/Dancefloorhomepage.jpg',
                   'Team/team-1.jpeg', 'Team/team-2.jpeg']:
         if os.path.exists(os.path.join(ROOT, extra)):
             make_thumb(extra)
